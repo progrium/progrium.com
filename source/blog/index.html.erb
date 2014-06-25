@@ -1,0 +1,88 @@
+---
+pageable: true
+per_page: 5
+---
+
+<% article = page_articles.first %>
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9"> 
+          <article>
+            <div class="meta">
+                <div class="date">
+                    <span class="month"><%= article.date.strftime('%b') %></span>
+                    <span class="day"><%= article.date.strftime('%d') %></span>
+                    <span class="year"><%= article.date.strftime('%Y') %></span>
+                </div>
+            </div>
+            <h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+            <%= article.body %>
+          </article>
+          <br /><a href="<%= article.url %>#disqus_thread">Comments</a>
+        </div>
+        
+        <div class="col-lg-3" id="sidebar">
+            <img src="/images/jeffphoto.gif" id="photo" />
+            <p>Jeff Lindsay is a design-minded software architect and product engineer in Austin, Texas. Currently he consults and writes open source software focusing on next-gen platforms and infrastructure.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<% page_articles[1..-1].each_with_index do |article, i| %>
+<section <% if i % 2 == 0 %> class="alternate"<% end %>>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9"> 
+          <article>
+            <div class="meta">
+                <div class="date">
+                    <span class="month"><%= article.date.strftime('%b') %></span>
+                    <span class="day"><%= article.date.strftime('%d') %></span>
+                    <span class="year"><%= article.date.strftime('%Y') %></span>
+                </div>
+            </div>
+            <h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+            <%= article.body %>
+          </article>
+          <br /><a href="<%= article.url %>#disqus_thread">Comments</a>
+        </div>
+    </div>
+</div>
+</section>
+<% end %>
+
+
+<% if paginate %>
+<section class="alternate">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12"> 
+        <ul class="pager article">
+          <% if next_page %>
+          <li class="previous">
+            <a href="<%= next_page.url %>">&larr; Older</a>
+          </li>
+          <% else %>
+          <li class="previous disabled">
+            <a href="#">&larr; Older</a>
+          </li>
+          <% end %>
+        
+          <% if prev_page %>
+          <li class="next">
+            <a href="<%= prev_page.url %>">Newer &rarr;</a>
+          </li>
+          <% else %>
+          <li class="next disabled">
+            <a href="#">Newer &rarr;</a>
+          </li>
+          <% end %>
+        </ul>
+        </div>
+    </div>
+</div>
+</section>
+<% end %>

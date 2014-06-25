@@ -1,55 +1,201 @@
+/* 
+ *= require "bootstrap/dist/css/bootstrap.min.css"
+ *= require "fontawesome/css/font-awesome.min.css"
+ */
 @charset "utf-8";
 
+/* =Global
+-------------------------------------------------------------- */
+
+/* http://www.colourlovers.com/palette/2337359/Play_Time */
 body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+  font-family: "Roboto Condensed",sans-serif;
+  background-color: #fff;
+  color: #505050;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  margin-bottom: 15px;
+}
 
-h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
+h5 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #999;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  font-weight: 600;
+}
 
-.doc {
+a {
+  color: #669EFF;
+}
+a:hover {
+  color: #2E36AB;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto; 
+}
+
+main {
+  padding-top: 150px; 
+}
+
+footer {
+    background-color: #323333;
+    color: #aaa;
+    padding: 20px;
+    font-size: 16px;
+}
+
+section {
+  padding: 60px 0; 
+}
+section h1 {
+  margin-top: 0;
+  margin-bottom: 20px; 
+}
+section h1 a, section h1 a:hover, section h1 a:visited {
+  color: #505050;
+}
+section p {
+  margin-bottom: 30px; 
+}
+section p:last-child {
+  margin-bottom: 0; 
+}
+section.color {
+  /* D6E68A */
+    /* FFDE66 */
+  background-color: #FEFDD6;
+  color: 505050; 
+}
+section.color2 {
+  background-color: #669EFF;
+  color: white;
+}
+
+section.alternate {
+  background-color: #eef0f2;
+}
+
+article {
+  padding-right: 28px;
+}
+article .meta {
+  position: absolute;
+  margin-left: -100px;
+  border-right: 1px dotted lightgray;
+  padding-top: 6px;
+  width: 80px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+article .meta .month {
+  font-size: 18px;
+  line-height: 15px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+article .meta .day {
+  display: block;
+  line-height: 32px;
+  font-size: 30px;
+  text-align: center;
+}
+article .meta .year {
   font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+  line-height: 15px;
+  color: lightgray;
+  display: block;
+  text-align: center;   
+}
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+/* =Header
+-------------------------------------------------------------- */
+header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #58b868;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+  header h1#logo {
+    margin: 0;
+    display: inline-block;
+    height: 150px;
+    line-height: 140px;
+    float: left;
+    font-family: "Dosis", sans-serif;
+    font-size: 48px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    #logo span {
+      font-size: 24px; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav a {
+      line-height: 160px;
+      margin-left: 20px;
+      color: white;
+      font-weight: 300;
+      font-size: 18px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      header nav a:hover {
+        color: white; }
+    header .hire {
+      border-color: white;
+      text-transform: uppercase;
+      border-width: 2px;
+      border-style: solid;
+      padding: 3px 10px 4px 10px;
+      font-weight: 600;
+      font-size: 16px;
+      border-radius:4px;
+      letter-spacing: 1.1px; }
+  header.smaller {
+    height: 75px; }
+    header.smaller h1#logo {
+      width: 140px;
+      height: 75px;
+      line-height: 75px;
+      font-size: 30px; }
+    header.smaller nav a {
+      line-height: 75px; }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+
+/* =Experimental
+-------------------------------------------------------------- */
+
+#photo {
+  margin-top: -20px;
+  width: 220px;
+  height: 220px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }

@@ -1,0 +1,15 @@
+---
+layout: page
+---
+Jeff Lindsay is a systems thinking hacker-philosopher. He builds, he explores, and is apparently "wired differently." Obsessed with esoteric knowledge, he applies modern technology driven by an eclectic model of the bigger picture. He's heavily involved in hacker culture, startup culture, web technologies and the indie game scene.
+
+While freelancing in 2005, Jeff met David Weekly, a local hacker-entrepreneur that later founded PBworks. Together they started a free and open monthly event called SuperHappyDevHouse, "a party for hackers and thinkers." It quickly gained the attention of the Silicon Valley digerati and inspired other events such as BarCamp and Yahoo! Hack Day, as well as a network of SHDH-modeled events in countries around the world. The original SHDH event has been featured in the San Jose Mercury News, SFGate, and CNET News.com, and courted by tech giants such as Google and Sun.
+
+After years of hobby game development, Jeff met freeware game developer Derek Yu in 2005 and helped him run and develop a blog called TIGSource. The Independent Game Source has grown into a major community that helped bring about what is now called the indie game scene, the source of hits such as Fez, Super Meat Boy, Spelunky, World of Goo, Braid, and even Minecraft. The TIGSource community has become part of a loose network of indie game developers, overlapping with many involved in the IGF and GDC. TIGSource has been championed by many in the game industry including 1UP, Kotaku, and Penny Arcade.
+
+While working on a startup in 2006, Jeff wrote about a pattern in web architecture he called "webhooks". Jeff has since presented about webhooks at Glue Conference, SXSW, and for Google and Pivotal Labs tech talks. Jeff's work has led to the adoption of webhooks by Google, GitHub, PBworks, SocialText and many others. In 2009, the pattern was used in a protocol called PubSubHubbub, used to make RSS and Atom feeds real-time. Jeff is a contributor to PubSubHubbub, which has been deployed by Google, Six Apart, FriendFeed and others. Jeff has also developed many tools and open source software to support a webhooks ecosystem, including RequestBin and Localtunnel.
+
+The success of SuperHappyDevHouse led to the formation of Hacker Dojo, a non-profit community center for technologists. Jeff co-founded Hacker Dojo in 2009 with SuperHappyDevHouse co-founder David Weekly and a group of passionate friends from the community, including Lee Felsenstein, moderator of the 1970's computer hobbyist group Homebrew Computer Club. In just three months of operating with over 100 paying members and hundreds of visitors for events and coworking, Hacker Dojo achieved immediate success. Hacker Dojo made headlines on the front page of the Mercury News and garnered a letter of congratulations from the City of Mountain View.
+
+Over the years, Jeff has worked with various startups and organizations as a software developer or advisor, including CommerceNet, Netflix, NASA Ames, and Twilio.
+

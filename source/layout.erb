@@ -3,17 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <title><%= (current_article.title+" :: ") unless current_article.nil? %>Jeff Lindsay</title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/atom.xml", title: "Atom Feed" %>
+
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag 'all' %>
   </head>
   <body>
+  <div id="wrapper">
     
-    <div id="main" role="main">
+    <header>
+      <div class="container clearfix">
+        <h1 id="logo">
+          Progrium <span>// Jeff Lindsay</span>
+        </h1>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="http://github.com/progrium">Projects</a>
+          <a href="/blog">Blog</a>
+          <a class="hire" href="mailto:progrium+hire@gmail.com">HIRE ME</a>
+        </nav>
+      </div>
+    </header>
+    
+    <main id="main" role="main">
       <%= yield %>
-    </div>
+    </main>
     
-    <aside>
-      <h2>Recent Articles</h2>
+    <!--aside>
+      <h2>Recent Articles?</h2>
       <ol>
         <% blog.articles[0...10].each do |article| %>
           <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
@@ -33,6 +53,15 @@
           <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
         <% end %>
       </ol>
-    </aside>
+    </aside-->
+
+    <footer>
+      <div class="container clearfix">
+        &copy; 2014 Jeff Lindsay, Progrium Labs
+      </div>
+    </footer>
+
+  </div>
+  <%= javascript_include_tag 'all' %>
   </body>
 </html>
