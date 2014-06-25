@@ -5,7 +5,7 @@
 # Time.zone = "UTC"
 
 activate :syntax
-activate :directory_indexes
+
 activate :livereload
 
 activate :deploy do |deploy|
@@ -37,6 +37,8 @@ activate :blog do |blog|
   blog.per_page = 10
   blog.page_link = "page{num}"
 end
+
+activate :directory_indexes
 
 page "/blog/atom.xml", layout: false
 
