@@ -45,6 +45,12 @@ main {
   padding-top: 150px; 
 }
 
+.fa {
+  /* align all text middle next to font awesome icons */
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
 footer {
     background-color: #323333;
     color: #aaa;
@@ -85,13 +91,14 @@ section.alternate {
 
 article {
   padding-right: 28px;
+  padding-bottom: 30px;
 }
 article .meta {
   position: absolute;
-  margin-left: -100px;
+  margin-left: -90px;
   border-right: 1px dotted lightgray;
   padding-top: 6px;
-  width: 80px;
+  width: 70px;
   font-weight: 400;
   padding-bottom: 20px;
 }
@@ -148,8 +155,11 @@ header {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-    #logo span {
+    header #logo span {
       font-size: 24px; }
+    header #logo a, header #logo a:hover, header #logo a:visited {
+      text-decoration: none;
+      color: white; }
   header nav {
     display: inline-block;
     float: right; }
@@ -198,4 +208,14 @@ header {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+#sidebar h5 {
+  margin-left: 15px;
+}
+#sidebar h5 a {
+  color: #999;
+}
+#sidebar h5 a:hover {
+  color: #669EFF;
 }

@@ -13,7 +13,7 @@ One could describe these all as failing to see the bigger picture. In systems we
 
 Openness is the principle that open systems, which includes everything from problems to corporations to opinions to products, can only be understood in the context of their environment. This is because open systems are dependent on and co-determined by their context. A closed system, like a watch or a hammer, can function entirely based on its own internal structure and process. An open system interacts with and is inextricably linked with its environment.
 
-<center><img src="/images/content/open_vs_closed_sys.png" title="Open systems vs Closed systems" /></center>
+<center><img src="/images/content/environmental-fallacy/open_vs_closed_sys.png" title="Open systems vs Closed systems" /></center>
 
 This insight may seem banal. In fact, the younger generations and the progressive recent generations are quite familiar with this concept at least as a vague intuition. But this is a very recent development. We don't appreciate how little this idea was understood for basically all of human existence up until just a few decades ago. 
 
@@ -27,7 +27,7 @@ Only until ecology took off in the mid-20th century did we have a science that e
 
 Often the environment refers to all external variables and conditions of a system, but in some cases it might refer to a particular part of the total environment. This is because the environment represents any surrounding system. Any one open system is embedded in a greater system, embedded in an even greater system, and so on. For example, one slice of how nested environments can affect an individual at work might look like this:
 
-<img src="/images/content/nested_environments.png" title="Nested
+<img src="/images/content/environmental-fallacy/nested_environments.png" title="Nested
 environments" style="float: left;" />
 
 If all of these layers influence each other, you start to realize, maybe somewhat helplessly, that everything depends on everything else. No wonder science originally dismissed the environment. But ignoring the complexities and dynamics of open systems leads to sometimes serious disparities from reality. 
