@@ -5,7 +5,7 @@ build:
 server: build
 	bundle exec middleman
 
-deploy: build
+deploy:
 	bundle exec middleman deploy
 
 .PHONY: build server deploy

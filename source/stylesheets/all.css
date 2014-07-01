@@ -68,7 +68,7 @@ section h1 {
 section h1 a, section h1 a:hover, section h1 a:visited {
   color: #505050;
 }
-section p {
+section p, section ul {
   margin-bottom: 30px; 
 }
 section p:last-child {
