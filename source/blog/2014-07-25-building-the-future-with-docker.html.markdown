@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Building the Future with Docker
 date: 2014-07-25 00:11 UTC
 tags:
