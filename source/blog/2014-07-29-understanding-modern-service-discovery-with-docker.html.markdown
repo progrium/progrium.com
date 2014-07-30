@@ -33,23 +33,23 @@ Unfortunately, SRV records alone are basically dead on arrival. Have you ever us
 
 Despite all this, DNS is still a marvel of engineering, and even SRV records will be useful to us yet. But for all these reasons, on top of the demands of building distributed systems, most large tech companies went down a different path. 
 
-## Rise of the Lock service
+## Rise of the Lock Service
 
 In 2006, Google released [a paper describing Chubby](http://static.googleusercontent.com/media/research.google.com/en/us/archive/chubby-osdi06.pdf), their distributed lock service. It implemented distributed consensus based on Paxos to provide a consistent, partition-tolerant (CP in CAP theorem) key-value store that could be used for coordinating leader elections, resource locking, and reliable low-volume storage. They began to use this for internal name resolution instead of DNS. 
 
 Eventually, the paper inspired an open source equivalent of Chubby called [Zookeeper](http://zookeeper.apache.org) that spun out of the Hadoop Apache project. This became the de facto standard lock server in the open source world, mainly because there were no alternatives with the same properties of high availability and reliability over performance. The Paxos consensus algorithm was also non-trivial to implement.
 
-Zookeeper provides similar semantics as Chubby for coordinating distributed systems, and being a consistent and highly available key-value store makes it an ideal cluster configuration store and directory of services. It's become a dependency to many major projects that require distributed coordination, including Hadoop, Storm, Mesos, Kafka, and others. Not surprisingly, it's used in mostly other Apache projects, often deployed in only the largest tech companies. It is quite heavyweight and not terribly accessible to "everyday" developers. 
+Zookeeper provides similar semantics as Chubby for coordinating distributed systems, and being a consistent and highly available key-value store makes it an ideal cluster configuration store and directory of services. It's become a dependency to many major projects that require distributed coordination, including Hadoop, Storm, Mesos, Kafka, and others. Not surprisingly, it's used in mostly other Apache projects, often deployed in larger tech companies. It is quite heavyweight and not terribly accessible to "everyday" developers. 
 
 About a year ago, a simpler alternative to the Paxos algorithm was published called [Raft](http://raftconsensus.github.io/). This set the stage for a real Zookeeper alternative and, sure enough, [etcd](https://github.com/coreos/etcd) was soon introduced by CoreOS. Besides being based on a simpler consensus algorithm, etcd is overall simpler. It's written in Go and lets you use HTTP to interact with it. I was extremely excited by etcd and used it in the initial architecture for Flynn.
 
-Today there's also [Consul](http://www.consul.io/) by Hashicorp, which builds on the ideas of etcd. I specifically explore Consul more in my next post.
+Today there's also [Consul](http://www.consul.io/) by Hashicorp, which builds on the ideas of etcd. I specifically explore Consul and lock servers more in my next post.
 
 ## Service Discovery Solutions
 
-Both Consul and etcd advertise themselves as service discovery solutions. Unfortunately, that's not entirely true. They're great distributed configuration stores and service *directories*. But this is just part of a service discovery solution. So what's missing?
+Both Consul and etcd advertise themselves as service discovery solutions. Unfortunately, that's not entirely true. They're great service *directories*. But this is just part of a service discovery solution. So what's missing?
 
-We're missing exactly how to get all our software, whether custom services or off-the-shelf software, to integrate with and use the service directory. This is particularly interesting to the Docker community, which ideally has portable solutions for *anything* that can run in a container.
+We're missing exactly how to get all our software, whether custom services or off-the-shelf software, to integrate with and use the service directory. This is particularly interesting to the Docker community, which ideally has portable solutions for anything that can run in a container.
 
 A comprehensive solution to service discovery will have three legs:
 
@@ -59,7 +59,7 @@ A comprehensive solution to service discovery will have three legs:
 
 We've got good technology for the first leg, but the remaining legs, despite how they sound, aren't exactly trivial. Especially when ideally you want them to be automatic and "non-invasive." In other words, they work with non-cooperating software, not designed for a service discovery system. Luckily, Docker has both increased the demand for these properties and makes them easier to solve. 
 
-In a world where you have lots of services coming and going across many hosts, service discovery is extremely valuable, if not necessary. Even in smaller systems, a solid service discovery system should reduce the effort in configuring and connecting services to nearly nothing. Adding the responsibility of service discovery to configuration management tools, or using a centralized message queue for everything are all-to-common alternatives that we know just don't scale. 
+In a world where you have lots of services coming and going across many hosts, service discovery is extremely valuable, if not necessary. Even in smaller systems, a solid service discovery system should reduce the effort in configuring and connecting services together to nearly nothing. Adding the responsibility of service discovery to configuration management tools, or using a centralized message queue for everything are all-to-common alternatives that we know just don't scale. 
 
 My goal with these posts is to help you understand and arrive at a good idea of what a service discovery system should actually encompass. The next few posts will take a deeper look at each of the above mentioned legs, touching on various approaches, and ultimately explaining what I ended up doing for my soon-to-be-released project, Consulate. 
 
