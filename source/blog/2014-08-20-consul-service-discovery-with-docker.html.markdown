@@ -33,6 +33,7 @@ For example, a directory of services without service health is actually not a ve
 <p style="text-align: center;"><img src="/images/content/embassy/consul_layers.png" /></p>
 
 A good way to think of Consul is broken into 3 layers. The middle layer is the actual config store, which is not that different from etcd or Zookeeper. The layers above and below are pretty unique to Consul. 
+
 Before Consul, HashiCorp developed a host node coordinator called Serf. It uses an efficient gossip protocol to connect a set of hosts into a cluster. The cluster is aware of its members and shares an event bus. This is primarily used to know when hosts come and go from the cluster, such as during a host failure. But in Serf the event bus was also exposed for custom events to trigger user actions on the hosts.
 
 Consul leverages Serf as a foundational layer to help maintain its cluster. For the most part, it's more of an implementation detail. However, I believe in an upcoming version of Consul, the Serf event bus will also be exposed in the Consul API. 
