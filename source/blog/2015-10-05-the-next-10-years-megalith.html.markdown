@@ -40,7 +40,7 @@ I'm much more likely to bootstrap a lifestyle company like Alan than take VC mon
 
 I'd much rather find a new way. Not just because I want to play to my strengths, but because I know I'm not the only one this applies to. I also know that a different, better kind of open source software will result if done properly.
 
-What I want is something of an independent R&D lab. I want us to re-capture the energy and innovation of Xerox PARC or Bell Labs, but focusing on open source. I want us to have the freedom to explore and build software right with like-minded people. Not to get rich, but to slow cook software. Systems software that further empowers individuals and small groups ... enterprise customers of the future, not the past.
+What I want is something of an independent R&D lab. I want us to [re-capture](http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/) the innovation and *invention* of Xerox PARC and Bell Labs, but focusing on open source. I want us to have the freedom to explore and build software *right* with like-minded people. Not to get rich, but to *slow cook software*. Systems software that further empowers individuals and small groups ... enterprise customers of the future, not the past.
 
 This is what I want Glider Labs to transition into. In fact, it's already been operating like this in a way. And I've been exploring and learning ways to make this work for years now. It's part business, part cooperative, part public service. But to make the leap to a lab that supports more than myself, it won't happen over night. And I can't do it by myself.
 
