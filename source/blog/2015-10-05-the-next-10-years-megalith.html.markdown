@@ -52,9 +52,9 @@ I've been told if I just wrote down everything I want to build and why, people m
 
 The real project this post is about is a meta-project I'm calling Megalith. It's an umbrella project to help unify and bring a common goal to all the work I've been doing for the past 10 years, and over the next 10 years.
 
-I know I can't do it alone, so the project is designed for participation. This means half my job is communicating and documenting. Perhaps in the future that's all it will be. Sometimes I feel like I only write code to get ideas out anyway.
+I know I can't do it alone, so the project is designed for participation. It will involve many more specific projects that are open source and independently useful. Many already exist. Most do not.
 
-It will involve a lot of more specific projects that are open source and independently useful. Many already exist. Most do not. Whether or not the final ideal is achieved, it will be approached. Lots of value will be produced in the process. Not just software and contributions to existing open source, but guides and how-to knowledge of everything I've learned to lead me to my current conclusions, and everything we learn in the process.
+Whether or not the final ideal is achieved, it will be approached. Lots of value will be produced in the process. Not just software and contributions to existing open source, but guides and how-to knowledge of everything I've learned to lead me to my current conclusions, and everything we learn in the process.
 
 Glider Labs and Megalith are separate but related parts of this venture. Megalith is the meta-project, Glider Labs is the organization. The idea is that they support each other. Megalith makes this new Glider Labs a reality, Glider Labs makes Megalith a reality.
 
