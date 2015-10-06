@@ -2,7 +2,6 @@
 layout: post
 title: "The Next 10 Years: Megalith"
 date: 2015-10-05 23:47 UTC
-published: false
 tags:
 ---
 I've decided what I'm going to be working on for the next 10 years. It's epic and exciting, and I'm going to need your help. It's called Megalith.
