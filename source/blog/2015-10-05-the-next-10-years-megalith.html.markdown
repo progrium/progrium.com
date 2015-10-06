@@ -26,7 +26,7 @@ His goal is passive income. For a lot of us independents, that's the dream. It m
 
 Meanwhile, in the same time, I've put out dozens of open source projects that solve problems or work towards dissolving larger problems in the long-term. I actually can't help it. It's compulsive like I said. The only way I see it stopping is if I leave the space altogether. I don't get paid to do 90% of these projects. They help bring me contract work, but seemingly only to take time away from supporting and building a community around those projects.
 
-The other problem, for me, is that running a business causes you to make software differently. You think about building software you can sell, or supports software you can sell. More than doing one thing well, you think about the features people will pay for. More than making it simple, you think about obscure enterprise and legacy use cases. Conventional knowledge says you must do those in some way at some point because that's How It Works.
+The other problem, for me, is that running a business causes you to make software differently. You think about building software you can sell, or that supports what you can sell. More than doing one thing well, you think about the features people will pay for. More than making it simple, you think about obscure enterprise and legacy use cases. Conventional knowledge says you must do those in some way at some point because that's How It Works.
 
 The problem is worse for startups that take VC money. Even VCs that "get it" and let you focus on open source traction still expect you to eventually figure out how to monetize and make them millions. To varying degrees this often makes startups:
 
