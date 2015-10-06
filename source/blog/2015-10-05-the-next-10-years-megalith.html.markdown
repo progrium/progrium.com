@@ -14,15 +14,15 @@ The problem is that there is a lot more to make. This ideal I have in mind that'
 
 ## Building a better organization for this work
 
-The software I write that people love comes from an almost obsessive-compulsive drive that goes beyond and even against the idea of startups. With the exception of Docker and a few other collaborations, I've never made anything that people loved while working for a startup. Naming and evangelizing webhooks was not something anybody paid me to do. In fact, a lot of projects I've built or think should exist are too small to sustain a startup. Does that mean they shouldn't be built? Or that I should temporarily dedicate my life to maybe making one of them work as a startup?
+The software I write that people love comes from a compulsive drive that goes beyond and even against the idea of startups. With the exception of Docker and a few other collaborations, I've never made anything that people loved while working for a startup. Naming and evangelizing webhooks was not something anybody paid me to do. In fact, a lot of projects I've built or think should exist are too small to sustain a startup. Does that mean they shouldn't be built? Or that I should temporarily dedicate my life to maybe make one of them work as a startup?
 
-Even a "non-growth" lifestyle business is quite a commitment to make work. My friend [Alan Shreve](https://inconshreveable.com/) made [Ngrok](https://ngrok.com/), inspired by my tool [Localtunnel](https://github.com/progrium/localtunnel), and has made a lifestyle business out of it. Aside from a few other projects, all designed of course to support this lifestyle business, this is how he spends his working hours on.
+Even a "non-growth" lifestyle business is quite a commitment to make work. My friend [Alan Shreve](https://inconshreveable.com/) made [Ngrok](https://ngrok.com/), inspired by my tool [Localtunnel](https://github.com/progrium/localtunnel). It's free and open source, but he's also made a lifestyle business out of it. This is what he spends all his working hours on.
 
-Given my goals and values I do prefer this approach, but it still poses a problem. The time spent writing lines of code to support a business, the time spent figuring out market fit, the time spent on support and operations ... this is time not moving forward to me. It's extracting wealth out of something that already exists. Why do this? So Alan can sustain himself and potentially fund other projects. In the meantime, there's a lot of great open source software that he's not making.
+Given my goals and values I do prefer this approach, but it still poses a problem. The time spent writing lines of code to support a business, the time spent figuring out market fit, the time spent on support and operations ... this is time not moving forward to me. It's extracting wealth out of something that already exists. Why do this? So Alan can sustain himself and potentially fund other projects, right? In the meantime, there's a lot of great open source software that he's not making.
 
 His goal is passive income. For a lot of us independents, that's the dream. It may or may not realize in full, but it's certainly time consuming either way. In that way, it's sort of just a smaller variation of the startup lottery.
 
-Meanwhile, in the same time, I've put out dozens of open source projects that solve problems or work towards dissolving larger problems in the long term. It's actually a bit annoying. I can't help it. The only way I see it stopping is if I leave the space altogether. I don't get paid to do 90% of these projects. They help bring me contract work, but seemingly only to take time away from supporting and building a community around those projects.
+Meanwhile, in the same time, I've put out dozens of open source projects that solve problems or work towards dissolving larger problems in the long-term. It's actually a bit annoying. I can't help it, it's compulsive like I said. The only way I see it stopping is if I leave the space altogether. I don't get paid to do 90% of these projects. They help bring me contract work, but seemingly only to take time away from supporting and building a community around those projects.
 
 The other problem, for me, is that running a business causes you to make software differently. You think about building software you can sell, or that supports software you can sell. More than doing one thing well, you think about the features people will pay for. More than making it simple, you think about obscure and annoying enterprise and legacy use cases. Conventional knowledge says you must do those in some way at some point because that's How It Works.
 
@@ -60,12 +60,15 @@ Glider Labs and Megalith are separate but related parts of this venture. Megalit
 
 ## Relevant to your interests?
 
-The first step is to explain Megalith and try to communicate this idea in my head, or at least some manifestation of it. Then everything else will start to make sense. It's almost more about approach and values. It's about an idea of simple, composable, extensible tools to make modern end-to-end development and operations sane at both large and small scale.
+The first step is to explain Megalith and try to communicate this idea in my head, or at least some manifestation of it. Then everything else will start to make sense. It's almost more about approach and values. It's about an idea of simple, composable, extensible tools to make modern end-to-end development and operations sane at both large and small scale. And making the world more programmable...
 
-Anyway, it's more than I can get into here. I've set up an announcement mailing list you can subscribe to. Sign up and you'll get emails about what's next. I might even email you directly to say hi.
+Anyway, it's more than I can get into here. I've set up [an announcement mailing list](http://eepurl.com/bAietL) you can subscribe to. Sign up and you'll get emails about what's next. I might even email you directly to say hi.
 
-Feel free to get in touch with me on Twitter, leave a comment below, or help out by sharing this post if it resonates with you. I'm pretty excited, especially since a lot of people have expressed interest so far.
+Feel free to get in touch with me, leave a comment below, or help out by sharing this post if it resonates with you. I'm pretty excited, especially since a lot of people have expressed interest so far.
 
 Lastly, here's a silly video I made about it:
 
 <center><iframe src="https://player.vimeo.com/video/140272143" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+<br />
+**[Subscribe for updates!](http://eepurl.com/bAietL)**
