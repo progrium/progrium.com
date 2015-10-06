@@ -6,7 +6,7 @@ tags:
 ---
 I've decided what I'm going to be working on for the next 10 years. It's epic and exciting, and I'm going to need your help. It's called Megalith.
 
-The past few years I've been spending most of my working hours writing open source software related to a project I worked on in 2012 called [Docker](http://docker.com). Docker was created as a skunkworks collaboration between me and some talented engineers at dotCloud, now Docker. The company pivoted 100% to Docker and is now worth about a billion dollars. As an independent, I didn't stay with Docker, I moved on to the next problem. Docker was one piece of a grander vision.
+For the past few years I've been spending most of my working hours writing open source software related to a project I worked on in 2012 called [Docker](http://docker.com). Docker was created as a skunkworks collaboration between me and some talented engineers at dotCloud, now Docker. The company pivoted 100% to Docker and is now worth about a billion dollars. As an independent, I didn't stay with Docker, I moved on to the next problem. Docker was one piece of a grander vision.
 
 To help pay for this lifestyle, I've experimented with sponsorships and even fell into lucky situations. And contracting. Last year I tried to make it a little more sustainable by starting [Glider Labs](http://gliderlabs.com) with a friend. We focused on consulting around Docker. We helped some of the first people to actually run Docker in production. We did this to learn and get a better grasp on the Real Problems. Something many vendors in this space don't really do. We learned a lot and as a result we ended up making a lot more open source software.
 
