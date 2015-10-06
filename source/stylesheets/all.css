@@ -1,4 +1,4 @@
-/* 
+/*
  *= require "bootstrap/dist/css/bootstrap.min.css"
  *= require "fontawesome/css/font-awesome.min.css"
  */
@@ -9,12 +9,12 @@
 
 /* http://www.colourlovers.com/palette/2337359/Play_Time */
 body {
-  font-family: "Roboto Condensed",sans-serif;
+  font-family: Doris, Georgia, serif;
   background-color: #fff;
-  color: #505050;
+  color: #555;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -38,12 +38,9 @@ a:hover {
 
 #wrapper {
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-main {
-  padding-top: 150px; 
-}
 
 .fa {
   /* align all text middle next to font awesome icons */
@@ -59,26 +56,26 @@ footer {
 }
 
 section {
-  padding: 60px 0; 
+  padding: 60px 0;
 }
 section h1 {
   margin-top: 0;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 section h1 a, section h1 a:hover, section h1 a:visited {
-  color: #505050;
+  color: #555;
 }
 section p, section ul {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 section p:last-child {
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 section.color {
   /* D6E68A */
     /* FFDE66 */
   background-color: #FEFDD6;
-  color: 505050; 
+  color: 505050;
 }
 section.color2 {
   background-color: #669EFF;
@@ -92,6 +89,12 @@ section.alternate {
 article {
   padding-right: 28px;
   padding-bottom: 30px;
+  font-family: Doris, Georgia, serif;
+  font-size: 18px;
+}
+article h1, article h2, article h3, article h4, article h5, article h6 {
+
+  font-family: Vollkorn, Georgia, serif;
 }
 article .meta {
   position: absolute;
@@ -101,6 +104,7 @@ article .meta {
   width: 70px;
   font-weight: 400;
   padding-bottom: 20px;
+  font-family: Vollkorn, Georgia, serif;
 }
 article .meta .month {
   font-size: 18px;
@@ -116,45 +120,33 @@ article .meta .day {
   text-align: center;
 }
 article .meta .year {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 15px;
-  color: lightgray;
   display: block;
-  text-align: center;   
+  text-align: center;
 }
 
 /* =Header
 -------------------------------------------------------------- */
 header {
   width: 100%;
-  height: 150px;
+  height: 100px;
   overflow: hidden;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #58b868;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s; }
+  background-color: #58b868; }
   header h1#logo {
     margin: 0;
     display: inline-block;
-    height: 150px;
-    line-height: 140px;
+    height: 100px;
+    line-height: 95px;
     float: left;
     font-family: "Dosis", sans-serif;
     font-size: 48px;
     color: white;
     font-weight: 400;
-    text-transform: uppercase;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    text-transform: uppercase; }
     header #logo span {
       font-size: 24px; }
     header #logo a, header #logo a:hover, header #logo a:visited {
@@ -168,12 +160,7 @@ header {
       margin-left: 20px;
       color: white;
       font-weight: 300;
-      font-size: 18px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -ms-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s; }
+      font-size: 18px; }
       header nav a:hover {
         color: white; }
     header .hire {
@@ -212,6 +199,7 @@ header {
 
 #sidebar h5 {
   margin-left: 15px;
+  font-family: Roboto, sans-serif;
 }
 #sidebar h5 a {
   color: #999;

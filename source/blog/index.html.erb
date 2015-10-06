@@ -7,7 +7,7 @@ per_page: 5
 <section>
 <div class="container">
     <div class="row">
-        <div class="col-lg-9"> 
+        <div class="col-lg-8 col-lg-offset-1">
           <article>
             <div class="meta">
                 <div class="date">
@@ -22,7 +22,7 @@ per_page: 5
           <a href="<%= article.url %>#disqus_thread">Comments</a>
           <br /><br />
         </div>
-        
+
         <%= partial "blog/sidebar" %>
     </div>
 </div>
@@ -33,7 +33,7 @@ per_page: 5
 <section <% if i % 2 == 0 %> class="alternate"<% end %>>
 <div class="container">
     <div class="row">
-        <div class="col-lg-9"> 
+        <div class="col-lg-8 col-lg-offset-1">
           <article>
             <div class="meta">
                 <div class="date">
@@ -57,7 +57,7 @@ per_page: 5
 <section class="alternate">
 <div class="container">
     <div class="row">
-        <div class="col-lg-12"> 
+        <div class="col-lg-12">
         <ul class="pager article">
           <% if next_page %>
           <li class="previous">
@@ -68,7 +68,7 @@ per_page: 5
             <a href="#">&larr; Older</a>
           </li>
           <% end %>
-        
+
           <% if prev_page %>
           <li class="next">
             <a href="<%= prev_page.url %>">Newer &rarr;</a>
