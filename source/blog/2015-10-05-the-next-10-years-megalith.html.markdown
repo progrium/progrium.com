@@ -6,27 +6,25 @@ tags:
 ---
 I've decided what I'm going to be working on for the next 10 years. It's epic and exciting, and I'm going to need your help. It's called Megalith.
 
-The past few years I've been spending most of my working hours writing open source software related to a project I worked on in 2012 called [Docker](http://docker.com). It was created as a skunkworks collaboration between me and some talented engineers at dotCloud, now Docker. The company pivoted 100% to Docker and is now worth about a billion dollars. As an independent, I didn't stay with Docker, I moved on to the next problem. Docker was one piece of a grander vision.
+The past few years I've been spending most of my working hours writing open source software related to a project I worked on in 2012 called [Docker](http://docker.com). Docker was created as a skunkworks collaboration between me and some talented engineers at dotCloud, now Docker. The company pivoted 100% to Docker and is now worth about a billion dollars. As an independent, I didn't stay with Docker, I moved on to the next problem. Docker was one piece of a grander vision.
 
-To help pay for this lifestyle, I've experimented with sponsorships and even fell into lucky situations. And contracting. Last year I tried to make it a little more sustainable by starting [Glider Labs](http://gliderlabs.com) with a friend. We focused on consulting around Docker. We helped some of the first people to actually run Docker in production. We did this to learn and get a better grasp on real problems. Something many vendors in this space don't really do. We learned a lot and as a result we ended up making a lot more open source software.
+To help pay for this lifestyle, I've experimented with sponsorships and even fell into lucky situations. And contracting. Last year I tried to make it a little more sustainable by starting [Glider Labs](http://gliderlabs.com) with a friend. We focused on consulting around Docker. We helped some of the first people to actually run Docker in production. We did this to learn and get a better grasp on the Real Problems. Something many vendors in this space don't really do. We learned a lot and as a result we ended up making a lot more open source software.
 
-The problem is that there is a lot to make. This ideal I have in mind that's been developing in my head for over 5 years is a massive undertaking. I've realized if I'm going to keep pursuing it, a few things need to change. A better vehicle to do the work, and a unifying project to get help.
+The problem is that there is a lot more to make. This ideal I have in mind that's been developing in my head for over 5 years is a massive undertaking. I've realized if I'm going to keep pursuing it, a few things need to change. I need a better vehicle in which to do the work, and a unifying project to get help.
 
 ## Building a better organization for this work
 
-The software I write that people love comes from an almost obsessive-compulsive drive that goes beyond and even against the idea of startups. With the exception of Docker and a few other collaborations, I've never made anything that people loved while working at a startup. Naming and evangelizing webhooks was not something anybody paid me to do. In fact, a lot of projects I've built or think should exist are too small to sustain a startup. Does that mean they shouldn't be built? Or that I should temporarily dedicate my life to maybe making one of them work as a startup?
+The software I write that people love comes from an almost obsessive-compulsive drive that goes beyond and even against the idea of startups. With the exception of Docker and a few other collaborations, I've never made anything that people loved while working for a startup. Naming and evangelizing webhooks was not something anybody paid me to do. In fact, a lot of projects I've built or think should exist are too small to sustain a startup. Does that mean they shouldn't be built? Or that I should temporarily dedicate my life to maybe making one of them work as a startup?
 
-Even a "non-growth" lifestyle business is quite a commitment to make work. My friend [Alan Shreve](https://inconshreveable.com/) made [Ngrok](https://ngrok.com/), inspired by my tool [Localtunnel](https://github.com/progrium/localtunnel), and has made a lifestyle business out of it. Aside from a few other projects all designed of course to support this lifestyle business, this is what he spends his working hours on.
+Even a "non-growth" lifestyle business is quite a commitment to make work. My friend [Alan Shreve](https://inconshreveable.com/) made [Ngrok](https://ngrok.com/), inspired by my tool [Localtunnel](https://github.com/progrium/localtunnel), and has made a lifestyle business out of it. Aside from a few other projects, all designed of course to support this lifestyle business, this is how he spends his working hours on.
 
-Given my goals and values I do prefer this approach, but it still poses a problem. The time spent writing lines of code to support a business, the time spent figuring out market fit, the time spent on support and operations ... this is time not moving forward.
-
-It's extracting wealth out of something that already exists. Why do this? So Alan can sustain himself and potentially fund other projects. In the meantime, there's a lot of great open source software that he's not making.
+Given my goals and values I do prefer this approach, but it still poses a problem. The time spent writing lines of code to support a business, the time spent figuring out market fit, the time spent on support and operations ... this is time not moving forward to me. It's extracting wealth out of something that already exists. Why do this? So Alan can sustain himself and potentially fund other projects. In the meantime, there's a lot of great open source software that he's not making.
 
 His goal is passive income. For a lot of us independents, that's the dream. It may or may not realize in full, but it's certainly time consuming either way. In that way, it's sort of just a smaller variation of the startup lottery.
 
-Meanwhile, in the same time, I've put out dozens of open source projects that solve problems or work towards dissolving larger problems in the long term. It's actually a bit annoying. I can't help it. The only way I see it stopping is if I leave the space altogether. I don't get paid to do 90% of these projects. They help bring me contract work, but only to take away from supporting and building a community around those projects.
+Meanwhile, in the same time, I've put out dozens of open source projects that solve problems or work towards dissolving larger problems in the long term. It's actually a bit annoying. I can't help it. The only way I see it stopping is if I leave the space altogether. I don't get paid to do 90% of these projects. They help bring me contract work, but seemingly only to take time away from supporting and building a community around those projects.
 
-The other problem, for me, is that running a business causes you to make software differently. You think about software you can sell, or that supports software you can sell. More than doing one thing well, you think about the features people will pay for. More than making it simple, you think about obscure and annoying enterprise and legacy use cases. Conventional knowledge says you must do those in some way at some point because that's How It Works.
+The other problem, for me, is that running a business causes you to make software differently. You think about building software you can sell, or that supports software you can sell. More than doing one thing well, you think about the features people will pay for. More than making it simple, you think about obscure and annoying enterprise and legacy use cases. Conventional knowledge says you must do those in some way at some point because that's How It Works.
 
 The problem is worse for startups that take VC money. Even VCs that "get it" and let you focus on open source traction still expect you to eventually figure out how to monetize and make them millions. To varying degrees this often makes startups:
 
@@ -35,31 +33,30 @@ The problem is worse for startups that take VC money. Even VCs that "get it" and
  * prioritize sexy demoware without production hardening
  * increase perceived value with more people and more partnerships
  * align everybody with the product that makes money
- * etc etc
 
-[Hashicorp](https://hashicorp.com/) is one of the best examples of companies in this space that have done a good job at taking just enough VC and working against a lot of these forces. However, they still work within the framework. They still have a commitment to exit big someday.
+[Hashicorp](https://hashicorp.com/) is one of the best examples of companies in this space that have done a good job at taking just enough VC and working against a lot of these forces. However, they still work within the framework. They still have a commitment to exit big someday. The implications of this are not insignificant.
 
-I'm much more likely to bootstrap a lifestyle company like Alan than take VC money. Not only is it just more my style, but a VC startup just won't play to my strengths. Though, even building a conventional lifestyle business doesn't seem to produce the most value for my time. Or make me very happy.
+I'm much more likely to bootstrap a lifestyle company like Alan than take VC money. Not only is it just more my style, but a VC startup just won't play to my strengths. Though, building a conventional lifestyle business doesn't seem to produce the most value for my time either. Or make me very happy.
 
 I'd much rather find a new way. Not just because I want to play to my strengths, but because I know I'm not the only one this applies to. I also know that a different, better kind of open source software will result if done properly.
 
 What I want is something of an independent R&D lab. I want us to re-capture the energy and innovation of Xerox PARC or Bell Labs, but focusing on open source. I want us to have the freedom to explore and do what we do with like-minded people. Not to get rich, but to keep doing what we love doing, making the open source that most companies wouldn't make, yet would be eager to use. Systems software that further empowers individuals and small groups ... enterprise customers of the future, not the past.
 
-This is what I want Glider Labs to transition into. In fact, it's already been operating like this in a way. And I've been exploring and learning ways to make this work for years now. It's part business, part cooperative, part public service. But to make the leap to a lab that supports more than myself, it just won't happen over night. And I can't do it by myself.
+This is what I want Glider Labs to transition into. In fact, it's already been operating like this in a way. And I've been exploring and learning ways to make this work for years now. It's part business, part cooperative, part public service. But to make the leap to a lab that supports more than myself, it won't happen over night. And I can't do it by myself.
 
 ## Sharing the vision, enabling participation
 
-This isn't just about a new organization. It has to have some purpose, some initial unifying project. In order to start from nothing, there needs to be a clear and valuable mission. Not just boundless experimentation. Luckily, most of my work does fall under a certain theme driven by a nebulous but nonetheless motivating ideal. That seems like a good place to start.
+This isn't just about a new organization. It has to have some purpose, some initial unifying project. In order to start from nothing, there needs to be a clear mission of value. Not just boundless experimentation. Luckily, most of my work does fall under a certain theme driven by a nebulous but nonetheless motivating ideal. That seems like a good place to start.
 
 I've been told if I just wrote down everything I want to build and why, people might be willing to help out. This is challenging both because of scope and its constant evolution. I figured if I just keep making projects people will start to see it, but other than a few people I'm not sure that's working out. So I'm going to try a more top-down approach.
 
-The real project this post is about is a meta-project I'm calling Megalith. It's an umbrella project to help unify and bring a goal to all the work I've been doing for the past 10 years, and over the next 10 years.
+The real project this post is about is a meta-project I'm calling Megalith. It's an umbrella project to help unify and bring a common goal to all the work I've been doing for the past 10 years, and over the next 10 years.
 
 I know I can't do it alone, so the project is designed for participation. This means half my job is communicating and documenting. Perhaps in the future that's all it will be. Sometimes I feel like I only write code to get ideas out anyway.
 
-It will involve lots of more specific projects that are open source and independently useful. Many already exist. Most do not. Whether or not the final ideal is achieved, it will be approached. Lots of value will be produced in the process. Not just software, but guides and how-to knowledge of everything I've learned to lead me to my current conclusions, and everything we learn in the process.
+It will involve a lot of more specific projects that are open source and independently useful. Many already exist. Most do not. Whether or not the final ideal is achieved, it will be approached. Lots of value will be produced in the process. Not just software and contributions to existing open source, but guides and how-to knowledge of everything I've learned to lead me to my current conclusions, and everything we learn in the process.
 
-Glider Labs and Megalith are separate but related parts of this venture. Megalith is the meta-project, Glider Labs is the organization. The plan is that they support each other.
+Glider Labs and Megalith are separate but related parts of this venture. Megalith is the meta-project, Glider Labs is the organization. The idea is that they support each other. Megalith makes this new Glider Labs a reality, Glider Labs makes Megalith a reality.
 
 ## Relevant to your interests?
 
@@ -67,7 +64,7 @@ The first step is to explain Megalith and try to communicate this idea in my hea
 
 Anyway, it's more than I can get into here. I've set up an announcement mailing list you can subscribe to. Sign up and you'll get emails about what's next. I might even email you directly to say hi.
 
-Feel free to get in touch with me on Twitter, or help out by sharing this post if it resonates with you. I'm pretty excited, especially since a lot of people have expressed interest so far.
+Feel free to get in touch with me on Twitter, leave a comment below, or help out by sharing this post if it resonates with you. I'm pretty excited, especially since a lot of people have expressed interest so far.
 
 Lastly, here's a silly video I made about it:
 
