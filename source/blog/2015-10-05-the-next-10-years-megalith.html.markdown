@@ -6,7 +6,7 @@ tags:
 ---
 I've decided what I'm going to be working on for the next 10 years. It's epic and exciting, and I'm going to need your help. It's called Megalith.
 
-First, I'm going to be upfront and say that I'm not going to be able to fully explain what Megalith is in this post. Instead, I'm going to start setting up context. To me, context is everything.
+Megalith is a symbol of the ideal I've been working towards my entire career. It's constantly evolving and very nuanced. I'm going to be upfront and say that I'm not going to be able to fully explain what Megalith is in this post. Instead, I'm going to start setting up context. To me, context is everything.
 
 For the past few years I've been spending most of my working hours writing open source software related to a project I worked on in 2012 called [Docker](http://docker.com). Docker was created as a skunkworks collaboration between me and some talented engineers at dotCloud, now Docker. The company pivoted 100% to Docker and is now worth about a billion dollars. As an independent, I didn't stay with Docker, I moved on to the next problem. Docker was one piece of a grander vision.
 
