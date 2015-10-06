@@ -10,33 +10,35 @@ For the past few years I've been spending most of my working hours writing open 
 
 To help pay for this lifestyle, I've experimented with sponsorships and even fell into lucky situations. And contracting. Last year I tried to make it a little more sustainable by starting [Glider Labs](http://gliderlabs.com) with a friend. We focused on consulting around Docker. We helped some of the first people to actually run Docker in production. We did this to learn and get a better grasp on the Real Problems. Something many vendors in this space don't really do. We learned a lot and as a result we ended up making a lot more open source software.
 
-The problem is that there is a lot more to make. This ideal I have in mind that's been developing in my head for over 5 years is a massive undertaking. I've realized if I'm going to keep pursuing it, a few things need to change. I need a better vehicle in which to do the work, and a unifying project to get help.
+The problem is that there is a lot more to make. This ideal I have in mind that's been developing in my head for over 5 years is a massive undertaking. I've realized if I'm going to keep pursuing it, a few things need to change. I need a better vehicle in which to do the work, and a unifying project to get help around.
 
 ## Building a better organization for this work
 
 The software I write that people love comes from a compulsive drive that goes beyond and even against the idea of startups. With the exception of Docker and a few other collaborations, I've never made anything that people loved while working for a startup. Naming and evangelizing webhooks was not something anybody paid me to do. In fact, a lot of projects I've built or think should exist are too small to sustain a startup. Does that mean they shouldn't be built? Or that I should temporarily dedicate my life to maybe make one of them work as a startup?
 
-Even a "non-growth" lifestyle business is quite a commitment to make work. My friend [Alan Shreve](https://inconshreveable.com/) made [Ngrok](https://ngrok.com/), inspired by my tool [Localtunnel](https://github.com/progrium/localtunnel). It's free and open source, but he's also made a self-funded business out of it. This business is what he spends most his working hours on.
+Even a lifestyle business is quite a commitment to make work. My friend [Alan Shreve](https://inconshreveable.com/) made [Ngrok](https://ngrok.com/), inspired by my tool [Localtunnel](https://github.com/progrium/localtunnel). It's free and open source, but he's also bootstrapped a business out of it. This business is what he spends most his working hours on.
 
-Given my goals and values I do prefer this approach, but it still poses a problem. The time spent writing lines of code to support a business, the time spent figuring out market fit, the time spent on support and operations ... this is time not moving forward to me. It's extracting wealth out of something that already exists. Why do this? So Alan can sustain himself and potentially fund other projects, right? In the meantime, there's a lot of great open source software that he's not making.
+Given my goals and values I do prefer this approach, but it still poses a problem. The time spent writing lines of code to support a business, the time spent figuring out market fit, the time spent on support and operations ... this is time not moving forward to me. It's extracting wealth out of something that already exists.
+
+Why do this? So Alan can sustain himself and potentially fund other projects, right? In the meantime, I know for a fact that there's a lot of great open source software that he's not making.
 
 His goal is passive income. For a lot of us independents, that's the dream. It may or may not realize in full, but it's certainly time consuming either way. In that way, it's sort of just a smaller variation of the startup lottery.
 
-Meanwhile, in the same time, I've put out dozens of open source projects that solve problems or work towards dissolving larger problems in the long-term. It's actually a bit annoying. I can't help it, it's compulsive like I said. The only way I see it stopping is if I leave the space altogether. I don't get paid to do 90% of these projects. They help bring me contract work, but seemingly only to take time away from supporting and building a community around those projects.
+Meanwhile, in the same time, I've put out dozens of open source projects that solve problems or work towards dissolving larger problems in the long-term. I actually can't help it. It's compulsive like I said. The only way I see it stopping is if I leave the space altogether. I don't get paid to do 90% of these projects. They help bring me contract work, but seemingly only to take time away from supporting and building a community around those projects.
 
-The other problem, for me, is that running a business causes you to make software differently. You think about building software you can sell, or that supports software you can sell. More than doing one thing well, you think about the features people will pay for. More than making it simple, you think about obscure and annoying enterprise and legacy use cases. Conventional knowledge says you must do those in some way at some point because that's How It Works.
+The other problem, for me, is that running a business causes you to make software differently. You think about building software you can sell, or supports software you can sell. More than doing one thing well, you think about the features people will pay for. More than making it simple, you think about obscure enterprise and legacy use cases. Conventional knowledge says you must do those in some way at some point because that's How It Works.
 
 The problem is worse for startups that take VC money. Even VCs that "get it" and let you focus on open source traction still expect you to eventually figure out how to monetize and make them millions. To varying degrees this often makes startups:
 
  * focus on enterprise customers, not regular developers
  * ship software that solves short-term problems, or yesterday's problems
  * prioritize sexy demoware without production hardening
- * increase perceived value with more people and more partnerships
- * align everybody with the product that makes money
+ * increase perceived value with more hires and more partnerships
+ * de-prioritize any effort outside the product that makes money
 
 [Hashicorp](https://hashicorp.com/) is one of the best examples of companies in this space that have done a good job at taking just enough VC and working against a lot of these forces. However, they still work within the framework. They still have a commitment to exit big someday. The implications of this are not insignificant.
 
-I'm much more likely to bootstrap a lifestyle company like Alan than take VC money. Not only is it just more my style, but a VC startup just won't play to my strengths. Though, building a conventional lifestyle business doesn't seem to produce the most value for my time either. Or make me very happy.
+I'm much more likely to bootstrap a company like Alan than take VC money. Not only is it just more my style, but a VC startup just won't play to my strengths. Though, building a bootstrap business doesn't seem to produce the most value for my time either. Or make me very happy.
 
 I'd much rather find a new way. Not just because I want to play to my strengths, but because I know I'm not the only one this applies to. I also know that a different, better kind of open source software will result if done properly.
 
