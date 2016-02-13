@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   pre:
-    - bundle install
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
   override:
     - bundle exec middleman build
 
