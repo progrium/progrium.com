@@ -9,7 +9,7 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
 Most of these are to be written.
 
  * [Autosustainable Services](Autosustainable)
- * [OpenOps](wiki/OpenOps)
+ * [OpenOps](OpenOps)
  * Webhooks
  * Megalith
  * Instrumentalism
