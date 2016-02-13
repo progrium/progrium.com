@@ -2,12 +2,6 @@ machine:
   ruby:
     version: 2.2.3
 
-dependencies:
-  pre:
-    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
-  override:
-    - bundle exec middleman build
-
 test:
   override:
     - /bin/true
@@ -16,4 +10,6 @@ deployment:
   gh-pages:
     branch: master
     commands:
+      - git config user.email "robot@progrium.com"
+      - git config user.name "CircleCI"
       - bundle exec middleman deploy
