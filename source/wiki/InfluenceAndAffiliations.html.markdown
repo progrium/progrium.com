@@ -1,0 +1,59 @@
+# Influence and Affiliations
+
+Beyond projects that I can call my own, I've had the privilege to be involved or affiliated with some great people and projects. Together we have had quite an impact on the world, changing individuals lives to influencing major technological and cultural phenomena. Here is a place I feel comfortable sharing some of them.
+
+Oddly enough, most of these trace back to 2005 at the dawn of "Web 2.0" and a legendary event and community called [SuperHappyDevHouse](https://en.wikipedia.org/wiki/SuperHappyDevHouse) (which I refer to as DevHouse). 
+
+## Hackathons
+
+The first couple [hackathons](https://en.wikipedia.org/wiki/Hackathon) seemed to occur around 1999, but hackathons became widespread from 2005 to 2010. Interestingly enough, this is the period the original DevHouse events occured. Given the size and influential location and attendance of DevHouse, it's hard to imagine it was just a correlation.
+
+Yahoo! Hack Day in 2006 was one of the first open, commercial hackathons after the Web 2.0 boom. I attended the first of these and in the invitation request form I mentioned my involvement in DevHouse. They replied citing DevHouse as an influence. From then on, many tech companies used hackathons to help market their platforms and APIs.
+
+Around 2011, Jon Gottfried, co-founder of Major League Hacking, cited DevHouse as the "father of modern hackathons". 
+
+Ironically, DevHouse was never considered a hackathon in the way most hackathons are run. It was a casual party-like atmosphere with coding and projects, but there were no competitions or extrinsic motivators for attendance. It also had no commercial agenda and was 100% community run. 
+
+## Facebook
+
+Facebook started hackathons that were internal and helped re-inforce their values around [The Hacker Way](http://www.wired.com/2012/02/zuck-letter/). Unlike most hackathons, the Facebook hackathons actually reflected the spirit of DevHouse around unfettered creation. This led to major features including the Like button, which has become a defining feature of the platform.
+
+This tradition of [legendary](http://www.fastcompany.com/3002845/secrets-facebooks-legendary-hackathons-revealed) hackathons turns out to be [directly inspired by DevHouse](https://www.quora.com/Who-brought-hackathon-to-Facebook). Apparently Facebook employee Scott Marlette attended DevHouse and told Mark Zuckerberg about it over lunch. Mark Zuckerberg "thought it was a good idea and that we should have one in the office."
+
+## Minecraft
+
+Around the time of starting DevHouse in 2005, I became friends with indie gamemaker Derek Yu. He was running a blog called [TIGSource](http://tig.wikia.com/wiki/TIGSource) on indie games. He was having trouble with their hosting provider, so I offered to help out. I became the TIGSource sysadmin. At Derek's request, I set up forums for TIGSource. 
+
+Those forums turned TIGSource into a major breeding ground for indie games of all kinds. Some major indie titles that were first shared there included Fez, Super Meat Boy, Spelunky, World of Goo, and Braid. 
+
+There was one blowout success that stands alone: Minecraft. I only found out in that last couple years that it made its debut on the TIGSource forums. The TIGSource forums and IRC were also used to help come up with the name Minecraft.
+
+## BarCamp
+
+Modern web pioneer [Tantek Çelik](https://en.wikipedia.org/wiki/Tantek_%C3%87elik) became friends with my then roommate Andy Smith and was a regular at the original DevHouse events. He and a cohort of a few other DevHouse regulars [dreamed up](http://tantek.com/2015/225/t2/10-years-ago-created-barcamp) [BarCamp](https://en.wikipedia.org/wiki/BarCamp), a technology "unconference" that inspired thousands of other BarCamps and unconferences around the world.
+
+During the closing remarks of the first BarCamp, Tantek mentioned DevHouse as a source of inspiration for the event. Particularly the grassroots "just do it" attitude of the organizers. 
+
+## Coworking
+
+In 2005, Brad Neuberg coined [coworking](https://en.wikipedia.org/wiki/Coworking) and started the first pilot coworking space in SF. DevHouse co-founder David Weekly introduced him to me at DevHouse and we bonded briefly over a shared appreciation of Will Wright and systems thinking. Brad, too, became a frequent attendee and later was one of several people to bring legendary [Doug Engelbart](https://en.wikipedia.org/wiki/Douglas_Engelbart) to DevHouse.
+
+With fellow DevHouse regular [Chris Messina](https://en.wikipedia.org/wiki/Chris_Messina_(open_source_advocate)), Brad co-founded the first work-only coworking space in SF called Citizen Space. They helped turn it into a movement that has now become an entire industry. Roughly 700 coworking spaces exist in the US and one report shows coworking spaces doubling every year.
+
+## Hashtag
+
+As a minor aside, we were all early Twitter users. Actually, a number of the original Twitter developers attended DevHouse. Chris Messina suggested we use hashtags to identify groups and tag our tweets. Twitter later adopted this as a native feature and as Twitter went mainstream, so did the hashtag. 
+
+## Homebrew Computer Club
+
+## Webhooks
+
+## GitHub
+
+## PaaS
+
+## OpenStack
+
+## Indie Game: The Movie
+
+## Docker
