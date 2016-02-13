@@ -33,3 +33,11 @@ Most of these are to be written.
  * Repurposing
  * The Next Unix
  * Lifestyle Design
+ * Localtunnel
+ * Dokku
+ * RequestBin
+ * Extensibility
+ * Callbacks
+ * Plugins
+ * Open Systems
+ * End User Programming
