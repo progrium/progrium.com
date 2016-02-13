@@ -10,7 +10,7 @@ The first couple [hackathons](https://en.wikipedia.org/wiki/Hackathon) seemed to
 
 Yahoo! Hack Day in 2006 was one of the first open, commercial hackathons after the Web 2.0 boom. I attended the first of these and in the invitation request form I mentioned my involvement in DevHouse. They replied citing DevHouse as an influence. From then on, many tech companies used hackathons to help market their platforms and APIs.
 
-Around 2011, Jon Gottfried, co-founder of Major League Hacking, cited DevHouse as the "father of modern hackathons". 
+In 2013, Jon Gottfried, co-founder of Major League Hacking, described DevHouse as the "mother of modern hackathons". 
 
 Ironically, DevHouse was never considered a hackathon in the way most hackathons are run. It was a casual party-like atmosphere with coding and projects, but there were no competitions or extrinsic motivators for attendance. It also had no commercial agenda and was 100% community run. 
 
