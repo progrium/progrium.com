@@ -41,3 +41,4 @@ Most of these are to be written.
  * Plugins
  * Open Systems
  * End User Programming
+ * [Influence and Affiliations](InfluenceAndAffiliations)
