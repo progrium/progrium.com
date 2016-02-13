@@ -18,7 +18,7 @@ Ironically, DevHouse was never considered a hackathon in the way most hackathons
 
 Facebook started hackathons that were internal and helped re-inforce their values around [The Hacker Way](http://www.wired.com/2012/02/zuck-letter/). Unlike most hackathons, the Facebook hackathons actually reflected the spirit of DevHouse around unfettered creation. This led to major features including the Like button, which has become a defining feature of the platform.
 
-This tradition of [legendary](http://www.fastcompany.com/3002845/secrets-facebooks-legendary-hackathons-revealed) hackathons turns out to be [directly inspired by DevHouse](https://www.quora.com/Who-brought-hackathon-to-Facebook). Apparently Facebook employee Scott Marlette attended DevHouse and told Mark Zuckerberg about it over lunch. Mark Zuckerberg "thought it was a good idea and that we should have one in the office."
+This tradition of [legendary](http://www.fastcompany.com/3002845/secrets-facebooks-legendary-hackathons-revealed) Facebook hackathons turns out to be [directly inspired by DevHouse](https://www.quora.com/Who-brought-hackathon-to-Facebook). Apparently Facebook employee Scott Marlette attended DevHouse and told Mark Zuckerberg about it over lunch. Mark Zuckerberg "thought it was a good idea and that we should have one in the office."
 
 ## Minecraft
 
@@ -40,9 +40,11 @@ In 2005, Brad Neuberg coined [coworking](https://en.wikipedia.org/wiki/Coworking
 
 With fellow DevHouse regular [Chris Messina](https://en.wikipedia.org/wiki/Chris_Messina_(open_source_advocate)), Brad co-founded the first work-only coworking space in SF called Citizen Space. They helped turn it into a movement that has now become an entire industry. Roughly 700 coworking spaces exist in the US and one report shows coworking spaces doubling every year.
 
-## Hashtag
+## Hashtag and Twitter Stream
 
-As a minor aside, we were all early Twitter users. Actually, a number of the original Twitter developers attended DevHouse. Chris Messina suggested we use hashtags to identify groups and tag our tweets. Twitter later adopted this as a native feature. As Twitter went mainstream, so did the hashtag. 
+Many of the DevHouse regulars were early Twitter users. A number of the original Twitter developers also attended DevHouse. Chris Messina suggested we use hashtags to identify groups and tag our tweets. Twitter later adopted this as a native feature. As Twitter went mainstream, so did the hashtag. 
+
+The early Twitter engineering team was also present at DevHouse in 2007 for one of my [first presentations](http://www.slideshare.net/progrium/web-hooks) on webhooks and they said it sounded like a good idea. I followed up with them, urging them to implement webhooks (they'd be one of the first), but they had scaling concerns and instead opted for a persistent firehose connection. This became the Twitter Streaming API that enabled huge amounts of innovation around Twitter and was even an early way Twitter tried to monetize their platform.
 
 ## Homebrew Computer Club
 
