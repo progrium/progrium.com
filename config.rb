@@ -13,6 +13,7 @@ activate :deploy do |deploy|
   deploy.build_before = true
 end
 
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
