@@ -1,0 +1,17 @@
+machine:
+  ruby:
+    version: 2.2.3
+
+dependencies:
+  override:
+    - bundle exec middleman build
+
+test:
+  override:
+    - /bin/true
+
+deployment:
+  gh-pages:
+    branch: master
+    commands:
+      - bundle exec middleman deploy
