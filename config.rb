@@ -9,7 +9,7 @@ activate :syntax
 activate :livereload
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.build_before = true
 end
 
