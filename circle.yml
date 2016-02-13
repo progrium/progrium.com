@@ -3,6 +3,8 @@ machine:
     version: 2.2.3
 
 dependencies:
+  pre:
+    - bundle install
   override:
     - bundle exec middleman build
 
