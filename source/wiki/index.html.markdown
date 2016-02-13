@@ -10,8 +10,8 @@ Most of these are to be written.
 
  * [Autosustainable Services](Autosustainable)
  * [OpenOps](OpenOps)
- * Webhooks
- * Megalith
+ * [Webhooks](Webhooks)
+ * [Megalith](Megalith)
  * Instrumentalism
  * Systems Thinking
  * Design Thinking
