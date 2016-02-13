@@ -56,9 +56,11 @@ In 2013, Lee, Joël, and Matt Spergel put together a [Homebrew Computer Club Reu
 
 ## GitHub
 
-## PaaS
-
 ## OpenStack
+
+## Google
+
+## PaaS
 
 ## Indie Game: The Movie
 
