@@ -1,0 +1,27 @@
+<% wrap_layout :layout do %>
+<header>
+  <div class="container">
+  <div class="row">
+      <div class="col-lg-8 col-lg-offset-1">
+        You're reading Jeff Lindsay's (<a href="http://twitter.com/progrium">@progrium</a>) wiki. There is also his <a href="/blog">blog</a>.
+      </div>
+  </div>
+</div>
+</header>
+
+<main id="main" role="main">
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1">
+          <article>
+            <%= yield %>
+          </article>
+        </div>
+
+
+    </div>
+</div>
+</section>
+</main>
+<% end %>

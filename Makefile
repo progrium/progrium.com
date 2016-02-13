@@ -1,6 +1,6 @@
 
 build:
-	bundle exec middleman build
+	bundle exec middleman build --verbose
 
 server: build
 	bundle exec middleman
