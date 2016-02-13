@@ -30,21 +30,27 @@ There was one blowout success that stands alone: Minecraft. I only found out in 
 
 ## BarCamp
 
-Modern web pioneer [Tantek Çelik](https://en.wikipedia.org/wiki/Tantek_%C3%87elik) became friends with my then roommate Andy Smith and was a regular at the original DevHouse events. He and a cohort of a few other DevHouse regulars [dreamed up](http://tantek.com/2015/225/t2/10-years-ago-created-barcamp) [BarCamp](https://en.wikipedia.org/wiki/BarCamp), a technology "unconference" that inspired thousands of other BarCamps and unconferences around the world.
+Modern web pioneer [Tantek Çelik](https://en.wikipedia.org/wiki/Tantek_%C3%87elik) became friends with my roommate Andy Smith and was a regular at the original DevHouse events. He and a cohort of a few other DevHouse regulars [dreamed up](http://tantek.com/2015/225/t2/10-years-ago-created-barcamp) [BarCamp](https://en.wikipedia.org/wiki/BarCamp), a free and attendee-driven technology "unconference" that inspired thousands of other BarCamps and unconferences around the world.
 
 During the closing remarks of the first BarCamp, Tantek mentioned DevHouse as a source of inspiration for the event. Particularly the grassroots "just do it" attitude of the organizers. 
 
 ## Coworking
 
-In 2005, Brad Neuberg coined [coworking](https://en.wikipedia.org/wiki/Coworking) and started the first pilot coworking space in SF. DevHouse co-founder David Weekly introduced him to me at DevHouse and we bonded briefly over a shared appreciation of Will Wright and systems thinking. Brad, too, became a frequent attendee and later was one of several people to bring legendary [Doug Engelbart](https://en.wikipedia.org/wiki/Douglas_Engelbart) to DevHouse.
+In 2005, Brad Neuberg coined [coworking](https://en.wikipedia.org/wiki/Coworking) and started the first pilot coworking space in SF. DevHouse co-founder [David Weekly](http://blog.dweek.ly/) introduced him to me at DevHouse and we bonded briefly over a shared appreciation of Will Wright and systems thinking. Brad, too, became a frequent attendee and later was one of several people to bring legendary [Doug Engelbart](https://en.wikipedia.org/wiki/Douglas_Engelbart) to DevHouse.
 
 With fellow DevHouse regular [Chris Messina](https://en.wikipedia.org/wiki/Chris_Messina_(open_source_advocate)), Brad co-founded the first work-only coworking space in SF called Citizen Space. They helped turn it into a movement that has now become an entire industry. Roughly 700 coworking spaces exist in the US and one report shows coworking spaces doubling every year.
 
 ## Hashtag
 
-As a minor aside, we were all early Twitter users. Actually, a number of the original Twitter developers attended DevHouse. Chris Messina suggested we use hashtags to identify groups and tag our tweets. Twitter later adopted this as a native feature and as Twitter went mainstream, so did the hashtag. 
+As a minor aside, we were all early Twitter users. Actually, a number of the original Twitter developers attended DevHouse. Chris Messina suggested we use hashtags to identify groups and tag our tweets. Twitter later adopted this as a native feature. As Twitter went mainstream, so did the hashtag. 
 
 ## Homebrew Computer Club
+
+I grew up in the SF bay area and as a techie kid, and I loved the history of Silicon Valley. In particular I was fascinated by an event in the 70s and 80s called Homebrew Computer Club, made famous as an event Jobs and Wozniak first attended to demo their Apple computer. But it was a breeding ground of innovation around personal computing. Among many others, one of their founding members, [Lee Felsenstein](https://en.wikipedia.org/wiki/Lee_Felsenstein), went on to design the first mass produced portable computer. Homebrew has been called "the crucible for an entire industry."
+
+I felt that DevHouse was the closest thing to a spiritual successor to Homebrew. Myself and fellow DevHouse organizer [Joël Franusic](http://joel.franusic.com/) took this very seriously given our respect and fascination with the previous generation of hackers. I mentioned this to a Mercury News reporter that was covering DevHouse. The article got in front of Lee Felsenstein, causing him to show up at the next event. He became a DevHouse regular and participated in a number of community events that spun out of DevHouse. 
+
+In 2013, Lee, Joël, and Matt Spergel put together a [Homebrew Computer Club Reunion](http://www.computerhistory.org/atchm/the-homebrew-computer-club-2013-reunion/) with the Computer History Museum. 
 
 ## Webhooks
 
