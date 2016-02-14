@@ -28,9 +28,11 @@ Those forums turned TIGSource into a major breeding ground for indie games of al
 
 There was one blowout success that stands alone: Minecraft. I only found out in that last couple years that it made its debut on the TIGSource forums. The TIGSource forums and IRC were also used to help come up with the name Minecraft.
 
-## BarCamp
+## BarCamp and Unconferences
 
-Modern web pioneer [Tantek Çelik](https://en.wikipedia.org/wiki/Tantek_%C3%87elik) became friends with my roommate Andy Smith and was a regular at the original DevHouse events. He and a cohort of a few other DevHouse regulars [dreamed up](http://tantek.com/2015/225/t2/10-years-ago-created-barcamp) [BarCamp](https://en.wikipedia.org/wiki/BarCamp), a free and attendee-driven technology "unconference" that inspired thousands of other BarCamps and unconferences around the world.
+Modern web pioneer [Tantek Çelik](https://en.wikipedia.org/wiki/Tantek_%C3%87elik) was a regular at the original DevHouse events. In 2005 after the second DevHouse, he and a cohort of a few other DevHouse regulars [dreamed up](http://tantek.com/2015/225/t2/10-years-ago-created-barcamp) [BarCamp](https://en.wikipedia.org/wiki/BarCamp), a free and attendee-driven technology [unconference](https://en.wikipedia.org/wiki/Unconference) that inspired thousands of other BarCamps and unconferences around the world. 
+
+Although the core ideas behind unconferences had been around since the 80s, BloggerCon and FooCamp brought the term unconference into use in 2003. The explosion of BarCamp in 2005 helped bring it into widespread use.
 
 During the closing remarks of the first BarCamp, Tantek mentioned DevHouse as a source of inspiration for the event. Particularly the grassroots "just do it" attitude of the organizers. 
 
