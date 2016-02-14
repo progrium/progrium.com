@@ -6,14 +6,17 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
 
 ## Topics
 
-Most of these are to be written.
+ * [Instrumentalism](Instrumentalism)
+ * [Influence and Affiliations](InfluenceAndAffiliations)
+ 
+Coming soon...
 
  * [Autosustainable Services](Autosustainable)
  * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
  * [Evented Web](EventedWeb)
  * [Megalith](Megalith)
- * [Instrumentalism](Instrumentalism)
+ * [Mental Models](MentalModels)
  * Systems Thinking
  * Design Thinking
  * Naming Projects
@@ -42,8 +45,6 @@ Most of these are to be written.
  * Plugins
  * Open Systems
  * End User Programming
- * [Mental Models](MentalModels)
- * [Influence and Affiliations](InfluenceAndAffiliations)
  * Serverless Architecture
  * Program the World
  * UnPaaS
