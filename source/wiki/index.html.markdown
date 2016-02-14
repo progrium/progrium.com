@@ -12,7 +12,7 @@ Most of these are to be written.
  * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
  * [Megalith](Megalith)
- * Instrumentalism
+ * [Instrumentalism](Instrumentalism)
  * Systems Thinking
  * Design Thinking
  * Naming Projects
@@ -41,4 +41,5 @@ Most of these are to be written.
  * Plugins
  * Open Systems
  * End User Programming
+ * [Mental Models](MentalModels)
  * [Influence and Affiliations](InfluenceAndAffiliations)
