@@ -47,8 +47,16 @@ page "/wiki/*", layout: "wiki"
 page "/404.html", directory_index: false
 
 helpers do
-  def some_helper
-    "Helping"
+  def page_title
+    if current_article
+      current_article.title + " :: "
+    elsif current_page.path.start_with? "wiki"
+      wiki_title + " :: "
+    end
+  end
+
+  def wiki_title
+    File.read(current_page.source_file).lines.first.chomp("\n").gsub('#', "")
   end
 end
 
