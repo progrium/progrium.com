@@ -11,6 +11,7 @@ Most of these are to be written.
  * [Autosustainable Services](Autosustainable)
  * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
+ * [Evented Web](EventedWeb)
  * [Megalith](Megalith)
  * [Instrumentalism](Instrumentalism)
  * Systems Thinking
@@ -43,3 +44,8 @@ Most of these are to be written.
  * End User Programming
  * [Mental Models](MentalModels)
  * [Influence and Affiliations](InfluenceAndAffiliations)
+ * Serverless Architecture
+ * Program the World
+ * UnPaaS
+ * Disaggregation
+ 
