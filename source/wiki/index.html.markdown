@@ -11,6 +11,7 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
  
 Coming soon...
 
+ * [Continuous Programming](ContinuousProgramming)
  * [Autosustainable Services](Autosustainable)
  * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
@@ -23,7 +24,6 @@ Coming soon...
  * Domain Modeling
  * SuperHappyDevHouse
  * Hacker Dojo
- * Continuous Programming
  * Developer Infrastructure
  * Developer Experience
  * Distributed Systems
@@ -49,4 +49,3 @@ Coming soon...
  * Program the World
  * UnPaaS
  * Disaggregation
- 
