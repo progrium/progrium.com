@@ -12,6 +12,7 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
 Coming soon...
 
  * [Continuous Programming](ContinuousProgramming)
+ * [Program the World](ProgramTheWorld)
  * [Autosustainable Services](Autosustainable)
  * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
@@ -46,6 +47,5 @@ Coming soon...
  * Open Systems
  * End User Programming
  * Serverless Architecture
- * Program the World
  * UnPaaS
  * Disaggregation
