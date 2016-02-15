@@ -13,6 +13,7 @@ Coming soon...
 
  * [Continuous Programming](ContinuousProgramming)
  * [Program the World](ProgramTheWorld)
+ * [Pop Computing](PopComputing)
  * [Autosustainable Services](Autosustainable)
  * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
