@@ -7,3 +7,8 @@ Pop computing, sterile computing, or mass produced computing describes the ironi
 ## Sterile vs Generative
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/ZAsb4gtEpaw" frameborder="0" allowfullscreen></iframe>
+
+## See Also
+
+ * [The First 100 Years](http://idlewords.com/talks/web_design_first_100_years.htm)
+ * [Indie Web](http://indiewebcamp.com/)
