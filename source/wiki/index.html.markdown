@@ -12,6 +12,7 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
 Coming soon...
 
  * [Continuous Programming](ContinuousProgramming)
+ * [Patreon Campaign](PatreonCampaign)
  * [Program the World](ProgramTheWorld)
  * [Pop Computing](PopComputing)
  * [Autosustainable Services](Autosustainable)
