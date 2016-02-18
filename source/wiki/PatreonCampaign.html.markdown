@@ -4,7 +4,7 @@
 
 **Jeff Lindsay is creating amazing open source tools, videos, and articles.**
 
-This is a Patreon page for me, Jeff Lindsay. It lets you set up a monthly subscription to donate and support my work so I can keep doing it and do more of it! Yay!
+Welcome to my Patreon page. Patreon lets you set up a monthly subscription to donate and support my work so I can keep doing it and do more of it! Yay!
 
 ## Who are you?
 
