@@ -41,8 +41,8 @@ end
 
 activate :directory_indexes
 
-page "/blog/atom.xml", layout: false
 page "/blog/*", layout: "blog"
+page "/blog/atom.xml", layout: false
 page "/wiki/*", layout: "wiki"
 page "/404.html", directory_index: false
 
