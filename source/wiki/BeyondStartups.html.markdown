@@ -1,6 +1,8 @@
 # Beyond Startups
 
-Startup culture is one of the best thing that's happened to technologists since we first discovered our intrinsic love for technology. Startups provide one way for creative technologists to get paid, sometimes quite abundantly, for their drive to be creative with technology. 
+Modern tech startups a great for technology creators, but are they enough? 
+
+Founding a startup provides a way for creative technologists to get paid, sometimes quite abundantly, for their drive to be creative with technology. 
 
 It used to be that you needed somebody with business vision and hustle to come along and motivate one to channel their energy into a startup. Woz had to be convinced by Jobs they should do Apple. Now after so many success stories, it's the norm for technologists to read a few Paul Graham essays, learn the skills and accessible tools to run a business, and apply for an accelerator. 
 
