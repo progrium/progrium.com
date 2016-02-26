@@ -66,7 +66,7 @@ Paul Graham talks about hackers as painters, craftsmen of technology. That they 
 
 YCombinator is actually a great example of where to find good tech ideas that turn out to be bad businesses. Absolutely great companies have come out of YCombinator, but many of those bright hackers build features instead of products. Eventually they pivot or regroup, but what if that feature was pretty useful? What if it opened up possibilities that didn't exist before?
 
-Some technologists want to build a tool just so it exists. Maybe to make some idea or technology more accessible. Maybe to empower a niche audience. To be a building block for others. Maybe just to build something cool. Rather than build it and then spend the next 5-10 years figuring out to make it work as a business, whether VC funded or self funded, maybe ... don't. 
+Some technologists want to build a tool just so it exists. Maybe to make some idea or technology more accessible. Maybe to empower a niche audience. To be a building block for others. Maybe just to build something cool. Rather than build it and then spend the next 5-10 years figuring out to make it work as a business, whether VC funded or self funded, maybe ... don't bother with the business part. 
 
 My ideal is for people to do what makes them happy. To do what makes them feel like their time alive is worth something. That when they're compelled to build cool tools, they can focus on building cool tools. Not that it was wasted trying to fit a square block into a round hole. 
 
