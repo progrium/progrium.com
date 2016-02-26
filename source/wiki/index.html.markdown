@@ -8,13 +8,14 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
 
  * [Instrumentalism](Instrumentalism)
  * [Influence and Affiliations](InfluenceAndAffiliations)
+ * [Pop Computing](PopComputing)
+ * [Patreon Campaign](PatreonCampaign)
+ * [Beyond Startups](BeyondStartups)
  
 Coming soon...
 
  * [Continuous Programming](ContinuousProgramming)
- * [Patreon Campaign](PatreonCampaign)
  * [Program the World](ProgramTheWorld)
- * [Pop Computing](PopComputing)
  * [Autosustainable Services](Autosustainable)
  * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
