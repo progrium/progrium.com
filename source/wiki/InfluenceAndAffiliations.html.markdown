@@ -94,7 +94,7 @@ By this time, I had left. Not long after, the NASA project collapsed. The remain
 
 ## Google
 
-I've never worked at Google, but I've found a number of libraries I've written and ideas end up being used at Google. Webhooks was the first of these. I was invited to give a Google Tech Talk on webhooks. It went rather poorly in terms of presentation, but some did see through the nervous, tired speaking and really grokked the idea.
+I've never worked at Google, but I've found a number of libraries I've written and ideas end up being used at Google. Webhooks was the first of these. I was invited to give a Google Tech Talk on webhooks in 2009. It went rather poorly in terms of presentation, but some did see through the nervous, amatuer speaking and really grokked the idea.
 
 Only a few Google products ended up getting any sort of webhooks, however it ended up influencing App Engine in an interesting way. Webhooks inspired the App Engine team to use HTTP as the mechanism to trigger background tasks and scheduled cron tasks. 
 
@@ -105,5 +105,25 @@ I also found out Google engineers used several of my libraries implementing JSON
 ## PaaS
 
 ## Indie Game: The Movie
+
+Although I never found time to really work on games in my 20s, I did stay involved with the community. In fact, the few times I did make games were during game jam events I helped organize as part of the TIGSource community. They were called TIGJam. We borrowed heavily from the SuperHappyDevHouse recipe, which actually made them a little more unique than most game jams today.
+
+I loved the indie game community. You had people pushing the envelope, experimenting with a new medium, and as game developers they had to be talented across several disciplines. Art, programming, sound, music. Even within programming, games involve graphics, networking, tools, AI, sound, etc. But rarely did they take themselves seriously. The result was a community of extremely talented, extremely humble (on average) and supportive, and extremely *fun* people. 
+
+I felt like I had to share this with more people. Maybe to inspire people to make indie games, maybe to play indie games, or just be aware of indie games. These were basically brilliant starving artists, so I had a lot of intentions to find ways to support them before we had App Stores, Steam, Stripe, Humble Bundle, itch.io, etc. But I was also just super in love with the vibe and I wanted to share it. 
+
+I decided I could make a short, low budget documentary on the community and culture showing the talent and personalities in it. I brought some filmmaking gear to the Game Developer Conference, the one central hub of game developers around the world, including indies. I started doing some interviews. A friend told me these two from their hometown in Canada were doing the same thing. 
+
+Initially I was not discouraged. Then I met them. And I saw their work. And I saw that they got it and knew how to capture it better than I did. So I dropped my project and decided to support them. 
+
+They self funded the project through several Kickstarters. I supported them in their first at the $100 level, which was maybe the upper middle end of levels. Then in post production I noticed they had a top level for $5,000. The primary reward on top of all the others was an Executive Producer credit. 
+
+Not only did I want to support this project, but I knew how good it was. Not only good but important. And when I thought about it, this was a pretty cheap way to get an Executive Producer credit. 
+
+By then they knew me and immediately emailed me trying to convince me I didn't need to give them that much. That that level was partly a joke, made for people with yachts and ascots. I insisted. 
+
+Because of this, they kept me in the loop. I was willing to help them during their tour of the film and then they told me they were getting into Sundance. They invited me to Sundance with them. They ended up winning Best Editing for World Documentary. They later did a theater tour, and later it was released on Netflix, iTunes, Steam, and direct on their site. 
+
+It did quite well. It resonated with creative people. It made some people cry. It was a Good Movie and I'm glad I got to support it. As a result, not only is my name in the end credits, but I'm listed on IMDB as an executive producer for an award winning documentary. 
 
 ## Docker
