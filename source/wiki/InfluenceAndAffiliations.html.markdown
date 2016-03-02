@@ -74,6 +74,19 @@ GitHub launched not long after I launched DevjaVu. I was in the south bay and th
 
 Although their success came for many other reasons, I think it's hard to deny the value in being able to integrate such a central tool with other tools in your workflow using webhooks. This made it possible to build other hosted services such as CI services that integrated with GitHub. Without webhooks, these integrations would have to be hardcoded by GitHub, severly limiting growth of the ecosystem.
 
+## Google
+
+I've never worked at Google, but I've found a number of libraries I've written and ideas end up being used at Google. Webhooks was the first of these. I was invited to give a Google Tech Talk on webhooks in 2009. It went rather poorly in terms of presentation, but some did see through the nervous, amatuer speaking and really grokked the idea.
+
+Only a few Google products ended up getting any sort of webhooks, however it ended up influencing App Engine in an interesting way. Webhooks inspired the App Engine team to use HTTP as the mechanism to trigger background tasks and scheduled cron tasks. 
+
+Later, two Google engineers started a project in their spare time called PubSubHubbub. The idea was to use webhooks to turn RSS feeds into webhook based subscriptions. This found its way into a number of experimental Google projects. I was loosely involved in the PubSubHubbub project. The PubSubHubbub API was later adopted by GitHub, though I think because PubSubHubbub never gained critical traction over the more general pattern of webhooks, most implementors had dropped support for it. 
+
+I also found out Google engineers used several of my libraries implementing JSON Web Token in several of their ecommerce and transaction APIs. Mostly likely these evolved into Google Wallet. 
+
+# More...
+The following are longer stories that probably deserve their own wiki pages with shorter summaries here.
+
 ## OpenStack
 
 A bunch of friends of mine from DevHouse ended up working at NASA Ames. They were self described space geeks excited to work with legendary NASA. Unfortunately, they found NASA was not the innovation powerhouse it once was. There was a saying, "they forgot how to get to the moon." Although there were still pockets of absolutely amazing scientists and engineers, they lived within a monstrous bureaucratic organization with all the trappings of some of the worst large organizations. 
@@ -92,38 +105,62 @@ In the end, this was quite ambitious. I was there particularly for the PaaS laye
 
 By this time, I had left. Not long after, the NASA project collapsed. The remaining team at NASA either went to Rackspace or founded an OpenStack startup. OpenStack went on to be the canonical open source alternative to Amazon Web Services. Rackspace went all in and rebuilt much of their cloud infrastructure on OpenStack.
 
-## Google
 
-I've never worked at Google, but I've found a number of libraries I've written and ideas end up being used at Google. Webhooks was the first of these. I was invited to give a Google Tech Talk on webhooks in 2009. It went rather poorly in terms of presentation, but some did see through the nervous, amatuer speaking and really grokked the idea.
 
-Only a few Google products ended up getting any sort of webhooks, however it ended up influencing App Engine in an interesting way. Webhooks inspired the App Engine team to use HTTP as the mechanism to trigger background tasks and scheduled cron tasks. 
+## PaaS and Docker
 
-Later, two Google engineers started a project in their spare time called PubSubHubbub. The idea was to use webhooks to turn RSS feeds into webhook based subscriptions. This found its way into a number of experimental Google projects. I was loosely involved in the PubSubHubbub project. The PubSubHubbub API was later adopted by GitHub, though I think because PubSubHubbub never gained critical traction over the more general pattern of webhooks, most implementors had dropped support for it. 
+I was instantly hooked on App Engine and the PaaS concept. I became a sort of power user. Not in the sense of building huge apps with millions of users, but pushing the edge of what was possible on those platforms. As such, I had many conversations with the teams behind App Engine, Heroku, and dotCloud. 
 
-I also found out Google engineers used several of my libraries implementing JSON Web Token in several of their ecommerce and transaction APIs. Mostly likely these evolved into Google Wallet. 
+App Engine solved a problem that was important to me. It abstracted away server management and configuration. While this seems like a no brainer for any application, I was interested in finding a way to run web apps as open source services. I believed the only way to do that was to automate and/or abstract server level operations away so a (non-commercial) community could more easily run and maintain a service.
 
-## PaaS
+With webhooks, I had also started building lots of prototypes and demos and it quickly became too much to manage on my own servers. App Engine relieved this problem. I also attempted to build a webtask or AWS Lambda style service for webhooks on App Engine. This and a number of other ideas really pushed what was possible on early PaaS systems. While RequestBin (then called PostBin) was a simple web app that could run on App Engine, projects like Mailhook and Localtunnel could not run on App Engine. This meant that I'd never be able to run them sustainably as an open source service. 
+
+Another great use of App Engine was for all the systems at Hacker Dojo. App Engine became our standard platform for apps. It meant we didn't have to run or manage servers because as a volunteer-powered non-profit, there were plenty of other more important issues to spend our time on. It also meant onboarding help was significantly easier, deploying was more accessible, and therefore more people could help out and evolve these systems. These included our sign-in system, our sign-up and payment system, our event manager, our website, and pretty much any other service we needed we could whip up on App Engine and all the users on our domain could access them. 
+
+App Engine's limitations led me to Heroku as it matured. It developed a more understandable, flexible, and open model referred to as the Process Model (they're just unix processes ... in containers) and open source buildpacks for different language stacks. My go-to became Heroku, but I was still running into limitations. Luckily, since I new early employees and hung out there sometimes, I could influence it on occasion. I quickly got quite familiar with the Heroku architecture and had access to a number of hidden, unreleased features. But I still couldn't run a lot of apps on Heroku. 
+
+That's when I started turning to dotCloud. Unlike Heroku, dotCloud let you listen on arbitrary ports. I was not limited to HTTP any longer. Unfortunately, the dotCloud experience was overall just not as great. And I still ran into limitations, despite long conversations with their team.
+
+So not only did I know PaaS well, it never satisfied me. So of course when my friends at NASA wanted to build a PaaS I said I'm down to help. Unfortunately, we never got that far. But I did research a number of open source PaaS and App Engine alternatives. There weren't many, and most of them you'll never hear of now. 
+
+My next job was at Twilio, which made a lot of sense (in theory) given their use of webhooks. My first year was working on a project that was very cool, but never had the product support to ever be officially launched. Most of the tech ended up in other products. The lack of product support I understood. Compared to all the other products, the margins for Twilio Realtime didn't quite make sense. It also wasn't telephony related at all, and so was a little ahead of its time in the product lineup. What I was more frustrated with was the delivery pipeline we had. 
+
+After a year I helped establish the Platform Team to manage our internal infrastructure and build an internal platform for the others. It was sort of devops with aspirations of PaaS. Only we never got organized enough to be able to build anything. Instead, we did a lot of design work and research in preparation.
+
+Based on my experience with PaaS, I was convinced we didn't want another PaaS solution. It would just be another black box with limitations. So I wanted to disaggregate the PaaS into smaller building blocks. It seemed clear talking to lots of companies, not just Twilio, that PaaS is too one-size-fits-all that happens to not fit most companies. The ideal was: make it easy to build your own. In the process of disaggregating, I came to the first base component borrowing Heroku terminology: a dyno manager.
+
+Less than 6 months later, I teamed up with dotCloud to work on Docker, applying this vision for this new tool. My initial use case was that I should be able to at least build a single-host PaaS very easily. I made a demo to show this was possible. In under 100 lines of Bash, I used Docker, the Heroku buildpacks, and a few other components I made to make Dokku. Dokku became popular quickly as it was more useful and understandable to developers than Docker itself. It was an easy sell: "your own hackable Heroku". 
+
+Eventually Docker outpaced Dokku in popularity, but Dokku had already inspired the modern generation of open source PaaS solutions built on Docker we have today. Many of them using components I made for Dokku. Some of them I even helped build or advised with.
+
+My goal was/is to dissolve the need for PaaS and make the knowledge and components used to build them just be part of our toolkit for building systems. So far, we're making progress in that direction. 
 
 ## Indie Game: The Movie
 
-Although I never found time to really work on games in my 20s, I did stay involved with the community. In fact, the few times I did make games were during game jam events I helped organize as part of the TIGSource community. They were called TIGJam. We borrowed heavily from the SuperHappyDevHouse recipe, which actually made them a little more unique than most game jams today.
+Although I never found time to really work on games in my 20s, I did stay involved with the community. The few times I did make games were during game jam events I helped organize as part of the TIGSource community. They were called TIGJam. We borrowed heavily from the SuperHappyDevHouse recipe, which actually made them a little more open ended than most game jams today.
 
-I loved the indie game community. You had people pushing the envelope, experimenting with a new medium, and as game developers they had to be talented across several disciplines. Art, programming, sound, music. Even within programming, games involve graphics, networking, tools, AI, sound, etc. But rarely did they take themselves seriously. The result was a community of extremely talented, extremely humble (on average) and supportive, and extremely *fun* people. 
+I love the indie game community. You have people pushing the envelope, experimenting with a new medium, creating very personal works, and as game developers they had to be talented across several disciplines. Art, programming, sound, music, production, business. Even within programming, games involve graphics, networking, tools, AI, sound, etc. But rarely did they take themselves seriously. The result was a community of extremely talented, extremely humble and supportive, and extremely *fun* people. 
 
-I felt like I had to share this with more people. Maybe to inspire people to make indie games, maybe to play indie games, or just be aware of indie games. These were basically brilliant starving artists, so I had a lot of intentions to find ways to support them before we had App Stores, Steam, Stripe, Humble Bundle, itch.io, etc. But I was also just super in love with the vibe and I wanted to share it. 
+I felt like I had to share this with more people. Maybe to inspire people to make indie games, maybe to play indie games, or just be aware of indie games and their creators. These were basically brilliant starving artists, so I had a lot of intentions to find ways to support them before we had App Stores, Steam, Stripe, Humble Bundle, itch.io, etc. But I was also just super in love with the vibe of the community and I wanted to share it. 
 
-I decided I could make a short, low budget documentary on the community and culture showing the talent and personalities in it. I brought some filmmaking gear to the Game Developer Conference, the one central hub of game developers around the world, including indies. I started doing some interviews. A friend told me these two from their hometown in Canada were doing the same thing. 
+I decided I could make a short, low budget documentary on the community and culture showing the talent and personalities in it. I brought some filmmaking gear to the Game Developer Conference, the one central hub of game developers around the world, including indies. I started doing some interviews. I did one or two and then one of my indie friends told me these two from his hometown of Winnipeg, Canada were doing the same thing. 
 
 Initially I was not discouraged. Then I met them. And I saw their work. And I saw that they got it and knew how to capture it better than I did. So I dropped my project and decided to support them. 
 
-They self funded the project through several Kickstarters. I supported them in their first at the $100 level, which was maybe the upper middle end of levels. Then in post production I noticed they had a top level for $5,000. The primary reward on top of all the others was an Executive Producer credit. 
+They self funded the project through several Kickstarters. I supported them in their first at the $100 level, which was maybe the upper middle end of levels. Then in their post production Kickstarter I noticed they had a top level for $5,000. The primary reward on top of all the others was an Executive Producer credit. 
 
-Not only did I want to support this project, but I knew how good it was. Not only good but important. And when I thought about it, this was a pretty cheap way to get an Executive Producer credit. 
+Not only did I want to support this project, but I knew how good it was. Not only good but important. And when I thought about it, this was a pretty cheap way to get an Executive Producer credit. So I did it.
 
 By then they knew me and immediately emailed me trying to convince me I didn't need to give them that much. That that level was partly a joke, made for people with yachts and ascots. I insisted. 
 
-Because of this, they kept me in the loop. I was willing to help them during their tour of the film and then they told me they were getting into Sundance. They invited me to Sundance with them. They ended up winning Best Editing for World Documentary. They later did a theater tour, and later it was released on Netflix, iTunes, Steam, and direct on their site. 
+Because of this, they kept me in the loop. I offered to help them during their tour of the film and then they told me they were getting into Sundance. They invited me to Sundance with them. They ended up winning Best Editing for World Documentary. They later did a theater tour, and later it was released on Netflix, iTunes, Steam, and direct on their site. 
 
-It did quite well. It resonated with creative people. It made some people cry. It was a Good Movie and I'm glad I got to support it. As a result, not only is my name in the end credits, but I'm listed on IMDB as an executive producer for an award winning documentary. 
+It did quite well. It resonated with creative people. It made some people cry. It was a Good Movie and I'm glad I got to support it. As a result, not only is my name in the end credits, but I'm listed on IMDB as an executive producer for an award winning documentary. I'm also featured in the extras since they came to TIGJam and covered it and put it into a special feature.
 
-## Docker
+Also, it's not obvious in the film, but all the developers in the movie already know each other, hanging out at GDC, or coming to TIGJam, or talking on the TIGSource forums. The indie community, especially then, was very small.
+
+Because he is hilarious (though they all are), Tommy Refenes was the first person I interviewed for my attempt at a documentary before I knew about IGTM. I hung out with him and his family during Sundance since I didn't know anybody else there. Tommy and Edmond I'm pretty sure came to some of the first TIGJams, but also have just always been around. Randomly, Edmond's wife Danielle McMillan went to my middle school with me. Jon Blow was a popular figure at GDC even before his indie games. He came to several DevHouse events and occasionally we came to each others social gatherings. 
+
+Phil Fish has always been around the indie game scene. At one point quite often in the TIGSource forums. Fez programmer Renaud Bédard used to use the same 3D programming tool I used in high school. We might have even talked on the forums, we don't remember. Fez sound designer Brandon McCartin was a TIGSource editor and admin. Rich Vreeland, who did the music for Fez, was my roommate!
+
+And that's just the games and developers featured in Indie Game: The Movie. There's a reason we all know each other -- it's just a great community. I'm glad IGTM captured some of it, and I'm super excited for their next project, whatever it is!
