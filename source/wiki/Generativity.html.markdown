@@ -1,6 +1,6 @@
 # Generativity
 
-In 2008 Jonathan Zittrain wrote the book [The Future of the Internet and How To Stop It](http://www.amazon.com/gp/product/B0089EHNC2/). For me, the most important idea in the book is the model of two types of technologies: sterile and generative. Here I'd like to explore this model and talk about why generative technologies are important. If you'd like to learn more about the actual topic of the book, [here is a good summary review](http://boingboing.net/2008/07/23/zittrains-the-future.html). 
+In 2008, Jonathan Zittrain wrote [The Future of the Internet and How To Stop It](http://www.amazon.com/gp/product/B0089EHNC2/). For me, the most important idea in the book is the model of two types of technologies: sterile and generative. Here I'd like to explore this model and talk about why generative technologies are important. If you'd like to learn more about the actual topic of the book, [here is a good summary review](http://boingboing.net/2008/07/23/zittrains-the-future.html). 
 
 Zittrain describes sterile technologies as those with a fixed purpose or use. They're made for one thing and don't really surprise you. Another way to think of them are as appliances. Most appliances are sterile. Your toaster is pretty much only good as a toaster. The smoke alarm in your house is only good as a smoke alarm. 
 
@@ -47,7 +47,7 @@ I don't believe computers are supposed to be sterile. It doesn't make sense. The
 
 The end result is that computing is everywhere, but it's a severly stunted form of computing I call [Pop Computing](http://progrium.com/wiki/PopComputing/).
 
-The Apple II slots argument not only shows that Jobs had a preference for sterile technology, but that Woz had a preference for generative technology. The reason I say this is because Woz represents hacker culture. He's basically the hacker's hacker. And I don't believe his bias for generativity is separate from his values as a hacker. 
+The Apple II slots argument not only showed that Jobs had a preference for sterile technology, but that Woz had a preference for generative technology. The reason I say this is because Woz represents hacker culture. He's basically the hacker's hacker. And I don't believe his bias for generativity is separate from his values as a hacker. 
 
 I'm beginning to define a hacker as a person that needs to use and build generative technology. It might not be a conscious idea, and they might not know why, but I believe generativity is part of hacker DNA. 
 
@@ -58,13 +58,13 @@ You can say hackers are about values of freedom like open source or free softwar
 I think hacker culture is about a bias towards generativity. 
 
 
-Generativity becomes more significant when you look at it from the context of the role of technology.
+Generativity becomes more significant when you look at it from the context of the role of technology. A topic not often explored beyond the scope of recent times.
 
-Kevin Kelly explored in his book [What Technology Wants](http://www.amazon.com/What-Technology-Wants-Kevin-Kelly/dp/0143120174) the biases and trends of technology. He broadly defines technology as anything useful created by a human mind, which includes hammers and gadgets, but also law and cities. What he found is that technology in all forms help us trend towards more options, choices, opportunities, possibilities, and freedoms.
+Kevin Kelly explored in his book [What Technology Wants](http://www.amazon.com/What-Technology-Wants-Kevin-Kelly/dp/0143120174) the biases and trends of technology across human history. He broadly defines technology as anything useful created by a human mind, which includes hammers and gadgets, but also law and cities. What he found is that technology in all forms help us trend towards more options, choices, opportunities, possibilities, and freedoms.
  
-These are all different ways of talking about the same thing. What this does, though, is every new technology brings us the potential for more new technology. That doesn't sound that significant, but as Kevin Kelly says, imagine Mozart before the piano, or van Gogh before cheap oil paints, or Hitchcock before film. 
+These are all different ways of talking about the same thing. What this does, though, is every new technology brings us the potential for more new technology. Again, this is not just tools, but art and ideas. That doesn't sound that significant, but as Kevin Kelly says, imagine Mozart before the piano, or van Gogh before cheap oil paints, or Hitchcock before film. These creators used mediums or technologies that had to be invented or discovered at some point.
 
-How many kids are out there today that won't realize their potential to self actualize because their medium doesn't exist yet? Where the thing that resonates so perfectly with that individual that it fills their life with purpose and meaning.
+How many kids are out there today that won't realize their potential to self actualize because their medium doesn't exist yet? Where the thing that resonates so perfectly with that individual that it fills their life with purpose and meaning. Or at least a way to express oneself.
 
 Just as one example, Vine, a seemingly trivial micro-video platform, has allowed for a new form of celebrity: Vine stars. This is different from being a movie star, or even being a YouTube star. It's an opportunity that didn't exist before. 
 
@@ -72,6 +72,6 @@ In contrast, imagine a world without technology, where we were incapable of maki
 
 So it seems, at least in general, the force of technology is a Good Thing. Tool making is arguably what makes us human, or at least what helped establish humanity. And from there it allows us to find new ways to meaningfully exist as individuals and therefore as a species.
 
-By definition, generative technology creates far more opportunities and possibilities than its sterile counterpart. Therefore, generative technology is more aligned with the basic trend of technology than sterile. You could say it's a more potent form of technology. So as a technologist that understands the value in technology at this level, it makes sense there would be a bias towards generative technology.
+By definition, generative technology creates far more opportunities and possibilities than its sterile counterpart. Therefore, generative technology is more aligned with the basic trend of technology than sterile. You could say it's a more potent form of technology. So as a technologist that understands the value of technology at this level, it makes sense there would be a bias towards generative technology.
 
 In the end, to me, generativity is an ideal. Something we should strive for. It's not always practical, and sometimes you need give it up a little to get more of it, but I think it's worth fighting for. Having the choice of whether our technology is sterile or generative is a Good Thing, but a consumer driven society will unfortunately always be biased towards sterile technology.
