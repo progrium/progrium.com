@@ -62,7 +62,7 @@ Generativity becomes more significant when you look at it from the context of th
 
 Kevin Kelly explored in his book [What Technology Wants](http://www.amazon.com/What-Technology-Wants-Kevin-Kelly/dp/0143120174) the biases and trends of technology across human history. He broadly defines technology as anything useful created by a human mind, which includes hammers and gadgets, but also law and cities. What he found is that technology in all forms help us trend towards more options, choices, opportunities, possibilities, and freedoms.
  
-These are all different ways of talking about the same thing. What this does, though, is every new technology brings us the potential for more new technology. Again, this is not just tools, but art and ideas. That doesn't sound that significant, but as Kevin Kelly says, imagine Mozart before the piano, or van Gogh before cheap oil paints, or Hitchcock before film. These creators used mediums or technologies that had to be invented or discovered at some point.
+These are all different ways of talking about the same thing. What this does, though, is every new technology brings us the potential for more new technology. Again, this is not just tools, but art and ideas. As Kevin Kelly says, imagine Mozart before the piano, or van Gogh before cheap oil paints, or Hitchcock before film. These creators used and identified with mediums or technologies that had to be invented or discovered at some point.
 
 How many kids are out there today that won't realize their potential to self actualize because their medium doesn't exist yet? Where the thing that resonates so perfectly with that individual that it fills their life with purpose and meaning. Or at least a way to express oneself.
 
