@@ -45,7 +45,7 @@ Finally, with his return to Apple, the timing was right for the iMac. And it cer
 
 I don't believe computers are supposed to be sterile. It doesn't make sense. They're inherently generative. And it wasn't just Jobs that pushed them to be more sterilized. Every business in the industry wanted to make computers sell more, so they were all incentivized to dumb down and sterilize computing. 
 
-The end result is that computing is everywhere, but it's a severly stunted form of computing I call Pop Computing.
+The end result is that computing is everywhere, but it's a severly stunted form of computing I call [Pop Computing](http://progrium.com/wiki/PopComputing/).
 
 The Apple II slots argument not only shows that Jobs had a preference for sterile technology, but that Woz had a preference for generative technology. The reason I say this is because Woz represents hacker culture. He's basically the hacker's hacker. And I don't believe his bias for generativity is separate from his values as a hacker. 
 
