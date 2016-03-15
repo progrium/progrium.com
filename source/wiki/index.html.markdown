@@ -12,6 +12,7 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
  * [Patreon Campaign](PatreonCampaign)
  * [Beyond Startups](BeyondStartups)
  * [Generativity](Generativity)
+ * [Programmability](Programmability)
  
 Coming soon...
 
