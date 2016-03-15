@@ -11,6 +11,7 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
  * [Pop Computing](PopComputing)
  * [Patreon Campaign](PatreonCampaign)
  * [Beyond Startups](BeyondStartups)
+ * [Generativity](Generativity)
  
 Coming soon...
 
