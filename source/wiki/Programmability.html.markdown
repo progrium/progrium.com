@@ -100,11 +100,11 @@ Clearly, we have nothing like this today. The closest is perhaps GitHub's Atom e
 
 ![Atom Editor](https://dl.dropboxusercontent.com/u/2096290/Wiki/2016/atom-editor.png)
 
-You can image not long from now, we'll see an operating system implemented entirely in JavaScript that might re-invent much of what Genera and Squeak did. In fact, I've already seen a few projects in this space. 
+You can imagine not long from now, we'll see an operating system implemented entirely in JavaScript that might re-invent much of what Genera and Squeak did. In fact, I've already seen a few projects in this space. 
 
 ## Closing the Gap
 
-Perhaps at some point we can start over. Certainly in specialized situations, we can explore new computing platforms from the ground up that are more programmable. However, for mainstream use, we have to live with what we have.
+Perhaps at some point we can start over. Certainly in specialized situations, we can explore new computing platforms from the ground up that are more programmable. However, for mainstream use, we have to work with what we have.
 
 What's more, modern computing goes beyond operating systems. We use applications across devices and across applications in the cloud. Our computing experience is not tied to a single platform. It transcends platforms. So we can't address programmability with a new platform. We have to make our existing applications across platforms more programmable. 
 
