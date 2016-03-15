@@ -2,7 +2,7 @@
 
 Software is eating the world. Disrupting industries and slowly pushing us towards ubiquitous computing. Our world is becoming software driven. This is great news for existing software developers. It also means there will be an increase in people getting into computer science or professional programming. 
 
-The world is becoming software driven, but that doesn't necessarily mean programmable. The important generativity of computing is captured by its programmability. However, most of our software is ironically sterile. This is part of what I call Pop Computing, the sterilized, watered down, consumer friendly form of computing we have today.
+The world is becoming software driven, but that doesn't necessarily mean programmable. The important [generativity](http://progrium.com/wiki/Generativity/) of computing is captured by its programmability. However, most of our software is ironically sterile. This is part of what I call Pop Computing, the sterilized, watered down, consumer friendly form of computing we have today.
 
 To unlock the full potential of computing, the unlimited innovation and empowerment specific to the generativity of computing, we need to reclaim the programmability of computing. I'd argue this is more important than open source and free software, and if there was one thing hacker culture should fight for, it's programmability.
 
@@ -108,4 +108,4 @@ Perhaps at some point we can start over. Certainly in specialized situations, we
 
 What's more, modern computing goes beyond operating systems. We use applications across devices and across applications in the cloud. Our computing experience is not tied to a single platform. It transcends platforms. So we can't address programmability with a new platform. We have to make our existing applications across platforms more programmable. 
 
-I can't exactly articulate what I have in mind, but as an simple example, I've already made a huge amount of progress evangelizing webhooks in web applications. This is just one piece of the foundation for a more programmable world. 
+I can't exactly articulate what I have in mind, but as an simple example, I've already made a huge amount of progress evangelizing webhooks in web applications. This is just one piece of the foundation for a more programmable world.
