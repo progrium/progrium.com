@@ -57,10 +57,10 @@ You can say hackers are about values of freedom like open source or free softwar
 
 I think hacker culture is about a bias towards generativity. 
 
+
 Generativity becomes more significant when looked at from the context of technology in general.
 
-Kevin Kelly explored in his book What Technology Wants the biases and trends of technology. He broadly defines technology as anything useful created by a human mind, which includes, for example, law and cities. What he found is that technology 
-in all forms help us trend towards:
+Kevin Kelly explored in his book What Technology Wants the biases and trends of technology. He broadly defines technology as anything useful created by a human mind, which includes, for example, law and cities. What he found is that technology in all forms help us trend towards:
 
  * Options
  * Choices
