@@ -1,6 +1,6 @@
 ---
 pageable: true
-per_page: 5
+per_page: 3
 ---
 
 <% article = page_articles.first %>
@@ -28,6 +28,7 @@ per_page: 5
 </div>
 </section>
 
+<%= partial "blog/subscribe" %>
 
 <% page_articles[1..-1].each_with_index do |article, i| %>
 <section <% if i % 2 == 0 %> class="alternate"<% end %>>

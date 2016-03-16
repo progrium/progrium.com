@@ -38,9 +38,11 @@ h5 {
 
 a {
   color: #669EFF;
+  cursor: pointer !important;
 }
 a:hover {
   color: #2E36AB;
+  cursor: pointer !important;
 }
 
 #wrapper {
@@ -135,6 +137,16 @@ article .meta .year {
   text-align: center;
 }
 
+.subscribe {
+  background-color: #58b868;
+  text-align: center;
+  color: white;
+}
+.subscribe a {
+  color: white;
+  text-decoration: underline;
+}
+
 /* =Header
 -------------------------------------------------------------- */
 header {
@@ -208,15 +220,16 @@ border-bottom: 1px dashed lightgray;
   margin-top: -20px;
   width: 220px;
   height: 220px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  border: 8px solid white;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+
+  margin-bottom: 20px;
 }
 
 #sidebar h5 {
-  margin-left: 15px;
-  font-family: Roboto, sans-serif;
+  margin-left: 5px;
 }
 #sidebar h5 a {
   color: #999;
