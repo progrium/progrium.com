@@ -33,7 +33,7 @@ However, APIs are about programmatic use, which significantly contributes to ove
 
 ### Hooks
 
-Hooks represent a significantly more programmable feature of software. Hook are callbacks, which can be used in a number of ways, but allows for user-specified code to run with the operation of some software. The biggest use case for hooks are integrations. However, they can also be used to change the behavior of programs in minor ways, for example git or svn pre-commit hooks.
+Hooks represent a significantly more programmable feature of software. Hooks are callbacks, which can be used in a number of ways, but allows for user-specified code to run with the operation of some software. The biggest use case for hooks are integrations. However, they can also be used to change the behavior of programs in minor ways, for example git or svn pre-commit hooks.
 
 Web applications have webhooks. A number of development tools use shell-based hooks. Programming environments and libraries often use callbacks. Most event-driven programming is callback or hook oriented. Bringing hooks to the application level helps bring evented programming to computing beyond a particular programming environment.
 
@@ -45,9 +45,9 @@ It's interesting to note that most large desktop applications have a plugin syst
 
 ### Platform
 
-We throw around the term platform quite a bit. In this case, software is a platform if it runs and supports applications. Operating systems, AWS, Heroku, Chrome, and even Facebook can be called platforms by this definition. 
+We throw around the term "platform" quite a bit. In this case, software is a platform if it runs and supports applications. Operating systems, AWS, Heroku, Chrome, and even Facebook can be called platforms by this definition. 
 
-Not all software is or makes sense to be a platform, though it's worth pointing out that being a platform is essentially being a computing environment that only focuses on "plugins" called applications. 
+Not all software is or makes sense as a platform, though it's worth pointing out that being a platform is essentially being a computing environment that only focuses on "plugins" called applications. 
 
 ### Scripting
 
