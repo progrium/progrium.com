@@ -30,7 +30,7 @@ A product with several uses is often harder to market until the uses are well-kn
 
 Besides marketability, generativity often comes with other business challenges. Having untethered uses is a support nightmare. Generative technology can also be confusing and harder to adopt. And again, malicious third parties can hurt users and product reputation. These all have costs that are easier to manage by limiting generativity.
 
-Another way to say it, sterile technology is more consumer-friendly. By keeping it simple and focused, it's easier to use, easier to market, and easier to run a business around it.
+Another way to say it, sterile technology is more consumer-friendly. By keeping it simple and focused, it's easier to use, easier to market, and easier to run a business around it. These all sound great, but from a technology standpoint the trade-off is the possibility space it allows us to explore. A toaster lets us make toast. A computer lets us do almost anything.
 
 ## Unprecedented generativity
 
