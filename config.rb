@@ -41,6 +41,8 @@ end
 
 activate :directory_indexes
 
+#redirect "/blog/2016/04/25/generativity.html", to: "/blog/2016/04/28/generativity.html"
+
 page "/blog/*", layout: "blog"
 page "/blog/atom.xml", layout: false
 page "/wiki/*", layout: "wiki"
