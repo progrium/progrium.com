@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generative Technology
-date: 2016-04-25 11:58 UTC
+date: 2016-04-28 21:00 UTC
 tags:
 ---
 I've felt for a long time that certain technologies were more appealing to me than others. I'm not talking about which industries or fields the technology is applied, but something deeper that impacts all technology. It's the reason why the computer felt so special to many of us. Perhaps why a lot of us got into software. For years I've been searching for a way to describe it and now I can: generativity.
