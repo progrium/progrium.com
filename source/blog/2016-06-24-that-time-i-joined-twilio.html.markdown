@@ -60,9 +60,9 @@ We went back to Pier 38 and into a conference room where I met their CTO, Evan C
 
 Remember, I said I was looking for my dream job and I meant it. Can you guess what that entails? If you know me it wouldn't surprise you: A place where I can work on whatever I want. Sure, who wouldn't want that? But I was ready to walk away if they said no. 
 
-I wanted a place where I could do my life's work. Not a place that would *give* me my life's work. A place I could *do* my life's work. A place I could make a home out of, stop contracting, and focus on what I consider to be important. In theory, Twilio and I seemed aligned enough it could work.
+I wanted a place where I could do my life's work. Not a place that would *give* me my life's work. A place I could *do* my life's work. A place I could make a home out of, stop contracting, and focus on all the projects I consider to be important. In theory, Twilio and I seemed aligned enough it could work.
 
-Their response was fairly predictable. They said, "Well what do you want to work on?" 
+Their response was fairly predictable. They said, "Well what do you want to work on first?" 
 
 At that time, regardless of my job situation, there was a project I was planning to build as open source and ideally run as a free service. It was a service that would handle real-time communication to the browser via REST API. Today, especially with Node.js and WebSockets this isn't anything special. Back then, though, neither of those existed. 
 
