@@ -143,6 +143,3 @@ DEPENDENCIES
   middleman-livereload
   middleman-sprockets (~> 4.0.0.rc.1)
   middleman-syntax
-
-BUNDLED WITH
-   1.11.2
