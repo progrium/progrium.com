@@ -20,7 +20,7 @@ Our team of young space geeks eventually evolved into a larger project called NA
 
 Despite that, I was feeling pretty great. I had worked at NASA! How cool is that. Plus, SuperHappyDevHouse, a regular free event I started with friends a few years before, was peaking with around 300 attendees each event. And in the fall of 2009, we opened the doors to Hacker Dojo in Mountain View, today the largest hackerspace in the country. I was also actively evangelizing an idea called webhooks, and it was working. Because of that, people were inviting me to speak at conferences, and I even gave a Tech Talk at Google.
 
-To a 24 year old that grew up poor, didn't go to college, and never had a full-time job, all this felt pretty good. That said, please excuse the arrogance of this tweet of mine from January 2010:
+To a 24 year old that grew up poor, didn't go to college, and never had a full-time job, all this felt pretty good. That said, please excuse this tweet of mine from January 2010:
 
 > Beginning February I will be available for hire. Keep in mind, I'm only considering my dream job. Think you have it?
 
