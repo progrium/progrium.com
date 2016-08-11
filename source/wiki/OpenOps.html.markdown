@@ -16,7 +16,7 @@ Some time ago, I proposed the idea of POSS (Public Open Source Services), which 
 
 OpenOps is the process and infrastructure to allow a community to operate a service. A big part is automation, so platforms like Heroku and services like Lambda definitely help. Heroku is probably best suited to this since you can easily share access to other people in the community and all they have to do is `git push` to deploy. 
 
-Not all services can be run on Heroku. This is one of the big forces for my involvement in Docker and the commoditization of PaaS. We couldn't run Twilio on Heroku. I couldn't even run my email to webhook adapter on Heroku. It did one stupid thing. A lot of the services I build today still can't run on Heroku because of the assumptions Heroku makes. Well a lot of the cool infrastructure I want to exist does not fit the mold of the typical startup webapp. 
+Not all services can be run on Heroku. This is one of the big forces for my involvement in Docker and the commoditization of PaaS. We couldn't run Twilio on Heroku. I couldn't even run my email to webhook adapter on Heroku. It did one stupid thing. A lot of the services I build today still can't run on Heroku because of the assumptions Heroku makes. Well a lot of the cool infrastructure I want to exist does not fit the mold of the typical web app. 
 
 That said, let's stick with Heroku for sake of discussion. So now, a trusted few, maybe a project's maintainers can easily deploy their app. What happens when something goes wrong? Do the maintainers get pinged somehow? Are they oncall now? They're probably already oncall for their day job! It's one thing to deploy, it's another to put the entire burden of operations on a small set of volunteers. 
 
