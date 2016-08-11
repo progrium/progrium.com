@@ -1,3 +1,35 @@
-## A New Post
+## OpenOps
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Would you ever let your users deploy your app? First of all, could they. Not everybody has made the transition to continuous delivery, which is entirely necessary for this premise. It has to be push button. And everybody has to be comfortable with it, so there has to be plenty of tests and rollback capability. Arguably this level of "safety" is a prerequisite for continuous delivery.
+
+The real question is why you would let your users deploy your app. There is no good reason, but it's a setup for the real topic here. Though, given the automation and safety involved in the idea of user deployments, it might represent a good goal post. Perhaps a badge of honor. Five years ago it was a big deal to deploy several times a day for a mature production app. Maybe saying deploying is so easy and safe you can let your users do it is the next big thing. Okay, well, probably not.
+
+Let me explain a situation where users deploying the app might make more sense. Let's say, you're not a business. You have an app, but it's basically not for profit. And for that reason, it's also open source. Your app is a public good. At least, your source code is. Then the service is a public service. Like any service, though, it requires some amount of operations. Even if it runs on Heroku, it needs deployments, checking in on memory usage and logs, or there might be a hosted database that requires gardening.
+
+Have you ever wondered why there's sooooo many open source projects, but so few of them run as a service? Well I have, for the past 8 years or so. First, running as a service can be a great business model, so it's usually reserved for those open source authors that would like to build a business around their project. Let's say, though, that the service is rather small and focused. It solves one problem and solves it well. It's not enough to build a business around. Yet part of the magic is that it is run as a service. You could make it easy for people to set up and deploy their own instance of it, but in some cases that ruins the magic of it. You're back to shrinkwrap software where you have to install before you can use it, except it's harder because you have to deploy it somewhere and then maintain it. 
+
+And that's the big reason you don't see a lot of web apps run as a public utility. It costs money and time. The money part has gotten quite a bit better. Both PaaS and containers and the general commoditization of cloud computing has made the baseline pretty cheap to run most services. Still, the other big sink is operations, which takes time, a certain mindset, and set of specialized tooling. Given this time and money requirement, it's much easier for a project to just exist as open source on Github, which can be done completely free.
+
+Yes, open source is powered by volunteer time. It's free in one sense, but much more valuable in another. There is definitely some level of scarcity here and it's probably getting worse as the number of open source projects rises (and they aren't getting any simpler either). However, what if we could apply this albeit scarce resource into operating a public service? 
+
+Some time ago, I proposed the idea of POSS (Public Open Source Services), which I later reframed as Autosustainable Services. I identified two components: an automated, continuous fundraising mechanism to help with the money side, and to deal with operations an idea I've been calling OpenOps. 
+
+OpenOps is the process and infrastructure to allow a community to operate a service. A big part is automation, so platforms like Heroku and services like Lambda definitely help. Heroku is probably best suited to this since you can easily share access to other people in the community and all they have to do is `git push` to deploy. 
+
+Not all services can be run on Heroku. This is one of the big forces for my involvement in Docker and the commoditization of PaaS. We couldn't run Twilio on Heroku. I couldn't even run my email to webhook adapter on Heroku. It did one stupid thing. A lot of the services I build today still can't run on Heroku because of the assumptions they make. Well a lot of the cool infrastructure I want to exist does not fit the mold of the typical startup webapp. 
+
+That said, let's stick with Heroku for sake of discussion. So now, a trusted few, maybe a project's maintainers can easily deploy their app. What happens when something goes wrong? Do the maintainers get pinged somehow? Are they oncall now? They're probably already oncall for their day job! It's one thing to deploy, it's another to put the entire burden of operations on a small set of volunteers. 
+
+One step in the right direction is to make traditional operations observability mechanisms public. They're read-only, there's no harm. Assuming the system was designed to consider the security implications of this, everybody could have access to logs, metrics, exceptions. If the maintainers want to keep deploying up to them, let the rest of the community help identify and maybe even fix the problem!
+
+Though you can imagine it's actually not a hard problem to open up deployments to the entire community. One of my favorite models is one we use when setting up continuous delivery systems for clients: deploy via Github PR. Either master or a release branch, anybody can open a PR into it, and when merged, the branch is used to deploy. 
+
+Ideas like ChatOps fit perfectly with OpenOps. In fact, depending on specifics, ChatOps is basically is form of OpenOps. Except the context and goal of OpenOps is different. It's about an open community participating in operations. And OpenOps extends further than your chat room, though for open source projects this is the perfect place to collaboratively perform operations tasks. 
+
+That said, you might see how some of the ideas and infrastructure here would be beneficial to closed organizations. It's true. OpenOps is seeking a scalable, distributed system for operations. Most companies that need to solve that problem do it in a traditional, centralized way. Often because it started small that way. In the same way that open source has changed the way people develop software (and more) internally, so would OpenOps. 
+
+In fact, the idea of OpenOps is actually more to the point that DevOps was originally about than DevOps has become. Before DevOps was pigeon holed into being just about infrastructure as code, or hybrid developer-operators, it was born out of organizations that made operations an organization-wide responsibility. Anybody could deploy and everybody knew the implications and what it meant to operate a system. It took a cultural shift, and required great tooling and testing for safe continuous delivery, but also transparency. Anybody could see how the application was performing. It wasn't just developers being responsible for their code, but they were. Everybody was. 
+
+OpenOps takes those ideals and changes it slightly. Everybody *can* be responsible. Because in the world of open source, people choose to be responsible. But there has to be a system that allows anybody to take on that responsibility. 
+
+So not only would OpenOps open up the possibility for great new public utilities run by an open source community, but it would provide the tools for closed organizations to scale their operations culture the same way. 
