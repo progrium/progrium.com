@@ -2,7 +2,7 @@
 
 Beyond projects that I can call my own, I've had the privilege to be involved or affiliated with some great people and projects. Together we have had quite an impact on the world, changing individuals lives to influencing major technological and cultural phenomena. Here is a place I feel comfortable sharing some of them.
 
-Oddly enough, most of these trace back to 2005 at the dawn of "Web 2.0" and a legendary event and community I started with friends called [SuperHappyDevHouse](https://en.wikipedia.org/wiki/SuperHappyDevHouse) (which I refer to as DevHouse). 
+Most of these trace back to 2005 at the dawn of "Web 2.0" and a legendary event and community I started with friends called [SuperHappyDevHouse](https://en.wikipedia.org/wiki/SuperHappyDevHouse) (which I refer to as DevHouse). 
 
 ## Hackathons
 
