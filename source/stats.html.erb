@@ -1,0 +1,339 @@
+---
+layout: layout
+---
+<% content_for :head do %>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<% end %>
+<header>
+  <div class="container">
+  <div class="row">
+      <div class="col-lg-8 col-lg-offset-1">
+        These are Google Analytics for my <a href="/blog">blog</a> and <a href="/wiki">wiki</a>.
+      </div>
+  </div>
+</div>
+</header>
+
+<main id="main" role="main">
+  <script>
+        var viewId = "ga:13796544";
+        var loaded = false;
+
+        function loadChart(chart, query) {
+          $(document).on("authed", function() {
+            new gapi.analytics.googleCharts.DataChart({
+              query: query,
+              chart: chart
+            }).execute();
+          });
+        }
+
+        function loadMetric(query, handler) {
+          var fn = function() {
+            var report = new gapi.analytics.report.Data({
+              query: query
+            });
+            report.on('success', handler);
+            report.execute();
+          };
+          if (loaded) {
+            fn();
+          } else {
+            $(document).on("authed", fn);
+          }
+        }
+
+        function loadVisitors(days) {
+          var id = days+"d";
+          loadMetric({
+            ids: viewId,
+            'start-date': days+'daysAgo',
+            'end-date': 'today',
+            metrics: 'ga:users'
+          }, function(resp) {
+            var last = resp.rows[0];
+            $("#visitors-"+id).text(last);
+            loadMetric({
+              ids: viewId,
+              'start-date': (days*2)+'daysAgo',
+              'end-date': days+'daysAgo',
+              metrics: 'ga:users'
+            }, function(resp) {
+              var previous = resp.rows[0];
+              var diff = last - previous;
+              if (diff > 0) {
+                $("#arrow-"+id).addClass("glyphicon-arrow-up");
+                $("#changeset-"+id).addClass("text-success");
+              } else {
+                $("#arrow-"+id).addClass("glyphicon-arrow-down");
+                $("#changeset-"+id).addClass("text-danger");
+              }
+              var change = Math.floor(Math.abs(diff) / last * 100);
+              $("#change-"+id).text(change);
+            });
+          });
+        }
+      </script>
+      <div class="container" style="width: 1000px;">
+        <div class="row text-center">
+
+          <div class="col-md-4">
+            <h5>Visitors last 24 hours</h5>
+            <h1 id="visitors-1d"></h1>
+            <h4>
+              <span title="Change from previous 24 hours" id="changeset-1d">
+                <span id="arrow-1d" class="glyphicon" aria-hidden="true"></span>
+                <span id="change-1d"></span>%
+              </span>
+              &nbsp;&nbsp;&nbsp;
+              <span title="Returning visitors">
+                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                <span id="return-1d"></span>%
+              </span>
+            </h4>
+            <% content_for :js do %>
+              loadVisitors(1);
+              loadMetric({
+                ids: viewId,
+                'start-date': '1daysAgo',
+                'end-date': 'today',
+                metrics: 'ga:users',
+                dimensions: 'ga:userType'
+              }, function(resp) {
+                var ret = Number(resp.rows[1][1]);
+                var total = Number(resp.rows[0][1])+ret
+                $("#return-1d").text(Math.floor(ret/total*100));
+              });
+            <% end %>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Visitors last 7 days</h5>
+            <h1 id="visitors-7d"></h1>
+            <h4>
+              <span title="Change from previous 7 days" id="changeset-7d">
+                <span id="arrow-7d" class="glyphicon" aria-hidden="true"></span>
+                <span id="change-7d"></span>%
+              </span>
+              &nbsp;&nbsp;&nbsp;
+              <span title="Returning visitors">
+                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                <span id="return-7d"></span>%
+              </span>
+            </h4>
+            <% content_for :js do %>
+              loadVisitors(7);
+              loadMetric({
+                ids: viewId,
+                'start-date': '7daysAgo',
+                'end-date': 'today',
+                metrics: 'ga:users',
+                dimensions: 'ga:userType'
+              }, function(resp) {
+                var ret = Number(resp.rows[1][1]);
+                var total = Number(resp.rows[0][1])+ret
+                $("#return-7d").text(Math.floor(ret/total*100));
+              });
+            <% end %>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Visitors last 30 days</h5>
+            <h1 id="visitors-30d"></h1>
+            <h4>
+              <span title="Change from previous 30 days" id="changeset-30d">
+                <span id="arrow-30d" class="glyphicon" aria-hidden="true"></span>
+                <span id="change-30d"></span>%
+              </span>
+              &nbsp;&nbsp;&nbsp;
+              <span title="Returning visitors">
+                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                <span id="return-30d"></span>%
+              </span>
+            </h4>
+            <% content_for :js do %>
+              loadVisitors(30);
+              loadMetric({
+                ids: viewId,
+                'start-date': '30daysAgo',
+                'end-date': 'today',
+                metrics: 'ga:users',
+                dimensions: 'ga:userType'
+              }, function(resp) {
+                var ret = Number(resp.rows[1][1]);
+                var total = Number(resp.rows[0][1])+ret
+                $("#return-30d").text(Math.floor(ret/total*100));
+              });
+            <% end %>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div id="users-over-last-month"></div>
+          <% content_for :js do %>
+            loadChart({
+              'container': 'users-over-last-month',
+              'type': 'LINE',
+              'options': {
+                'width': '100%',
+                'series': {
+                  0: {
+                    labelInLegend: "Visitors",
+                    visibleInLegend: false
+                  }
+                }
+              }
+            }, {
+              'ids': viewId,
+              'start-date': '30daysAgo',
+              'end-date': 'yesterday',
+              'metrics': 'ga:users',
+              'dimensions': 'ga:date'
+            });
+          <% end %>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-6 small">
+            <h5>Top Content</h5>
+            <div id="top-pages" class="text-left"></div>
+            <% content_for :js do %>
+              loadChart({
+                'container': 'top-pages',
+                'type': 'TABLE',
+                'options': {
+                  'width': '100%'
+                }
+              }, {
+                'ids': viewId,
+                'start-date': '30daysAgo',
+                'end-date': 'today',
+                'metrics': 'ga:pageviews',
+                'dimensions': 'ga:pagePath',
+                'sort': '-ga:pageviews',
+                'filters': 'ga:pagePath!=/;ga:pagePath!=/blog/;ga:pagePath!=/blog/page2/;ga:pagePath!=/wiki/',
+                'max-results': 10
+              });
+            <% end %>
+          </div>
+          <div class="col-md-6 small">
+            <h5>Top Referrers</h5>
+            <div id="top-referrers" class="text-left"></div>
+            <% content_for :js do %>
+              loadChart({
+                'container': 'top-referrers',
+                'type': 'TABLE',
+                'options': {
+                  'width': '100%'
+                }
+              }, {
+                'ids': viewId,
+                'start-date': '30daysAgo',
+                'end-date': 'today',
+                'metrics': 'ga:pageviews',
+                'dimensions': 'ga:fullReferrer',
+                'sort': '-ga:pageviews',
+                'filters': 'ga:fullReferrer!=google;ga:fullReferrer!=bing;ga:fullReferrer!=(direct)',
+                'max-results': 10
+              });
+            <% end %>
+          </div>
+        </div>
+
+        <div class="row text-center" style="margin-top: 20px;">
+          <div class="col-md-4">
+            <h5>Top Channels</h5>
+            <div id="top-channels"></div>
+            <% content_for :js do %>
+              loadChart({
+                'container': 'top-channels',
+                'type': 'PIE',
+                'options': {
+                  'width': '100%'
+                }
+              }, {
+                'ids': viewId,
+                'start-date': '30daysAgo',
+                'end-date': 'today',
+                'metrics': 'ga:pageviews',
+                'dimensions': 'ga:channelGrouping',
+                'sort': '-ga:pageviews',
+                'max-results': 10
+              });
+            <% end %>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Top Networks</h5>
+            <div id="top-networks"></div>
+            <% content_for :js do %>
+              loadChart({
+                'container': 'top-networks',
+                'type': 'PIE',
+                'options': {
+                  'width': '100%'
+                }
+              }, {
+                'ids': viewId,
+                'start-date': '30daysAgo',
+                'end-date': 'today',
+                'metrics': 'ga:pageviews',
+                'dimensions': 'ga:socialNetwork',
+                'sort': '-ga:pageviews',
+                'filters': 'ga:socialNetwork!=(not set)',
+                'max-results': 10
+              });
+            <% end %>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Top Countries</h5>
+            <div id="top-country"></div>
+            <% content_for :js do %>
+              loadChart({
+                'container': 'top-country',
+                'type': 'PIE',
+                'options': {
+                  'width': '100%'
+                }
+              }, {
+                'ids': viewId,
+                'start-date': '30daysAgo',
+                'end-date': 'today',
+                'metrics': 'ga:pageviews',
+                'dimensions': 'ga:country',
+                'sort': '-ga:pageviews',
+                'max-results': 10
+              });
+            <% end %>
+          </div>
+        </div>
+
+      </div>
+
+      <% content_for :js do %>
+        (function(w,d,s,g,js,fs){
+          g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
+          js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
+          js.src='https://apis.google.com/js/platform.js';
+          fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
+        }(window,document,'script'));
+
+        gapi.analytics.ready(function() {
+          $.ajax({
+            url: "https://progrium-analytics.herokuapp.com/token",
+            success: function(data) {
+              gapi.analytics.auth.authorize({
+                'serverAuth': {
+                  'access_token': data.token
+                }
+              });
+              loaded = true;
+              $(document).trigger("authed");
+            }
+          });
+        });
+      <% end %>
+
+
+</main>

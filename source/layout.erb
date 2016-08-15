@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Lora:400,700,400italic|Vollkorn:400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag 'all' %>
+    <%= yield_content :head %>
   </head>
   <body>
   <div id="wrapper">
@@ -38,6 +39,9 @@
       var host = "progrium.com";
       if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
+    </script>
+    <script type="text/javascript">
+      <%= yield_content :js %>
     </script>
   </body>
 </html>
