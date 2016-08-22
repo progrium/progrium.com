@@ -2,6 +2,20 @@
 
 Beyond projects that I can call my own, I've had the privilege to be involved or affiliated with some great people and projects. Together we have had quite an impact on the world, changing individuals lives to influencing major technological and cultural phenomena. Here is a place I feel comfortable sharing some of them.
 
+Theses are some highlights with more details below:
+
+* Started DevHouse, "mother of modern hackathons" inspiring Facebook's internal hackathons
+* Ran the website where many indie games were first announced/uploaded, including Minecraft
+* Coined and first evangelized webhooks, influencing implementation at GitHub and Slack
+* Worked with friends at NASA Ames to build what would become OpenStack
+* Built a tool called Localtunnel, which directly inspired Ngrok
+* Co-developed Docker and then helped very early adoption. Later added its plugin system.
+* Built RequestBin, the canonical tool to debug webhooks and inspect HTTP requests
+* Built Dokku as a talk demo, now one of the most popular open source PaaS projects
+* A bunch of other stuff in the Docker ecosystem nobody gives me credit for :)
+* Co-founded Hacker Dojo in Mountain View, the largest non-profit hackerspace in the country
+* Executive producer for an award winning documentary called Indie Game: The Movie
+
 Most of these trace back to 2005 at the dawn of "Web 2.0" and a legendary event and community I started with friends called [SuperHappyDevHouse](https://en.wikipedia.org/wiki/SuperHappyDevHouse) (which I refer to as DevHouse). 
 
 ## Hackathons
