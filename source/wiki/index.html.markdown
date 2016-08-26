@@ -13,13 +13,13 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
  * [Beyond Startups](BeyondStartups)
  * [Generativity](Generativity)
  * [Programmability](Programmability)
+ * [OpenOps](OpenOps)
  
 Coming soon...
 
  * [Continuous Programming](ContinuousProgramming)
  * [Program the World](ProgramTheWorld)
  * [Autosustainable Services](Autosustainable)
- * [OpenOps](OpenOps)
  * [Webhooks](Webhooks)
  * [Evented Web](EventedWeb)
  * [Megalith](Megalith)
