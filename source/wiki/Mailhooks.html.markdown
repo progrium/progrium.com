@@ -10,7 +10,7 @@ Like a number of my projects, I wrote Mailhooks several times. The first time, a
 
 Back then I lived in the south bay, which is where I grew up. I was spending a lot of time with friends that I met at a LAN party called LGLAN. They later helped found and organize SuperHappyDevHouse. One of our non-tech activities was hiking, though most of the time we'd be talking about tech. During one of these hikes, we idealized a scenario that would only really be possible with Mailhooks.
 
-At the time, a few of us had the Danger Hiptop phone, marketed by T-Mobile as the Sidekick. It was a smart phone ahead of its time, pre-iPhone, with a large display, builtin camera, and a qwerty keyboard. It also had an open app store and developer ecosystem. One of the apps you could buy was an SSH client. We also used the camera quite a bit. The easiest way to get the photos to your laptop was via email, which is still often true today. Or we'd email directly to Flickr using their email upload address.
+At the time, a few of us had the [Danger Hiptop](https://en.wikipedia.org/wiki/Danger_Hiptop) phone, marketed by T-Mobile as the Sidekick. It was a smart phone ahead of its time, pre-iPhone, with a large display, builtin camera, and a qwerty keyboard. It also had an open app store and developer ecosystem. One of the apps you could buy was an SSH client. We also used the camera quite a bit. The easiest way to get the photos to your laptop was via email, which is still often true today. Or we'd email directly to Flickr using their email upload address.
 
 This inspired a number of ideas that came up during this hike. One idea was an email service that would take a bunch of photo attachments, stitch them together into an animated GIF and email it back to you. Then we thought it would be cool if we were able to make this right there while hiking. It was theoretically possible, we had SSH clients with us, so we could SSH into a server and write some PHP that shelled out to ImageMagick to make the GIF from the images. The hard part was getting the images, ideally via email.
 
@@ -36,4 +36,4 @@ That made it seem like there was potential, so I talked a friend into partnering
 
 The way this ended, if I recall, was rather anti-climactic. The guy I was working with sort of disappeared. That killed any motivation to keep trying and I let mailhook bitrot until I remade it in 2009. Similarly, I let that bitrot, though it did run for years on App Engine with no maintenance. 
 
-That said, I will say this perhaps isn't the end of the Mailhooks story. I've learned a lot since then and have a much more cohesive vision for a lot of the ideas from that era. 
+That said, I will say this perhaps isn't the end of the entire Mailhooks story. I've learned a lot since then and have a much more cohesive vision for a lot of the ideas from that era. 
