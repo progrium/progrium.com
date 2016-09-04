@@ -26,7 +26,7 @@ That said, [SendGrid](https://sendgrid.com/) does have exactly what Mailhooks is
 
 ## Downfall Story
 
-Actually this sotry is the downfall of version one, but both versions had a similar fate. The second implementation happened in 2009 and was on App Engine. It used their incoming email interface, which was, not surprisingly to me, based on HTTP like a webhook. At that point it became a convenience around App Engine's email hook. Any app I wanted to make with email I just made directly using App Engine. This is why I never really talked about it except for in talks as an example story around webhooks. 
+Actually this story is the downfall of version one, but both versions had a similar fate. The second implementation happened in 2009 and was on App Engine. It used their incoming email interface, which was, not surprisingly to me, based on HTTP like a webhook. At that point it became a convenience around App Engine's email hook. Any app I wanted to make with email I just made directly using App Engine. This is why I never really talked about it except for in talks as an example story around webhooks. 
 
 The downfall story I want to tell is how a friend and I attempted to make a small business around Mailhooks (then mailhook.org). It's actually pretty short, but is an experience that helped shape my desire for a vehicle [other than business](http://progrium.com/wiki/BeyondStartups/) to run a web app.
 
