@@ -18,9 +18,9 @@ If Mailhooks existed, we'd have everything to literally build this on our phones
 
 I'm quite certain the moment I got home I started working on Mailhooks. I even built a prototype of that email attachement to GIF service idea with it.
 
-I like this story because it paints a picture of how we thought the world should be, and how I still think it should be 10 years later. It *should* have been that easy to wire together, *on our phones, while hiking*. And not just for veteran programmers, but for some kids that just knew basic web programming and had a cool idea. 
+I like this story because it paints a picture of how we thought the world should be, and how I still think it should be 10 years later. It *should* have been that easy to wire together, *on our phones, while hiking*. And not just for veteran programmers, but in particular it should be easy for excited kids that know basic web programming and have a cool idea. 
 
-Just the other day on Facebook, I noticed my friend [Tantek](http://tantek.com/) bemoaning how difficult it would be to add an email interface to a project of his. Apparently difficult enough that it wasn't worth it. Still, today.
+Just the other day on Facebook, I noticed my friend [Tantek](http://tantek.com/), a veteran programmer, bemoaning how difficult it would be to add an email interface to a project of his. Apparently difficult enough that it wasn't worth it. Still, today.
 
 That said, [SendGrid](https://sendgrid.com/) does have exactly what Mailhooks is [as a feature now](https://sendgrid.com/docs/API_Reference/Webhooks/parse.html). And a few people have linked me to recent projects that do the same thing. In one case it was framed as "to make email bots". Yes, and plenty more. There is a demand for this, though I would posit not enough to start a company for.
 
