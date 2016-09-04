@@ -14,6 +14,7 @@ This wiki will focus on old projects, philosophies, and incubating ideas. A lot 
  * [Generativity](Generativity)
  * [Programmability](Programmability)
  * [OpenOps](OpenOps)
+ * [Mailhooks](Mailhooks)
  
 Coming soon...
 
