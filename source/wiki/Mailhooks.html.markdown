@@ -22,7 +22,7 @@ I like this story because it paints a picture of how we thought the world should
 
 Just the other day on Facebook, I noticed my friend [Tantek](http://tantek.com/) bemoaning how difficult it would be to add an email interface to a project of his. Apparently difficult enough that it wasn't worth it. Still, today.
 
-That said, SendGrid does have exactly what Mailhooks is as a feature now. And a few people have linked me to recent projects that do the same thing. In one case it was framed as "to make email bots". Yes, and plenty more. There is a demand for this, though I would posit not enough to start a company for.
+That said, [SendGrid](https://sendgrid.com/) does have exactly what Mailhooks is [as a feature now](https://sendgrid.com/docs/API_Reference/Webhooks/parse.html). And a few people have linked me to recent projects that do the same thing. In one case it was framed as "to make email bots". Yes, and plenty more. There is a demand for this, though I would posit not enough to start a company for.
 
 ## Downfall Story
 
