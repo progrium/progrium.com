@@ -14,7 +14,7 @@ At the time, a few of us had the [Danger Hiptop](https://en.wikipedia.org/wiki/D
 
 This inspired a number of ideas that came up during this hike. One idea was an email service that would take a bunch of photo attachments, stitch them together into an animated GIF and email it back to you. Then we thought it would be cool if we were able to make this right there while hiking. It was theoretically possible, we had SSH clients with us, so we could SSH into a server and write some PHP that shelled out to ImageMagick to make the GIF from the images. The hard part was getting the images, ideally via email.
 
-If Mailhooks existed, we'd have everything to literally build this on our phones while hiking, circa 2005. It would probably have taken only a few minutes. Looking back, we could have configured Postfix via SSH, but that archaic system was not an easy one to work with. Mailhooks originally relied on Postfix and it was not something a kid with my experience then could easily throw together. Once I had Mailhooks, it was.
+If Mailhooks existed, we'd have everything to literally build this on our phones while hiking, circa 2005. It would probably have taken only a few minutes. Looking back, we could have configured Postfix via SSH, but that archaic system is not an easy one to work with. Mailhooks originally relied on Postfix and it was not something a kid with my experience then could easily throw together. The point being, once I had Mailhooks, these email ideas *were* easy to throw together.
 
 I'm quite certain the moment I got home I started working on Mailhooks. I even built a prototype of that email attachement to GIF service idea with it.
 
