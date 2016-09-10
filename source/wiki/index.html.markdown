@@ -1,4 +1,4 @@
-# Wiki. Hello
+# Wiki
 
 My goal is to use this wiki as a way to export knowledge and ideas. Most people would use a blog for this, but blogs are too temporally oriented. A lot of what I want to blog about requires a lot of context that I have no way to reference. Here I can bootstrap that context.
 
