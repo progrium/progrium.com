@@ -21,10 +21,12 @@ layout: layout
 
         function loadChart(chart, query) {
           $(document).on("authed", function() {
+            query["dataSourceUrl"] = "http://localhost:8080";
             new gapi.analytics.googleCharts.DataChart({
               query: query,
               chart: chart
             }).execute();
+            //console.log(chart);
           });
         }
 
