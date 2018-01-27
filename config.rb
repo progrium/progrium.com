@@ -48,6 +48,8 @@ page "/blog/atom.xml", layout: false
 page "/wiki/*", layout: "wiki"
 page "/404.html", directory_index: false
 
+page "/", :layout => false
+
 helpers do
   def page_title
     if current_article
