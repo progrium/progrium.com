@@ -1,0 +1,204 @@
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+  }
+  .fullscreen-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    overflow:hidden;
+    z-index: -100;
+}
+
+
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .text-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .color {
+    background-color: black;
+    opacity: 40%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAYAAABGM/VAAAAAGUlEQVQYV2NkYGD4z4AGGHEJoitkAKnEAACLmwID82i1VgAAAABJRU5ErkJggg==) repeat;
+  }
+  .text {
+    position: absolute;
+    font-family: "Nunito";
+    color: white;
+    font-size: 84px;
+    line-height: 1.1em;
+    top: 30%;
+    margin-left: 10%;
+    margin-right: 20%;
+    font-weight: 600;
+    filter: drop-shadow(5px 2px 2px #6666ff) drop-shadow(-3px 1px 2px #ff6666);
+  }
+  .text p {
+    margin-top: 0;
+font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight: 400;
+
+  }
+  .subtext {
+    font-family: "Nunito";
+    color: white;
+    font-size: 30px;
+    line-height: 1.1em;
+    margin-top: 200px;
+    margin-left: 10%;
+    margin-right: 20%;
+    font-weight: 600;
+    filter: drop-shadow(5px 2px 2px #6666ff) drop-shadow(-3px 1px 2px #ff6666);
+  }
+  .video {
+    transform:scale(1.3);
+  }
+  img {
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 20px;
+    width: 234px;
+    height: 108px;
+    transform:scale(0.8);
+    filter: drop-shadow(2px 1px 1px #000) drop-shadow(-1px 0px 1px #6666ff);
+  }
+  .bottom-bg {
+    background: black;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 40%;
+    color: white;
+    padding: 30px;
+    padding-left: 10%;
+  }
+  .bottom {
+    color: white;
+    opacity: 100%;
+    height: 96px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    padding-left: 10%;
+        
+    
+    
+  }
+  .bottom .words {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .bottom div, .bottom input {
+    font-family: 'Roboto Mono', monospace;
+  }
+  .bottom input.email {
+    font-family: 'Roboto Mono', monospace;
+    
+    min-width: 400px;
+    font-size: 24px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    color: white;
+    background: #333;
+    opacity: 80%;
+    border: 0px;
+    border-radius: 10px;
+  }
+  .bottom input {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+  }
+  .bottom input:focus {
+    filter: drop-shadow(0px 0px 4px #6666ff);
+    outline-offset: 0px !important;
+    outline: none !important;
+  }
+  .submit {
+    width: 200px;
+    background: linear-gradient(#ff6666, #6666ff) !important;
+  }
+  form {
+    background: none;
+    border: 0;
+    padding: 0;
+  }
+</style>
+<body>
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="video overlay">
+        <source src="/BGv1.1.mov" type="video/mp4">
+    </video>
+  </div>
+  <div class="overlay color"></div>
+  <div class="text-overlay">
+    <div class="text">
+      Tools for the<br> Imagination Age
+    </div>
+  </div>
+  <img src="logo.png" />
+  <div class="bottom-bg"></div>
+  <div class="bottom container">
+    <div class="row">
+      <div class="words col-sm-4">Let us slide into your inbox<br />and you can follow along.</div> 
+      <div class="col-sm-8">
+       
+        <!-- Begin Mailchimp Signup Form -->
+        
+       
+        <form action="https://progrium.us13.list-manage.com/subscribe/post?u=0dda02db0663c0132866c08ae&amp;id=f964b318bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required autofocus />
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0dda02db0663c0132866c08ae_f964b318bd" tabindex="-1" value=""></div>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button submit">
+            </div>
+        </form>
+        
+
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
