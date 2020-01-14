@@ -11,14 +11,14 @@
     overflow: hidden;
   }
   video {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
-    min-height: 50%;
-    min-width: 50%;
+    min-height: 100%;
+    min-width: 80%;
   }
   .fullscreen-bg {
     position: absolute;
@@ -30,11 +30,8 @@
     z-index: -100;
 }
 
-
-
-
   .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -42,12 +39,12 @@
   }
   .text-overlay {
     position: absolute;
-    width: 100%;
+    width: 115%;
     height: 100%;
   }
   .color {
     background-color: black;
-    opacity: 40%;
+    opacity: 0.4;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAYAAABGM/VAAAAAGUlEQVQYV2NkYGD4z4AGGHEJoitkAKnEAACLmwID82i1VgAAAABJRU5ErkJggg==) repeat;
   }
   .text {
@@ -64,7 +61,7 @@
   }
   .text p {
     margin-top: 0;
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 30px;
     font-weight: 400;
 
@@ -95,48 +92,46 @@ font-family: 'Roboto Mono', monospace;
   .bottom-bg {
     background: black;
     height: 120px;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 40%;
+    opacity: 0.4;
     color: white;
     padding: 30px;
     padding-left: 10%;
   }
   .bottom {
     color: white;
-    opacity: 100%;
+    opacity: 1;
     height: 96px;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     padding: 30px;
     padding-left: 10%;
-        
-    
-    
   }
   .bottom .words {
-    font-size: 24px;
+    margin-top: 2px;
+    font-size: 22px;
     font-weight: 400;
+    word-spacing: -6px;
+    line-height: 1.35em;
   }
   .bottom div, .bottom input {
     font-family: 'Roboto Mono', monospace;
   }
   .bottom input.email {
     font-family: 'Roboto Mono', monospace;
-    
-    min-width: 400px;
-    font-size: 24px;
+    min-width: 352px;
+    font-size: 20px;
     height: 50px;
-    margin-top: 10px;
     padding: 5px;
-    padding-left: 15px;
+    padding-left: 10px;
     color: white;
     background: #333;
-    opacity: 80%;
+    opacity: 0.8;
     border: 0px;
     border-radius: 10px;
   }
@@ -144,7 +139,8 @@ font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto Mono', monospace;
     font-size: 24px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 3px;
+    margin-bottom: 0;
     color: white;
     border: 0px;
     border-radius: 10px;
