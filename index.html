@@ -89,6 +89,30 @@
       transform: scale(0.8);
       filter: drop-shadow(2px 1px 1px #000) drop-shadow(-1px 0px 1px #6666ff);
     }
+    nav {
+      position: absolute;
+      top: 36px;
+      right: 10%;
+      background: transparent;
+      margin: 0;
+      border: none;
+    }
+    nav a.link,
+    nav a.link:visited,
+    nav a.link:focus {
+      display: block;
+      background: transparent;
+      font-family: 'Nunito';
+      font-size: 22px;
+      line-height: 1.35em;
+      color: white;
+      padding: 0;
+      border: none;
+    }
+    nav a.link:hover {
+      background: transparent;
+      filter: drop-shadow(5px 2px 2px #6666ff) drop-shadow(-3px 1px 2px #ff6666);
+    }
     .bottom-bg {
       background: black;
       height: 120px;
@@ -175,6 +199,9 @@
       </div>
     </div>
     <img src="logo.png" />
+    <nav>
+      <a href="/blog" class="link">Blog</a>
+    </nav>
     <div class="bottom-bg"></div>
     <div class="bottom container">
       <div class="row">
