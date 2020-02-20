@@ -1,0 +1,58 @@
+{{!< ../default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{#if @member}}
+
+{{!-- The tag below includes the theme header - partials/header.hbs --}}
+{{> header}}
+
+{{!-- The content area on the subscribe page --}}
+<div id="content" class="site-content fadeInDown delay_075s">
+	<main id="main" class="outer">
+
+		<article class="site-account post page post-full inner">
+
+			<header class="post-header">
+				<h1 class="post-title">{{t "Account Details"}}</h1>
+			</header><!-- .page-header -->
+
+			<div class="post-content">
+
+				<p>{{{t "You are signed in as <strong>{email}</strong>." email=@member.email}}} <a href="#signout" data-members-signout>{{t "Sign out"}}</a>.</p>
+
+				<h2 class="underline">{{t "Credentials"}}</h2>
+				<ul class="account-info">
+					{{#if @member.name}}
+					<li><strong>{{t "Name:"}}</strong> {{@member.name}}</li>
+					{{/if}}
+					<li><strong>{{t "Email:"}}</strong> {{@member.email}}</li>
+				</ul>
+
+				<h2 class="underline">{{t "Subscription"}}</h2>
+				{{#if @member.paid}}
+				<p>{{{t "You have an active <strong>{sitetitle}</strong> account with access to all areas. You're all set, but if you need any help, get in touch with us and we'd be happy to help." sitetitle=@site.title}}}</p>
+				{{#foreach @member.subscriptions}}
+				<ul class="account-info">
+					<li><strong>{{t "Subscription type:"}}</strong> {{plan.nickname}}</li>
+					<li><strong>{{t "Card:"}}</strong> **** **** **** {{default_payment_card_last4}}</li>
+					<li><strong>{{t "Renewal:"}}</strong> {{date current_period_end format="MMMM DD, YYYY"}}</li>
+				</ul>
+				{{/foreach}}
+				{{else}}
+				<p>{{{t "You are subscribed to free updates from <strong>{sitetitle}</strong>, but don't have a paid subscription to unlock full access. Upgrade your account and get access to all areas." sitetitle=@site.title}}}</p>
+				<p><a class="btn" href="{{@site.url}}/subscribe/">{{t "See subscription options"}}</a></p>
+				{{/if}}
+
+			</div><!-- .page-content -->
+
+		</article><!-- .post -->
+
+	</main><!-- .site-main -->
+</div><!-- .site-content -->
+
+{{else}}
+
+{{!-- Not logged in: Redirect to signin --}}
+<script>window.location = '{{@site.url}}/signin/';</script>
+
+{{/if}}

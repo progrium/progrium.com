@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+	{{!-- Document Settings --}}
+	<meta charset="utf-8">
+
+	{{!-- Page Meta --}}
+	<title>{{meta_title}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	{{!-- Styles --}}
+	{{> custom-fonts}}
+	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+	{{!-- Outputs SEO meta+structured data and other important settings --}}
+	{{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+	<div id="page" class="site">
+		{{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+		{{{body}}}
+		{{!-- The tag below includes the theme footer - partials/footer.hbs --}}
+		{{> footer}}
+	</div><!-- .site -->
+	<div id="site-overlay" class="site-overlay"></div>
+	{{!-- The tag below includes the theme sidebar - partials/sidebar.hbs --}}
+	{{> sidebar}}
+	{{!-- The tag below includes the member menu - partials/member-menu.hbs --}}
+	{{#if @labs.members}}
+		{{#if @member}}
+		{{> "member-menu"}}
+		{{/if}}
+		{{> "member-notifications"}}
+	{{/if}}
+
+	{{!-- Scripts --}}
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="{{asset "js/jquery-3.4.1.min.js"}}"><\/script>');</script>
+	<script src="{{asset "js/plugins.js"}}"></script>
+	<script src="{{asset "js/custom.js"}}"></script>
+
+	{{#if @labs.members}}
+	{{!-- Scripts for Members subscription --}}
+	<script>
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+					results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+
+		var action = getParameterByName('action');
+		var stripe = getParameterByName('stripe');
+
+		if (action == 'subscribe') {
+			document.body.classList.add("subscribe-success");
+		}
+		if (action == 'signup') {
+			document.body.classList.add("signup-success");
+		}
+		if (action == 'signin') {
+			document.body.classList.add("signin-success");
+		}
+		if (stripe == 'success') {
+			document.body.classList.add("checkout-success");
+		}
+
+		var notifClose = document.querySelectorAll('.notification-close');
+		for (var i = 0; i < notifClose.length; i++) {
+			notifClose[i].addEventListener('click', function(e){
+				this.parentNode.classList.add('closed');
+				var uri = window.location.toString();
+								if (uri.indexOf("?") > 0) {
+										var clean_uri = uri.substring(0, uri.indexOf("?"));
+										window.history.replaceState({}, document.title, clean_uri);
+								}
+				e.preventDefault();
+			});
+		}
+	</script>
+	{{/if}}
+
+	{{!-- Outputs important scripts and data --}}
+	{{ghost_foot}}
+
+</body>
+</html>

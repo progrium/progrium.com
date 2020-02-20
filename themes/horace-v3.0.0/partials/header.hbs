@@ -1,0 +1,32 @@
+{{!-- The header of the theme --}}
+<header id="masthead" class="site-header outer">
+	<div class="site-header-inside">
+		<div class="site-branding">
+			{{#if @site.logo}}
+			<p class="site-logo"><a href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}" alt="{{@site.title}}" /></a></p>
+			{{/if}}
+			{{#is "index"}}
+			<h1 class="site-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+			{{else}}
+			<p class="site-title"><a href="{{@site.url}}">{{@site.title}}</a></p>
+			{{/is}}
+		</div><!-- .site-branding -->
+		<nav id="main-navigation" class="site-navigation" aria-label="Primary Navigation">
+			{{navigation}}
+			<ul class="actions">
+				{{!-- If members enabled, show member subscribe and log in/out buttons --}}
+				{{#if @labs.members}}
+					{{^if @member.paid}}
+					<li class="action-item action-subscribe"><a href="{{@site.url}}/subscribe/" class="btn btn-outlined">{{t "Subscribe"}}</a></li>
+					{{/if}}
+					{{#if @member}}
+					<li class="action-item"><button id="member-menu-show" class="btn btn-icon btn-outlined">{{> "icons/user"}}</button></li>
+					{{else}}
+					<li class="action-item"><a class="btn btn-icon btn-outlined" href="{{@site.url}}/signin/"><span class="screen-reader-text">{{t "Sign in"}}</span>{{> "icons/user"}}</a></li>
+					{{/if}}
+				{{/if}}
+				<li class="action-item"><button id="sidebar-show" class="sidebar-toggle btn btn-icon"><span class="screen-reader-text">{{t "Open Sidebar"}}</span><span class="icon-more" aria-hidden="true"></span></button></li>
+			</ul>
+		</nav><!-- .site-navigation -->
+	</div><!-- .site-header-inside -->
+</header><!-- .site-header -->

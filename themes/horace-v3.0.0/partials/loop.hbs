@@ -1,0 +1,33 @@
+{{!-- The post loop with featured posts excluded --}}
+{{#get "posts" include="tags" limit=@config.posts_per_page filter="featured:false" page=pagination.page}}
+
+	<div class="post-feed inner-wide">
+		{{#foreach posts visibility="all"}}
+		<article class="{{post_class}}">
+			<header class="post-header">
+				<div class="post-meta">
+					<time class="published" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+				</div><!-- .post-meta -->
+				<h2 class="post-title"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h2>
+			</header><!-- .post-header -->
+			{{#if feature_image}}
+			<a href="{{url}}" class="post-thumbnail"><img srcset="{{img_url feature_image size="xxs"}} 150w, {{img_url feature_image size="xs"}} 300w, {{img_url feature_image size="s"}} 600w, {{img_url feature_image size="m"}} 800w, {{img_url feature_image size="l"}} 1100w, {{img_url feature_image size="xl"}} 1600w" sizes="(max-width: 766px) 94vw, 720px" src="{{img_url feature_image size="m"}}" alt="{{title}}" /></a>
+			{{/if}}
+			<div class="post-content">
+				{{#if custom_excerpt}}
+				<p>{{custom_excerpt}}</p>
+				{{else}}
+				<p>{{excerpt words="40"}}&hellip;</p>
+				{{/if}}
+				{{#if tags}}
+				<p class="post-tags">{{tags separator=" "}}</p>
+				{{/if}}
+			</div><!-- .post-content -->
+		</article><!-- .post -->
+		{{/foreach}}
+	</div><!-- .post-feed -->
+
+	{{!-- Previous/next page links - displayed on every page --}}
+	{{pagination}}
+
+{{/get}}

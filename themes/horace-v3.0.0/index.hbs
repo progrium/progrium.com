@@ -1,0 +1,15 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The tag below includes the theme header - partials/header.hbs --}}
+{{> header}}
+
+{{!-- The content area on the blog page --}}
+<div id="content" class="site-content">
+	<main id="main" class="site-main outer">
+
+		{{!-- The tag below includes the post loop - partials/loop.hbs --}}
+		{{> "loop"}}
+
+	</main><!-- .site-main -->
+</div><!-- .site-content -->

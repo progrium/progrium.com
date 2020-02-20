@@ -1,0 +1,126 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The tag below includes the theme header - partials/header.hbs --}}
+{{> header}}
+
+{{!-- The content area on the single post page --}}
+<div id="content" class="site-content fadeInDown delay_075s">
+	<main id="main" class="site-main outer">
+
+		{{!-- Everything inside the #post tags pulls data from the post --}}
+		{{#post}}
+
+		<article class="{{post_class}} post-full inner">
+
+			<header class="post-header">
+				<div class="post-meta">
+					{{#if featured}}<span class="featured-badge">{{t "Featured"}}</span> &sol; {{/if}}<time class="published" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+				</div><!-- .post-meta -->
+				<h1 class="post-title">{{title}}</h1>
+			</header><!-- .post-header -->
+
+			{{#if feature_image}}
+			<div class="post-thumbnail"><img srcset="{{img_url feature_image size="xs"}} 300w, {{img_url feature_image size="s"}} 600w, {{img_url feature_image size="m"}} 800w, {{img_url feature_image size="l"}} 1100w, {{img_url feature_image size="xl"}} 1600w" sizes="(max-width: 1140px) 94vw, 1100px" src="{{img_url feature_image size="l"}}" alt="{{title}}" /></div>
+			{{/if}}
+
+			{{!-- If the user has access, show post content --}}
+			{{#if access}}
+
+			<div class="post-content">
+				{{content}}
+			</div><!-- .post-content -->
+
+			<footer class="post-footer">
+				{{#if tags}}
+				<p class="post-tags">{{tags separator=" "}}</p>
+				{{/if}}
+				<p class="post-share">
+					<span class="post-share-title">{{t "Share:"}}</span>
+					<a target="_blank" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" rel="noopener">Twitter</a>
+					<a target="_blank" href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}" rel="noopener">Facebook</a>
+					<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&amp;title={{encode title}}&amp;source={{encode @site.title}}" rel="noopener">LinkedIn</a>
+				</p>
+			</footer><!-- .post-footer -->
+
+			{{!-- Everything inside the #primary_author tags pulls data from the author --}}
+			{{#primary_author}}
+			<div class="author-box">
+				{{#if profile_image}}
+				<div class="author-avatar"><img src="{{img_url profile_image size="xxs"}}" alt="{{name}}" class="avatar" /></div>
+				{{/if}}
+				<div class="author-details">
+					<h2 class="author-title">{{t "About {authorname}" authorname=name}}</h2>
+					{{#if bio}}
+					<p class="author-description">{{bio}}</p>
+					{{/if}}
+				</div>
+			</div><!-- .author-box -->
+			{{/primary_author}}
+
+			{{!-- The tag below includes the theme comments - partials/comments.hbs --}}
+			{{> comments}}
+
+			{{else}}
+
+			<div class="post-excerpt">
+				<p>{{excerpt words="40"}}</p>
+			</div><!-- .post-content -->
+
+			<section class="signup-box {{visibility}}">
+				{{!-- If it's a post for paying subscribers, show upgrade --}}
+				<div class="signup-box-paid">
+					<h2 class="signup-box-title">{{t "This post is for paying subscribers only"}}</h2>
+					{{#if @member}}
+					<p>{{t "Upgrade your account to keep reading this post and get access to the full library of posts for paying subscribers only."}}</p>
+					<a class="btn" href="{{@site.url}}/subscribe/">{{t "See subscription options"}}</a>
+					{{else}}
+					<p>{{t "Subscribe to get access to the full library of posts for paying subscribers only."}}</p>
+					<a class="btn" href="{{@site.url}}/subscribe/">{{t "Subscribe now"}}</a>
+					<p class="note">{{t "Already have an account?"}} <a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></p>
+					{{/if}}
+				</div><!-- .signup-box-paid -->
+				{{!-- If it's a post for subscribers, show sign up --}}
+				<div class="signup-box-members">
+					<h2 class="signup-box-title">{{t "This post is for subscribers only"}}</h2>
+					<p>{{t "Subscribe to get access to the full library of posts for subscribers only."}}</p>
+					<a class="btn" href="{{@site.url}}/subscribe/">{{t "Subscribe now"}}</a>
+					<p class="note">{{t "Already have an account?"}} <a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></p>
+				</div><!-- .signup-box-members -->
+			</section><!-- .signup-box -->
+
+			{{/if}}
+
+		</article><!-- .post -->
+
+		{{!-- Related posts --}}
+		{{#get "posts" filter="tags:[{{tags[*].slug}}]+id:-{{id}}" limit="3" include="tags" as |related_posts|}}
+			{{#foreach related_posts visibility="all"}}
+				{{#if @first}}
+				<section class="read-next inner">
+					<h2 class="read-next-title underline">{{t "Read Next"}}</h2>
+				{{/if}}
+					<article class="{{post_class}}">
+						<header class="post-header">
+							<div class="post-meta">
+								<time class="published" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+							</div><!-- .post-meta -->
+							<h3 class="post-title"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h3>
+							{{#if tags}}
+							<p class="post-tags">{{tags separator=" "}}</p>
+							{{/if}}
+						</header><!-- .post-header -->
+						{{#if feature_image}}
+						<a href="{{url}}" class="post-thumbnail"><img srcset="{{img_url feature_image size="xxs"}}, {{img_url feature_image size="xs"}} 2x" src="{{img_url feature_image size="xxs"}}" alt="{{title}}" /></a>
+						{{/if}}
+					</article><!-- .post -->
+				{{#if @last}}
+				</section><!-- .read-next -->
+				{{/if}}
+			{{/foreach}}
+		{{/get}}
+
+		{{/post}}
+
+	</main><!-- .site-main -->
+</div><!-- .site-content -->

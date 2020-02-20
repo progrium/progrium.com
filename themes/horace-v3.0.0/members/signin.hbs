@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+	{{!-- Document Settings --}}
+	<meta charset="utf-8">
+
+	{{!-- Page Meta --}}
+	<title>{{@site.title}} — {{t "Sign In"}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	{{!-- Styles --}}
+	{{> custom-fonts}}
+	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+	{{#if @site.cover_image}}
+		{{> site-cover image=@site.cover_image}}
+	{{/if}}
+
+	{{ghost_head}}
+</head>
+<body class="special-template">
+
+	{{#if @member}}
+
+	{{!-- Logged in: Redirect home --}}
+	<script>window.location = '{{@site.url}}';</script>
+
+	{{else}}
+
+	<div id="page" class="site">
+		<div id="content" class="site-content">
+			<nav class="top-navigation">
+				<a class="btn btn-outlined" href="{{@site.url}}">{{{t "&larr; Back to homepage"}}}</a>
+			</nav>
+			<main id="main" class="site-main outer">
+				<section class="site-signin inner-wide">
+					<header class="page-header inner">
+						<h1 class="page-title">{{t "Sign in to Your Account"}}</h1>
+						<p class="page-description">{{t "Don't have an account yet?"}} <a href="{{@site.url}}/signup/">{{t "Sign up"}}</a></p>
+					</header><!-- .page-header -->
+					<div class="page-content inner">
+						{{> "member-signin-form"}}
+					</div><!-- .page-content -->
+				</section>
+			</main><!-- .site-main -->
+		</div><!-- .site-content -->
+	</div><!-- .site -->
+
+	{{/if}}
+
+</body>
+</html>

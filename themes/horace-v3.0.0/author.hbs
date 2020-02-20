@@ -1,0 +1,23 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The tag below includes the theme header - partials/header.hbs --}}
+{{> header}}
+
+{{!-- The content area on the author archive page --}}
+<div id="content" class="site-content">
+	<main id="main" class="site-main outer">
+
+		{{!-- Everything inside the #author tags pulls data from the author --}}
+		{{#author}}
+		<header class="archive-header inner">
+			<h1 class="archive-title">{{name}}</h1>
+			<p class="archive-description">{{plural ../pagination.total empty=(t "A collection of 0 posts") singular=(t "A collection of % post") plural=(t "A collection of % posts")}}</p>
+		</header><!-- .archive-header -->
+		{{/author}}
+
+		{{!-- The tag below includes the post loop - partials/loop-archive.hbs --}}
+		{{> "loop-archive"}}
+
+	</main><!-- .site-main -->
+</div><!-- .site-content -->
