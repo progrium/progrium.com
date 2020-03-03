@@ -1,0 +1,19 @@
+{{!-- The footer at the very bottom of the screen --}}
+<footer id="colophon" class="site-footer outer">
+	<div class="site-footer-inside">
+
+		{{!-- The tag below includes the social links list - partials/social-links.hbs --}}
+		{{> "social-links"}}
+
+		{{#if @site.secondary_navigation}}
+		<nav id="secondary-navigation" class="footer-navigation" aria-label="Secondary Navigation">
+			{{navigation type="secondary"}}
+		</nav>
+		{{/if}}
+
+		<p class="site-info"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}. {{{t "Horace theme by {jgtlink}. Powered by {ghostlink}." jgtlink="<a target=\"_blank\" href=\"https://justgoodthemes.com/\" rel=\"noopener\">Just Good Themes</a>" ghostlink="<a target=\"_blank\" href=\"https://ghost.org\" rel=\"noopener\">Ghost</a>"}}}</p>
+
+		<p class="back-to-top"><a id="top-button" class="btn btn-secondary btn-icon" href="#page"><span class="icon icon-arrow-up" aria-hidden="true"></span><span class="screen-reader-text">{{t "Back to top"}}</span></a></p>
+
+	</div><!-- .site-footer-inside -->
+</footer><!-- .site-footer -->

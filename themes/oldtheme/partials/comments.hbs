@@ -1,0 +1,26 @@
+{{!-- The Disqus comments block --}}
+<section id="comments-area" class="comments-area">
+	<h2 class="comments-title underline">{{t "Comments"}}</h2>
+	<div class="comments-inside">
+		<div id="disqus_thread"></div>
+	</div><!-- .comments-inside -->
+	<div id="comments-overlay" class="comments-overlay">
+		<a href="#" id="comments-show" class="comments-show">{{t "Show comments"}}</a>
+	</div><!-- .comments-overlay -->
+	<noscript>{{{t "Please enable JavaScript to view the comments powered by {disquslink}." disquslink="<a href=\"https://disqus.com/?ref_noscript\" rel=\"nofollow\">Disqus</a>"}}}</noscript>
+</section><!-- .comments-area -->
+
+<script>
+	if (typeof disqus_shortname !== 'undefined' && disqus_shortname !== '') {
+		var disqus_config = function () {
+			this.page.url = '{{url absolute="true"}}';
+			this.page.identifier = 'ghost-{{comment_id}}';
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	}
+</script>

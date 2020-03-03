@@ -1,0 +1,12 @@
+{{!-- Newer and older posts links --}}
+<nav class="pagination inner">
+	<div class="nav-links">
+		{{#if prev}}
+		<a class="newer-posts btn btn-secondary btn-icon" href="{{page_url prev}}"><span class="icon icon-arrow-left" aria-hidden="true"></span><span class="screen-reader-text">{{t "Newer Posts"}}</span></a>
+		{{/if}}
+		<span class="page-number">{{t "Page {page} of {pages}" page=page pages=pages}}</span>
+		{{#if next}}
+		<a class="older-posts btn btn-secondary btn-icon" href="{{page_url next}}"><span class="screen-reader-text">{{t "Older Posts"}}</span><span class="icon icon-arrow-right" aria-hidden="true"></span></a>
+		{{/if}}
+	</div><!-- .nav-links -->
+</nav><!-- .pagination -->

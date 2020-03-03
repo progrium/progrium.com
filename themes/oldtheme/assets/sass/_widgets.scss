@@ -1,0 +1,150 @@
+/**
+ * 6. Widgets
+ */
+.widget {
+  font-size: 0.88889rem;
+  margin-bottom: 3.33333rem;
+
+  .widget-title {
+    color: #fff;
+  }
+
+  label {
+    color: #fff;
+    font-size: 0.77778rem;
+  }
+
+  input,
+  select,
+  textarea {
+    border: 0;
+  }
+
+  button,
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  a {
+    &:hover {
+      color: $gray-light;
+    }
+  }
+
+  .btn {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.widget-navigation {
+  .menu,
+  .actions {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-item {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+
+    a {
+      color: #fff;
+  
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  .action-item {
+    margin: 0 0 0.83333rem;
+  }
+
+  .btn {
+    display: block;
+  }
+}
+
+.widget-recent-posts {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 0.83333rem;
+  }
+
+  .post-header {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-bottom: 0.83333rem;
+  }
+
+  .post-meta {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+  }
+
+  .post-title {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .post-thumbnail {
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 0 0 0.83333rem 30px;
+    width: 90px;
+  }
+}
+
+.widget-tagcloud {
+  a {
+    border: 1px solid $gray-dark;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 10px 0.75em 0;
+    padding: 0.4em 20px;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+    &:hover {
+      border-color: $color-accent;
+      color: $color-accent;
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .widget-navigation {
+    .actions {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .widget-recent-posts {
+    .post-thumbnail {
+      margin-left: 10px;
+      width: 75px;
+    }
+  }
+}

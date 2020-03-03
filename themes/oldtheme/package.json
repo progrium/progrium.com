@@ -1,0 +1,47 @@
+{
+  "name": "horace",
+  "description": "A simple single-author Ghost theme for writers and bloggers.",
+  "demo": "https://horace.justgoodthemes.eu/",
+  "version": "3.0.0",
+  "engines": {
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
+  },
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "author": {
+    "name": "Just Good Themes",
+    "email": "hello@justgoodthemes.com",
+    "url": "https://justgoodthemes.com"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
+  "config": {
+    "posts_per_page": 5,
+    "image_sizes": {
+      "xxs": {
+        "width": 150
+      },
+      "xs": {
+        "width": 300
+      },
+      "s": {
+        "width": 600
+      },
+      "m": {
+        "width": 800
+      },
+      "l": {
+        "width": 1100
+      },
+      "xl": {
+        "width": 1600
+      }
+    }
+  }
+}
