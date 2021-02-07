@@ -1,0 +1,34 @@
+{{!-- The sidebar of the theme --}}
+<aside id="sidebar" class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="sidebar-inside">
+
+			<button id="sidebar-hide" class="btn btn-icon"><span class="screen-reader-text">{{t "Close Sidebar"}}</span><span aria-hidden="true" class="icon-close"></span></button>
+
+			{{!-- Includes the site navigation for small screens - partials/navigation.hbs --}}
+			{{#if @site.navigation}}
+			<nav id="sidebar-navigation" class="widget widget-navigation">
+				<h2 class="widget-title underline">{{t "Explore Site"}}</h2>
+				{{navigation}}
+				{{#if @labs.members}}
+				{{^if @member}}
+				<ul class="actions">
+					<li class="action-item"><a href="{{@site.url}}/subscribe/" class="btn">{{t "Subscribe"}}</a></li>
+				</ul>
+				{{/if}}
+				{{/if}}
+			</nav><!-- .widget -->
+			{{/if}}
+
+			{{!-- Includes the about widget - partials/widget-about.hbs --}}
+			{{> "widget-about"}}
+
+			{{!-- Includes the recent posts widget - partials/widget-recent.hbs --}}
+			{{> "widget-recent"}}
+
+			{{!-- Includes the tagcloud widget - partials/widget-tagcloud.hbs --}}
+			{{> "widget-tagcloud"}}
+
+		</div><!-- .sidebar-inside -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->

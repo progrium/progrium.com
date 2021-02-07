@@ -1,0 +1,11 @@
+{{!-- Member subscribe form --}}
+<form data-members-form="subscribe" class="subscribe-form">
+  <div class="form-group">
+    <input data-members-email class="subscribe-email" type="email" name="email" placeholder="{{t "Your email address"}}" required />
+    <button class="btn" type="submit">
+      <span class="btn-content">{{t "Subscribe"}}</span>
+      <span class="btn-loader">{{> "icons/loader"}}</span>
+    </button>
+  </div>
+  {{> "member-form-messages"}}
+</form><!-- subscribe-form -->

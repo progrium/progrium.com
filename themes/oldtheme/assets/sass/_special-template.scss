@@ -1,0 +1,61 @@
+/**
+ * 4.3 Special Template
+ */
+.special-template {
+  min-height: 100vh;
+
+  .site {
+    background: $gray-lightest;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    &:before {
+      -webkit-animation-delay: .15s;
+      animation-delay: .15s;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: fadeInOpacity;
+      animation-name: fadeInOpacity;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 0;
+      content: "";
+      left: 0;
+      opacity: .15;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .site-content {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .site-main {
+    padding-bottom: 3.33333em;
+    padding-top: 3.33333em;
+    position: relative;
+    text-align: center;
+  }
+
+  .top-navigation {
+    left: 0;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+  }
+
+  .top-navigation + .site-main {
+    padding-top: 6.66667em;
+  }
+}

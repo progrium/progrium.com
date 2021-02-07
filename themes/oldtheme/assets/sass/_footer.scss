@@ -1,0 +1,82 @@
+/**
+ * 7. Site Footer
+ */
+.site-footer {
+  padding-bottom: 1.66667em;
+  padding-top: 1.66667em;
+}
+
+.site-footer-inside {
+  position: relative;
+}
+
+.footer-navigation {
+  .menu {
+    list-style: none;
+    margin: 0 0 0.83333em;
+    padding: 0;
+    text-align: center;
+  }
+
+  .menu-item {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 10px 0.5em;
+  }
+
+  a {
+    color: $gray-dark;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.site-info {
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.back-to-top {
+  margin: 1.66667em 0 0;
+  text-align: center;
+
+  .btn-icon {
+    height: 2.5em;
+    width: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .site-footer {
+    .social-links {
+      -webkit-justify-content: start;
+      -ms-flex-pack: start;
+      justify-content: start;
+      padding-right: 70px;
+
+      .btn-icon {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .footer-navigation {
+    .menu-item {
+      display: inline-block;
+    }
+  }
+
+  .social-links ~ .back-to-top {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

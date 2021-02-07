@@ -1,0 +1,84 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The hero section with blog cover image as a background if available --}}
+<div class="hero-wrap">
+
+	{{#if @site.cover_image}}
+	<div class="hero-wrap-bg" style="background-image: url({{@site.cover_image}})"></div>
+	{{/if}}
+
+	{{!-- The tag below includes the theme header - partials/header.hbs --}}
+	{{> header}}
+
+	<section class="hero outer fadeInDown delay_075s">
+		<div class="inner">
+
+			{{#get "authors" limit="1" order="created_at asc" as |user|}}
+				{{#user}}
+					{{#if profile_image}}
+					<p class="hero-avatar"><img srcset="{{img_url profile_image size="xxs"}}, {{img_url profile_image size="xs"}} 2x" src="{{img_url profile_image size="xxs"}}" alt="{{name}}" class="avatar" /></p>
+					{{/if}}
+				{{/user}}
+			{{/get}}
+
+			<h2 class="hero-title">{{t "Hi there!"}}</h2>
+			<p class="hero-description">{{t "My name is Daniel Bennett. I'm a freelance front-end developer, author and speaker based in Austin, TX. It's nice to meet you."}}</p>
+
+			{{!-- The tag below includes the social links list - partials/social-links.hbs --}}
+			{{> "social-links"}}
+
+		</div><!-- .inner -->
+	</section><!-- .hero -->
+
+</div><!-- .hero-wrap -->
+
+{{!-- The content area on the homepage --}}
+<div id="content" class="site-content fadeInDown delay_1s">
+	<main id="main" class="site-main">
+
+		{{!-- The featured posts --}}
+		{{#get "posts" filter="featured:true" include="tags" as |featured_posts|}}
+			{{#foreach featured_posts visibility="all"}}
+			{{#if @first}}
+			<div class="featured-posts outer">
+			{{/if}}
+				<article class="{{post_class}} post-featured inner">
+					<header class="post-header">
+						<div class="post-meta">
+							{{#if featured}}<span class="featured-badge">{{t "Featured"}}</span> &sol; {{/if}}<time class="published" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+						</div><!-- .post-meta -->
+						<h2 class="post-title"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h2>
+					</header><!-- .post-header -->
+					{{#if feature_image}}
+					<a href="{{url}}" class="post-thumbnail"><img srcset="{{img_url feature_image size="xs"}} 300w, {{img_url feature_image size="s"}} 600w, {{img_url feature_image size="m"}} 800w, {{img_url feature_image size="l"}} 1100w, {{img_url feature_image size="xl"}} 1600w" sizes="(max-width: 1140px) 94vw, 1100px" src="{{img_url feature_image size="l"}}" alt="{{title}}" /></a>
+					{{/if}}
+					<div class="post-content">
+						{{#if custom_excerpt}}
+						<p>{{custom_excerpt}}</p>
+						{{else}}
+						<p>{{excerpt words="50"}}&hellip;</p>
+						{{/if}}
+						{{#if tags}}
+						<p class="post-tags">{{tags separator=" "}}</p>
+						{{/if}}
+						<p class="read-more"><a class="btn" href="{{url}}">{{t "Continue Reading"}}</a></p>
+					</div><!-- .post-content -->
+				</article><!-- .post -->
+			{{#if @last}}
+			</div><!-- .featured-posts -->
+			{{/if}}
+			{{/foreach}}
+		{{/get}}
+
+		<div class="outer">
+
+			<div class="post-feed-title underline inner">{{t "Latest Articles"}}</div>
+
+			{{!-- The tag below includes the post loop - partials/loop.hbs --}}
+			{{> "loop"}}
+
+		</div><!-- .outer -->
+
+	</main><!-- .site-main -->
+</div><!-- .site-content -->

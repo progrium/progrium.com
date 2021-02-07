@@ -1,0 +1,21 @@
+{{!-- Widget to display the recent posts list --}}
+<section class="widget widget-recent-posts">
+	<h2 class="widget-title underline">{{t "Recent Articles"}}</h2>
+	{{#get "posts" limit="3" as |recent_posts|}}
+	<ul>
+		{{#foreach recent_posts visibility="all"}}
+		<li>
+			<div class="post-header">
+				<div class="post-meta">
+					<time class="published" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+				</div><!-- .post-meta -->
+				<h3 class="post-title"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h3>
+			</div>
+			{{#if feature_image}}
+			<a href="{{url}}" class="post-thumbnail"><img src="{{img_url feature_image size="xxs"}}" alt="{{title}}" /></a>
+			{{/if}}
+		</li>
+		{{/foreach}}
+	</ul>
+	{{/get}}
+</section><!-- .widget -->

@@ -1,0 +1,23 @@
+{{!-- The panel for logged in members --}}
+<div id="member-menu" class="member-menu">
+	<div class="member-menu-scrollable">
+		<div class="member-menu-inside">
+
+			<button id="member-menu-hide" class="btn btn-icon"><span class="screen-reader-text">{{t "Close"}}</span><span aria-hidden="true" class="icon-close"></span></button>
+
+			<div class="member-menu-info">
+				{{#if @member.name}}
+				{{@member.name}}
+				{{else}}
+				{{@member.email}}
+				{{/if}}
+			</div><!-- .member-menu-info -->
+
+			<ul class="member-menu-actions">
+				<li><a class="btn" href="{{@site.url}}/account/">{{t "View Account"}}</a></li>
+				<li><a class="btn btn-outlined" href="#signout" data-members-signout>{{t "Sign out"}}</a></li>
+			</ul><!-- .member-menu-actions -->
+
+		</div><!-- .member-menu-inside -->
+	</div><!-- .member-menu-scrollable -->
+</div><!-- .member-menu -->

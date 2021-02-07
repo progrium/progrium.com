@@ -1,0 +1,12 @@
+{{!-- Social links list --}}
+<p class="social-links">
+	{{#if @site.facebook}}
+	<a href="{{facebook_url}}" class="btn btn-icon btn-secondary" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+	{{/if}}
+	{{#if @site.twitter}}
+	<a href="{{twitter_url}}" class="btn btn-icon btn-secondary" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+	{{/if}}
+	<a href="https://www.instagram.com/" class="btn btn-icon btn-secondary" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+	<a href="https://github.com/" class="btn btn-icon btn-secondary" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+	<a href="https://codepen.io/" class="btn btn-icon btn-secondary" target="_blank" rel="noopener">{{> "icons/codepen"}}</a>
+</p><!-- .social-links -->

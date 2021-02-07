@@ -1,0 +1,62 @@
+/**
+ * 4.4 Comments
+ */
+.comments-area {
+  margin: 0 0 1.66667em;
+  position: relative;
+}
+
+.comments-overlay {
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,1) 100%);
+  bottom: 0;
+  color: $color-accent;
+  display: none;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.comments-show {
+  border-bottom: 2px solid $color-accent;
+  bottom: 0;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  z-index: 1;
+
+  &:hover {
+    border-color: $gray-darkest;
+    color: $gray-darkest;
+  }
+}
+
+.comments-area {
+  &.comments--loaded {
+    .comments-inside {
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .comments-overlay {
+      display: block;
+    }
+  }
+
+  &.comments--opened {
+    .comments-inside {
+      height: auto;
+      overflow: auto;
+    }
+
+    .comments-overlay {
+      display: none;
+    }
+  }
+}

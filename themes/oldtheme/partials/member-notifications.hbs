@@ -1,0 +1,17 @@
+{{!-- The notifications displayed at the top of the site when the members sign in or sign up --}}
+<div class="notification notification-subscribe">
+	<a class="notification-close" href="javascript:;"><span class="icon-close" aria-hidden="true"></span><span class="screen-reader-text">{{t "Close"}}</span></a>
+	{{t "You've successfully subscribed to {sitetitle}." sitetitle=@site.title}}
+</div>
+<div class="notification notification-signup">
+	<a class="notification-close" href="javascript:;"><span class="icon-close" aria-hidden="true"></span><span class="screen-reader-text">{{t "Close"}}</span></a>
+	{{t "Great! You've successfully signed up."}} {{#if @member}}<a href="{{@site.url}}/account/">{{t "View your account."}}</a>{{/if}}
+</div>
+<div class="notification notification-signin">
+	<a class="notification-close" href="javascript:;"><span class="icon-close" aria-hidden="true"></span><span class="screen-reader-text">{{t "Close"}}</span></a>
+	{{t "Welcome back! You've successfully signed in."}}
+</div>
+<div class="notification notification-checkout">
+	<a class="notification-close" href="javascript:;"><span class="icon-close" aria-hidden="true"></span><span class="screen-reader-text">{{t "Close"}}</span></a>
+	{{t "Success! Your account is fully activated, you now have access to all content."}}
+</div>

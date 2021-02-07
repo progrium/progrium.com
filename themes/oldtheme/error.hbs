@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+	{{!-- Document Settings --}}
+	<meta charset="utf-8">
+
+	{{!-- Page Meta --}}
+	<title>{{@site.title}} — {{statusCode}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	{{!-- Styles --}}
+	{{> custom-fonts}}
+	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+	{{#if @site.cover_image}}
+		{{> site-cover image=@site.cover_image}}
+	{{/if}}
+</head>
+<body class="special-template">
+
+	<div id="page" class="site">
+		<div id="content" class="site-content">
+			<main id="main" class="site-main outer">
+				<section class="site-error inner">
+					<header class="page-header">
+						<h1 class="page-title">{{statusCode}}</h1>
+					</header>
+					<div class="page-content">
+						<p class="page-description">{{message}}</p>
+						<p><a class="btn btn-outlined" href="{{@site.url}}">{{{t "&larr; Back to homepage"}}}</a></p>
+					</div>
+				</section><!-- .site-error -->
+			</main><!-- .site-main -->
+		</div><!-- .site-content -->
+	</div><!-- .site -->
+
+</body>
+</html>
