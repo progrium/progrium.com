@@ -1,200 +1,288 @@
 <html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
-<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"  />
+</head>
+<body class="bg-black">
 
-<style>
-  body {
-    margin: 0;
-    background: black;
-    overflow: hidden;
-  }
-  video {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    min-height: 100%;
-    min-width: 80%;
-  }
-  .fullscreen-bg {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    overflow:hidden;
-    z-index: -100;
-}
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  .text-overlay {
-    position: absolute;
-    width: 115%;
-    height: 100%;
-  }
-  .color {
-    background-color: black;
-    opacity: 0.4;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAYAAABGM/VAAAAAGUlEQVQYV2NkYGD4z4AGGHEJoitkAKnEAACLmwID82i1VgAAAABJRU5ErkJggg==) repeat;
-  }
-  .text {
-    position: absolute;
-    font-family: "Nunito";
-    color: white;
-    font-size: 84px;
-    line-height: 1.1em;
-    top: 30%;
-    margin-left: 10%;
-    margin-right: 20%;
-    font-weight: 600;
-    filter: drop-shadow(5px 2px 2px #6666ff) drop-shadow(-3px 1px 2px #ff6666);
-  }
-  .text p {
-    margin-top: 0;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
-    font-weight: 400;
-
-  }
-  .subtext {
-    font-family: "Nunito";
-    color: white;
-    font-size: 30px;
-    line-height: 1.1em;
-    margin-top: 200px;
-    margin-left: 10%;
-    margin-right: 20%;
-    font-weight: 600;
-    filter: drop-shadow(5px 2px 2px #6666ff) drop-shadow(-3px 1px 2px #ff6666);
-  }
-  .video {
-    transform:scale(1.3);
-  }
-  img {
-    position: absolute;
-    margin-left: 8%;
-    margin-top: 20px;
-    width: 234px;
-    height: 108px;
-    transform:scale(0.8);
-    filter: drop-shadow(2px 1px 1px #000) drop-shadow(-1px 0px 1px #6666ff);
-  }
-  .bottom-bg {
-    background: black;
-    height: 120px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.4;
-    color: white;
-    padding: 30px;
-    padding-left: 10%;
-  }
-  .bottom {
-    color: white;
-    opacity: 1;
-    height: 96px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 30px;
-    padding-left: 10%;
-  }
-  .bottom .words {
-    margin-top: 2px;
-    font-size: 22px;
-    font-weight: 400;
-    word-spacing: -6px;
-    line-height: 1.35em;
-  }
-  .bottom div, .bottom input {
-    font-family: 'Roboto Mono', monospace;
-  }
-  .bottom input.email {
-    font-family: 'Roboto Mono', monospace;
-    min-width: 352px;
-    font-size: 20px;
-    height: 50px;
-    padding: 5px;
-    padding-left: 10px;
-    color: white;
-    background: #333;
-    opacity: 0.8;
-    border: 0px;
-    border-radius: 10px;
-  }
-  .bottom input {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
-    height: 50px;
-    margin-top: 3px;
-    margin-bottom: 0;
-    color: white;
-    border: 0px;
-    border-radius: 10px;
-  }
-  .bottom input:focus {
-    filter: drop-shadow(0px 0px 4px #6666ff);
-    outline-offset: 0px !important;
-    outline: none !important;
-  }
-  .submit {
-    width: 200px;
-    background: linear-gradient(#ff6666, #6666ff) !important;
-  }
-  form {
-    background: none;
-    border: 0;
-    padding: 0;
-  }
-</style>
-<body>
-  <div class="fullscreen-bg">
-    <video loop muted autoplay class="video overlay">
-        <source src="/BGv1.1.mov" type="video/mp4">
-    </video>
-  </div>
-  <div class="overlay color"></div>
-  <div class="text-overlay">
-    <div class="text">
-      Tools for the<br> Imagination Age
+  <div class="relative bg-gray-50 overflow-hidden" style="height: 48rem;">
+    <div class="absolute inset-y-0 w-full flex justify-center items-center" aria-hidden="true">
+      <video loop muted autoplay class="absolute w-full min-h-full" style="min-width: 54rem; margin-left: 0rem;">
+        <source src="/BGv1.1.mp4" type="video/mp4" />
+      </video>
+      <div class="w-full h-full scanlines"></div>
+    </div>
+  
+    <div class="relative pt-10 pb-16 sm:pb-24 h-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+            <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#">
+                  <span class="sr-only">progrium technology company</span>
+                  <img class="logo dropshadow" src="logo.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="md:absolute md:space-x-10 md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 text-lg">
+              <!-- <a href="#" class="font-medium text-white dropshadow hover:underline">Devlog</a>
+              <a href="#" class="font-medium text-white dropshadow hover:underline">Jobs</a> -->
+              <a href="https://github.com/sponsors/progrium" target="_blank" class="font-medium text-white dropshadow hover:underline">Sponsor &rarr;</a>
+            </div>
+          </nav>
+        </div>
+  2
+  
+      <main class="mt-18 mx-auto max-w-7xl px-16 sm:mt-36 text-left teeth">
+        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+          <span class="block hero xl:inline">Tools for the<br /> Imagination Age</span>
+        </h1>
+        <p class="mt-3 max-w-md text-base text-white dropshadow sm:text-lg md:mt-5 md:text-2xl md:max-w-3xl">
+          Software to empower the next generation of future-makers.
+        </p>
+        <div class="mt-5 max-w-md sm:flex md:mt-8">
+          <div class="rounded-md shadow">
+            <a href="#thesis" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black dropshadow bg-white hover:bg-indigo-500 hover:text-white md:py-4 md:text-lg md:px-10"> See Thesis &darr; </a>
+          </div>
+          <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+            <a href="https://github.com/sponsors/progrium" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black dropshadow hover:bg-indigo-500 md:py-4 md:text-lg md:px-10"> Sponsor &rarr;</a>
+            
+          </div>
+        </div>
+      </main>
     </div>
   </div>
-  <img src="logo.png" />
-  <div class="bottom-bg"></div>
-  <div class="bottom container">
-    <div class="row">
-      <div class="words col-sm-4">Let us slide into your inbox<br />and you can follow along.</div> 
-      <div class="col-sm-8">
-       
-        <!-- Begin Mailchimp Signup Form -->
-        
-       
-        <form action="https://progrium.us13.list-manage.com/subscribe/post?u=0dda02db0663c0132866c08ae&amp;id=f964b318bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required autofocus />
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0dda02db0663c0132866c08ae_f964b318bd" tabindex="-1" value=""></div>
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button submit">
-            </div>
-        </form>
-        
 
-        <!--End mc_embed_signup-->
+
+  <div id="thesis" class="relative bg-black py-20 sm:py-20">
+    <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+      <div class="relative sm:py-16 lg:py-0">
+        <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+          <svg class="absolute top-8 left-1/2 -ml-4 lg:-right-9 lg:left-auto lg:top-12" width="411" height="294" fill="none" viewBox="0 0 411 294">
+            <defs>
+              <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="3" width="8" height="2" class="text-gray-700" fill="currentColor" />
+                <rect x="3" y="0" width="2" height="8" class="text-gray-700" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="411" height="294" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
+          </svg>
+        </div>
+        <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:pt-20 lg:pb-10">
+          <!-- Testimonial card-->
+          <div onclick="document.getElementById('video-modal').style.display = 'block'" class="cursor-pointer relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
+            <img class="absolute inset-0 h-full w-full object-cover" src="https://img.youtube.com/vi/yKZ15O7zeHY/hqdefault.jpg" alt="" style="transform: scale(1.2);">
+            <div class="absolute inset-0 scanlines mix-blend-multiply"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute inset-0 h-full w-full text-white opacity-25" style="transform: scale(0.8);">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </svg>
+            <!-- <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90"></div> -->
+            
+          </div>
+        </div>
+      </div>
+  
+      <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+        <!-- Content area -->
+        <div class="pt-10 sm:pt-10 lg:pt-18 mt-6">
+          <h2 class="text-3xl nunito text-white font-extrabold tracking-tight sm:text-4xl">Unlocking the<br /> Imagination Machine</h2>
+          <div class="mt-6 text-gray-500 space-y-6">
+            <p class="text-lg">
+              The personal computer is an imagination machine. 
+              Programming this machine lets you invent whatever
+              tools and experiences you can logically wish for.
+              However there is a growing gap
+              between software users and software programmers. 
+            </p>
+            <p class="text-lg text-white"><a onclick="document.getElementById('video-modal').style.display = 'block'" class="hover:underline cursor-pointer">&larr; Watch thesis video</a></p>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
+
+
+
+  <div class="bg-black overflow-hidden">
+    <div class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <svg class="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" width="414" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+        <defs>
+          <pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="3" width="8" height="2" class="text-gray-700" fill="currentColor" />
+            <rect x="3" y="0" width="2" height="8" class="text-gray-700" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="414" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
+      </svg>
+  
+      <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div class="lg:col-span-1">
+          <h2 class="text-3xl nunito font-extrabold tracking-tight text-white sm:text-4xl">Generative Building Block Approach</h2>
+        </div>
+        <dl class="mt-10 mb-20 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+          <div>
+            <dt>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-black glow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19V15m0 0h4M15 15l5 5m11-1V4 " />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19V15m0 0h4M15 15l5 5m11-1V4 " style="transform: scale(-1, 1); transform-origin: center;" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19V15m0 0h4M15 15l5 5m11-1V4 " style="transform: scale(-1, -1); transform-origin: center;" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19V15m0 0h4M15 15l5 5m11-1V4 " style="transform: scale(1, -1); transform-origin: center;" />
+                </svg>
+              </div>
+              <p class="mt-5 text-lg leading-6 font-medium text-white">Simple</p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">Less is more. Easier to fully understand. Easier to reason about. Easier to replace and adapt. When done thoughtfully, simple is more generative.</dd>
+          </div>
+  
+          <div>
+            <dt>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-black glow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                </svg>
+              </div>
+              <p class="mt-5 text-lg leading-6 font-medium text-white">Composable</p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">Building blocks are composable when they have an API, and even more composable when implemented with common interfaces and protocols.</dd>
+          </div>
+  
+          <div>
+            <dt>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-black glow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                </svg>
+              </div>
+              <p class="mt-5 text-lg leading-6 font-medium text-white">Extensible</p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">Whether via hooks, plugins, or scripting, allowing building blocks to be modifiable keeps its core design focused while supporting exceptional cases.</dd>
+          </div>
+  
+          <div>
+            <dt>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-black glow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <p class="mt-5 text-lg leading-6 font-medium text-white">Ergonomic</p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">None of this matters unless the experience is human-friendly. APIs and interfaces that make sense and feel natural.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-gray-600">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:py-6 sm:px-6 lg:px-8">
+      
+      <div class="flow-root my-6 lg:my-6">
+        <div class="-mt-4 -ml-8 mr-10 flex flex-wrap justify-between lg:-ml-8" style="filter: grayscale(1);">
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+            <img class="graylogo h-12" style="transform:scale(0.8);" src="https://ngrok.com/static/img/twilio-logo.svg" alt="Twilio">
+          </div>
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+            <img class="graylogo h-12" style="transform:scale(0.9); margin-top:-0.3rem;" src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png" alt="Docker">
+          </div>
+          
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+            <img class="graylogo h-12" style="transform:scale(0.9);" src="https://upload.wikimedia.org/wikipedia/commons/8/83/HashiCorp_Logo.png" alt="HashiCorp">
+          </div>
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+            <img class="graylogo h-12" style="transform:scale(1.4);" src="https://storage.googleapis.com/mist-blog-prod/dist/images/post-images/DigitalOcean-logo.webp" alt="DigitalOcean">
+          </div>
+        </div>
+      </div>
+      <h2 class="text-xl text-center nunito font-bold text-gray-400">Collaborations with revolutionary developer-focused companies</h2>
+    </div>
+  </div>
+
+
+
+
+  <div class="bg-black py-16">
+    <div class="max-w-2xl mx-auto text-center py-32 px-4 sm:py-32 sm:px-6 lg:px-8">
+      <h2 class="text-5xl font-extrabold text-white sm:text-5xl">
+        <span class="nunito block my-2">Forget the metaverse.</span>
+        <span class="nunito block my-2">We build the metafuture.</span>
+      </h2>
+      <p class="mt-8 text-lg leading-6 text-gray-500">
+        Subscribe to our devlog to follow along and participate.
+      </p>
+      <form class="mt-8 justify-center sm:flex">
+        <label for="email-address" class="sr-only">Email address</label>
+        <input id="email-address" name="email" type="email" autocomplete="email" required class="w-full px-5 py-3 placeholder-gray-400 sm:max-w-xs rounded-md bg-gray-600" placeholder="Enter your email">
+        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+          <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-500 hover:text-white focus:outline-none glow focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <footer class="bg-white relative whiteteeth mt-10">
+    <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+        <!-- <div class="px-5 py-2">
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Devlog </a>
+        </div>
+  
+        <div class="px-5 py-2">
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Jobs </a>
+        </div>
+  
+        <div class="px-5 py-2">
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Press </a>
+        </div> -->
+  
+        <div class="px-5 py-2">
+          <a href="https://github.com/sponsors/progrium" class="text-base text-gray-500 hover:text-gray-900"> Sponsor </a>
+        </div>
+  
+      </nav>
+      <div class="mt-8 flex justify-center space-x-6">
+  
+        <a href="https://twitter.com/progriumHQ" class="text-gray-400 hover:text-gray-500">
+          <span class="sr-only">Twitter</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          </svg>
+        </a>
+  
+        <a href="https://github.com/progrium" class="text-gray-400 hover:text-gray-500">
+          <span class="sr-only">GitHub</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+          </svg>
+        </a>
+  
+      </div>
+      <p class="mt-8 text-center text-base text-gray-300">&copy; 2022 Progrium, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <div id="video-modal" class="hidden fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div onclick="document.getElementById('video-modal').style.display = 'none'" class="fixed inset-0 bg-black bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+  
+      <!-- This element is to trick the browser into centering the modal contents. -->
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+      
+      <div class="relative w-9/12 inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle">
+        <iframe class="w-full" style="aspect-ratio: 16 / 9;"  src="https://www.youtube.com/embed/yKZ15O7zeHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 </html>
