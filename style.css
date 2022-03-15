@@ -7,6 +7,23 @@ body {
     border: 1px solid red;
 }
 
+article p {
+    margin-bottom: 1rem ;
+    letter-spacing: 0;
+}
+article hr {
+    border-top-color: #666;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+article a {
+    text-decoration: underline;
+}
+
+
 .teeth:after {
     content: "";
     position: absolute;

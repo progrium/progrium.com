@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on progrium technology company</title>
+    <link>https://progrium.com/blog/</link>
+    <description>Recent content in Blog on progrium technology company</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Mar 2022 12:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Progrium Technology Thesis</title>
+      <link>https://progrium.com/blog/progrium-technology-thesis/</link>
+      <pubDate>Tue, 15 Mar 2022 12:00:00 +0000</pubDate>
+      
+      <guid>https://progrium.com/blog/progrium-technology-thesis/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yKZ15O7zeHY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;em&gt;Video transcript:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Creating software is too complicated. Our options are overwhelming, our tooling is too bloated, and things rarely ever &amp;ldquo;just work&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
