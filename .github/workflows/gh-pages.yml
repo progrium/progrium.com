@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - 2022  # Set a branch to deploy
   pull_request:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/2022'
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./public
