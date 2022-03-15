@@ -1,0 +1,23 @@
+{{ define "head" }}
+<title>{{ .Title }} :: ptc blog</title>
+{{ end }}
+{{ define "main" }}
+<main class="relative bg-black pt-16 pb-20 px-4 sm:px-6 lg:pt-16 lg:pb-20 lg:px-8">
+  <div class="absolute inset-0">
+    <div class="bg-black h-1/3 sm:h-2/3"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="text-center">
+      <p class="my-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">{{ .Date.Format "January 2, 2006" }}</p>
+      <h2 class="text-3xl tracking-tight font-extrabold text-white sm:text-4xl">{{ .Title }}</h2>
+    </div>
+    <div class="mt-16 max-w-3xl mx-auto space-y-16 text-white pb-20">
+
+        <article id="content" class="text-xl font-sans">
+           {{ .Content }}
+        </article>
+
+    </div>
+  </div>
+</main>
+{{ end }}
