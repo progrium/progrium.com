@@ -82,4 +82,5 @@ Even if that doesn't happen, I'd love to just get some better building blocks. P
 
 As an independent creator, I depend on people like you to help fund this work, and I'd love you to come along and help make the Tractor System a reality by [becoming a sponsor](https://github.com/sponsors/progrium).
 
-Thanks!
+Onward!
+-jeff
