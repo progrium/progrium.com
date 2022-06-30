@@ -1,7 +1,9 @@
 ---
 title: "Progrium Technology Thesis"
-date: 2022-03-15T12:00:00Z
+date: "2022-03-15"
 draft: false
+description: "Creating software is too complicated. Our options are overwhelming, our tooling is too bloated, and things rarely ever just work."
+cover: "https://i3.ytimg.com/vi/yKZ15O7zeHY/maxresdefault.jpg"
 ---
 {{< youtube id="yKZ15O7zeHY" >}}
 *Video transcript:*  
