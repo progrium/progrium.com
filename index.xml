@@ -6,7 +6,18 @@
     <description>Recent content on progrium technology company</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing Apptron</title>
+      <link>https://progrium.com/blog/apptron-announcement/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://progrium.com/blog/apptron-announcement/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m happy to announce the first major building block of the Tractor System: Apptron.&lt;/p&gt;
+&lt;p&gt;Apptron is a software primitive that lets you drive native platform APIs using the technologies you&amp;rsquo;re already familiar with, enabling cross-platform webview apps and more.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://progrium.com/images/apptron-announcement.png&#34; alt=&#34;Apptron Demo Screenshot&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Progrium Technology Thesis</title>
       <link>https://progrium.com/blog/progrium-technology-thesis/</link>
