@@ -48,4 +48,5 @@ Anybody interested in contributing or helping drive this project should definite
 A huge thanks to my [sponsors](https://github.com/sponsors/progrium), who I depend on to fund this early R&D work on the Tractor System. As long as it's sustainable, I look forward to releasing more powerful open source primitives.
 
 Excited to tell you more next week with the first Apptron demo!  
+
 -jeff
