@@ -6,7 +6,22 @@
     <description>Recent content on progrium technology company</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apptron Demo: Webview Window Building Block</title>
+      <link>https://progrium.com/blog/apptron-webview-window-building-block/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://progrium.com/blog/apptron-webview-window-building-block/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/XU-vrmA7j4U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this demo, I use the &lt;a href=&#34;https://progrium.com/blog/apptron-announcement/&#34;&gt;Apptron&lt;/a&gt; API from Go to build a simple birthday card application defined by HTML and CSS.
+I also explore the architectural approach of Apptron compared to directly working with platform native APIs.&lt;/p&gt;
+&lt;p&gt;To expand on the demo, in this post I&amp;rsquo;ll discuss some of the motivation behind this project. There are a few reasons why I made Apptron.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Announcing Apptron</title>
       <link>https://progrium.com/blog/apptron-announcement/</link>
