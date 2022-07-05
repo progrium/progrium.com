@@ -1,7 +1,7 @@
 ---
 title: "Apptron Demo: Webview Window Building Block"
 date: "2022-07-05"
-draft: true
+draft: false
 description: "In this demo, I use the Apptron API from Go to build a simple birthday card application defined by HTML and CSS."
 cover: "https://i3.ytimg.com/vi/XU-vrmA7j4U/maxresdefault.jpg"
 ---
