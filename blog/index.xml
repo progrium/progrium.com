@@ -6,7 +6,20 @@
     <description>Recent content in Blog on progrium technology company</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apptron Demo: Zero Config HTML5 Native Apps</title>
+      <link>https://progrium.com/blog/apptron-zero-config-html5-native-apps/</link>
+      <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://progrium.com/blog/apptron-zero-config-html5-native-apps/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7zsCQGOEBRU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this demo I use the Apptron build command to create an executable from a single HTML file. No setup, no configuration. If you want to change how the window looks, you can add a meta tag to your HTML file. It&amp;rsquo;s not only simple, it&amp;rsquo;s fast.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Apptron Demo: Webview Window Building Block</title>
       <link>https://progrium.com/blog/apptron-webview-window-building-block/</link>
