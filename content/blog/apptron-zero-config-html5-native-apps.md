@@ -8,7 +8,7 @@ cover: "https://i3.ytimg.com/vi/7zsCQGOEBRU/maxresdefault.jpg"
 
 {{< youtube id="7zsCQGOEBRU" >}}
 
-In this demo I use the Apptron build command to create an executable from a single HTML file. No setup, no configuration. If you want to change how the window looks, you can add a meta tag to your HTML file. It's not only simple, it's fast.
+In this demo I use the [Apptron](https://progrium.com/blog/apptron-announcement/) build command to create an executable from a single HTML file. No setup, no configuration. If you want to change how the window looks, you can add a meta tag to your HTML file. It's not only simple, it's fast.
 <!--more-->
 
 The way this works is actually similar to the last demo where we built a simple Go application to host our webview app, except Apptron is building it for us. Unlike all other commands of Apptron, this build command does have a dependency, which is the Go compiler. Luckily, this compiler is also a self-contained tool that's easy to install on any platform. 
