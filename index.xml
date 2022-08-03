@@ -6,7 +6,20 @@
     <description>Recent content on progrium technology company</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apptron Demo: Shell Scriptable Native APIs</title>
+      <link>https://progrium.com/blog/apptron-shell-scriptable-native-apis/</link>
+      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://progrium.com/blog/apptron-shell-scriptable-native-apis/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UHFS4STFYXM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this demo I show off the rest of the &lt;a href=&#34;https://progrium.com/blog/apptron-announcement/&#34;&gt;Apptron&lt;/a&gt; CLI, which exposes most of the cross-platform APIs as commands. These commands make great shell scriptable utilities, and you can see how they&amp;rsquo;ve been designed to facilitate this. By the end, we&amp;rsquo;ll have created an app indicator (systray) icon and menu that&amp;rsquo;s created and driven by a shell script.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Apptron Demo: Zero Config HTML5 Native Apps</title>
       <link>https://progrium.com/blog/apptron-zero-config-html5-native-apps/</link>
@@ -17,7 +30,7 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/7zsCQGOEBRU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;In this demo I use the Apptron build command to create an executable from a single HTML file. No setup, no configuration. If you want to change how the window looks, you can add a meta tag to your HTML file. It&amp;rsquo;s not only simple, it&amp;rsquo;s fast.&lt;/p&gt;</description>
+&lt;p&gt;In this demo I use the &lt;a href=&#34;https://progrium.com/blog/apptron-announcement/&#34;&gt;Apptron&lt;/a&gt; build command to create an executable from a single HTML file. No setup, no configuration. If you want to change how the window looks, you can add a meta tag to your HTML file. It&amp;rsquo;s not only simple, it&amp;rsquo;s fast.&lt;/p&gt;</description>
     </item>
     
     <item>

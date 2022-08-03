@@ -5,10 +5,10 @@
   <link rel="stylesheet" href="/tailwind-2.2.19.min.css" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="In this demo I use the Apptron build command to create an executable from a single HTML file. No setup, no configuration." />
+<meta name="description" content="In this demo I show off the rest of the Apptron CLI, which exposes most of the cross-platform APIs as commands." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://progrium.com/blog/apptron-zero-config-html5-native-apps/" />
+<link rel="canonical" href="https://progrium.com/blog/apptron-shell-scriptable-native-apis/" />
 
 
 
@@ -25,25 +25,25 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="@progrium" />
 
-<meta name="twitter:image" content="https://i3.ytimg.com/vi/7zsCQGOEBRU/maxresdefault.jpg">
+<meta name="twitter:image" content="https://i3.ytimg.com/vi/UHFS4STFYXM/maxresdefault.jpg">
 
 
 
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Apptron Demo: Zero Config HTML5 Native Apps">
-<meta property="og:description" content="In this demo I use the Apptron build command to create an executable from a single HTML file. No setup, no configuration." />
-<meta property="og:url" content="https://progrium.com/blog/apptron-zero-config-html5-native-apps/" />
+<meta property="og:title" content="Apptron Demo: Shell Scriptable Native APIs">
+<meta property="og:description" content="In this demo I show off the rest of the Apptron CLI, which exposes most of the cross-platform APIs as commands." />
+<meta property="og:url" content="https://progrium.com/blog/apptron-shell-scriptable-native-apis/" />
 <meta property="og:site_name" content="progrium technology company" />
 
-  <meta property="og:image" content="https://i3.ytimg.com/vi/7zsCQGOEBRU/maxresdefault.jpg">
+  <meta property="og:image" content="https://i3.ytimg.com/vi/UHFS4STFYXM/maxresdefault.jpg">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
 
-  <meta property="article:published_time" content="2022-07-19 00:00:00 &#43;0000 UTC" />
+  <meta property="article:published_time" content="2022-08-03 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -55,7 +55,7 @@
 
 
   
-<title>Apptron Demo: Zero Config HTML5 Native Apps :: ptc blog</title>
+<title>Apptron Demo: Shell Scriptable Native APIs :: ptc blog</title>
 
 </head>
 <body class="bg-white">
@@ -98,24 +98,22 @@
   </div>
   <div class="relative max-w-7xl mx-auto">
     <div class="text-center">
-      <p class="my-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">July 19, 2022</p>
-      <h2 class="text-3xl tracking-tight font-extrabold text-white sm:text-4xl">Apptron Demo: Zero Config HTML5 Native Apps</h2>
+      <p class="my-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">August 3, 2022</p>
+      <h2 class="text-3xl tracking-tight font-extrabold text-white sm:text-4xl">Apptron Demo: Shell Scriptable Native APIs</h2>
       <h3 class="text-white text-xl mt-2"></h3>
     </div>
     <div class="mt-16 max-w-3xl mx-auto space-y-16 text-white pb-20">
 
         <article id="content" class="text-xl font-sans">
            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/7zsCQGOEBRU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/UHFS4STFYXM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p>In this demo I use the <a href="https://progrium.com/blog/apptron-announcement/">Apptron</a> build command to create an executable from a single HTML file. No setup, no configuration. If you want to change how the window looks, you can add a meta tag to your HTML file. It&rsquo;s not only simple, it&rsquo;s fast.</p>
-<p>The way this works is actually similar to the last demo where we built a simple Go application to host our webview app, except Apptron is building it for us. Unlike all other commands of Apptron, this build command does have a dependency, which is the Go compiler. Luckily, this compiler is also a self-contained tool that&rsquo;s easy to install on any platform.</p>
-<p>At some point, I&rsquo;d like to try embedding the Go compiler with Apptron, but this does introduce some complexity I don&rsquo;t want to take on just yet. However, if anybody is interested in making this happen, please join early access so you can help us make Apptron great.</p>
-<p>Speaking of help, this demo avoids talking about something that&rsquo;s somewhat necessary on modern platforms: signing. If you&rsquo;ve ever downloaded an executable on Windows, I&rsquo;m sure you&rsquo;ve gotten a giant alert asking if you really want to run it. This is because it&rsquo;s an unsigned executable, which means it can&rsquo;t be proven to not be tampered with by a non-author. Platforms are getting stricter and stricter about this.</p>
-<p>On Mac, you have to not only sign but notarize your executable before another Mac will be allowed to run it. This is a tricky process that can be done on your own with an Apptron built executable, but I have preliminary tooling to help with the process. The same tooling can also bundle up your executable into a Mac app bundle.</p>
-<p>However, I need help getting these last mile features in. So please consider <a href="https://tractor.dev/apptron/">joining early access</a>, not only to try Apptron, but if you have the experience, to help us finish these core features before it debuts as a public open source project.</p>
-<p>See you with the next demo!</p>
+<p>In this demo I show off the rest of the <a href="https://progrium.com/blog/apptron-announcement/">Apptron</a> CLI, which exposes most of the cross-platform APIs as commands. These commands make great shell scriptable utilities, and you can see how they&rsquo;ve been designed to facilitate this. By the end, we&rsquo;ll have created an app indicator (systray) icon and menu that&rsquo;s created and driven by a shell script.</p>
+<p>There is a whole class of power users that doesn&rsquo;t always want to take the time to &ldquo;write a program,&rdquo; let alone learn how. Since the functionality is right there, why not expose it in a way that&rsquo;s useful for these folks? Sysadmins and devops engineers often spend most of their time at a command prompt, so this feature goes out to all of them.</p>
+<p>It turns out having a CLI interface to the APIs also makes it easy to do basic regression testing for the project. It also provides a kind of accessible listing of functionality. And! It helps with our polyglot primitive goal, working as a stopgap before having native library support for a language, since nearly all languages can &ldquo;shell out&rdquo;.</p>
+<p>As I mentioned in the video, this is a strategy I like to use when making generative primitives: maximize utility by providing multiple ways to access features. Like being language agnostic, this helps meet users where they are, and reach users you might not otherwise. There&rsquo;s also often a dominant context people think of for some functionality, so showing it in a new or surprising context helps break people out of existing thought patterns and imagine new possibilities.</p>
+<p>Let&rsquo;s see what possibilities open up with the next demo! In the meantime, <a href="https://tractor.dev/apptron/">join early access</a> to explore Apptron on your own.</p>
 <p>-jeff</p>
         </article>
 
