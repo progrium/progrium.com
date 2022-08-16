@@ -6,7 +6,20 @@
     <description>Recent content on progrium technology company</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apptron Demo: HTML5 Background Apps</title>
+      <link>https://progrium.com/blog/apptron-html5-background-apps/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://progrium.com/blog/apptron-html5-background-apps/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/i9nNUOHF7G4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this week&amp;rsquo;s demo I built a background application using HTML and &lt;a href=&#34;https://progrium.com/blog/apptron-announcement/&#34;&gt;Apptron&lt;/a&gt;. It may seem weird to involve a webview at all for a background app, which is why this was not a use case I had planned, but I was pleasantly surprised to discover how this turned out.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Apptron Demo: Shell Scriptable Native APIs</title>
       <link>https://progrium.com/blog/apptron-shell-scriptable-native-apis/</link>
