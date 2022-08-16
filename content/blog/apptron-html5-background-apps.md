@@ -1,7 +1,7 @@
 ---
 title: "Apptron Demo: HTML5 Background Apps"
 date: "2022-08-16"
-draft: true
+draft: false
 description: "In this week's demo I build a background application using HTML and Apptron."
 cover: "https://i3.ytimg.com/vi/i9nNUOHF7G4/maxresdefault.jpg"
 ---
