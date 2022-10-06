@@ -6,7 +6,20 @@
     <description>Recent content on progrium technology company</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progrium.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apptron Demo: CSS Themed Windows</title>
+      <link>https://progrium.com/blog/apptron-css-themed-windows/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://progrium.com/blog/apptron-css-themed-windows/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/4fjblMTvVh0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this demo I show an experimental feature of &lt;a href=&#34;https://progrium.com/blog/apptron-announcement/&#34;&gt;Apptron&lt;/a&gt; that lets you customize the window frame using HTML and CSS. This allows us to create re-usable themes. Apptron even comes with a few builtin.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Apptron Demo: HTML5 Background Apps</title>
       <link>https://progrium.com/blog/apptron-html5-background-apps/</link>

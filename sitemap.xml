@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://progrium.com/blog/apptron-html5-background-apps/</loc>
-    <lastmod>2022-08-16T00:00:00+00:00</lastmod>
+    <loc>https://progrium.com/blog/apptron-css-themed-windows/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://progrium.com/blog/</loc>
-    <lastmod>2022-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://progrium.com/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://progrium.com/blog/apptron-html5-background-apps/</loc>
     <lastmod>2022-08-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://progrium.com/blog/apptron-shell-scriptable-native-apis/</loc>
